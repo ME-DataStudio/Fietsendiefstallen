@@ -4,3 +4,4 @@ Naast de gegevens wordt ook code in Python en R beschikbaar gesteld om de gegeve
 
 Het gaat om de volgende datasets:
 * [Postcodegebieden](https://github.com/KennisnetwerkDataScience/Fietsendiefstallen/tree/master/data/postcodegebieden) (bron: ESRI)
+* [100 meter vierkanten met demografische gegevens uit 2014](https://github.com/KennisnetwerkDataScience/Fietsendiefstallen/tree/master/data/vierkant100m2014) (bron: CBS)
