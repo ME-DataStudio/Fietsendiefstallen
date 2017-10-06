@@ -25,21 +25,21 @@
 #!   MARKDOWN_DESCRIPTION=""
 #!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
 #!   DESTINATION_ROUTING_FILE=""
-#!   VIEW_POSITION="-331.253 0"
+#!   VIEW_POSITION="-328.128 0"
 #!   FME_BUILD_NUM="17539"
 #!   SOURCE="NONE"
 #!   FME_REPROJECTION_ENGINE="FME"
 #!   ZOOM_SCALE="100"
-#!   LAST_SAVE_DATE="2017-10-06T21:29:38"
+#!   LAST_SAVE_DATE="2017-10-06T22:33:57"
 #!   BEGIN_PYTHON=""
-#!   FME_DOCUMENT_PRIORGUID="37f7826f-86f5-4c04-8d61-03ea6cff4251,d0db8377-07a9-42b5-97a0-ca67be5165a7"
+#!   FME_DOCUMENT_PRIORGUID="37f7826f-86f5-4c04-8d61-03ea6cff4251,d0db8377-07a9-42b5-97a0-ca67be5165a7,00a17d7f-3957-4fe6-82ef-a4043c0cae9b"
 #!   DOC_TOP_LEFT="-185.752 -986.258"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   PASSWORD=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   ATTR_TYPE_ENCODING="SDF"
-#!   FME_DOCUMENT_GUID="00a17d7f-3957-4fe6-82ef-a4043c0cae9b"
+#!   FME_DOCUMENT_GUID="48973f13-9eea-408d-a2a3-3c4fba6d11ad"
 #!   DESCRIPTION=""
 #!   END_TCL=""
 #!   SHOW_INFO_NODES="true"
@@ -50,7 +50,7 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   WORKSPACE_VERSION="1"
 #!   DESTINATION="NONE"
-#!   DOC_EXTENTS="2870.15 798.651"
+#!   DOC_EXTENTS="2870.15 798.652"
 #!   REDIRECT_TERMINATORS="NONE"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   LOG_MAX_RECORDED_FEATURES="200"
@@ -761,7 +761,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="17"
@@ -776,7 +776,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="10"
@@ -791,7 +791,7 @@
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   COLOUR="1,1,0.784314,0.196078"
+#!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="10"
 #!   COMMENT_TYPE="REGULAR"
 #!   ANCHORED_NODE="0"
@@ -805,7 +805,7 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="10"
 #!   TYPE="FeatureReader"
-#!   VERSION="6"
+#!   VERSION="9"
 #!   POSITION="1064.45 -512.984"
 #!   BOUNDING_RECT="1064.45 -512.984 557.442 71"
 #!   ORDER="5e+14"
@@ -813,30 +813,36 @@
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="17539"
 #! >
-#!     <OUTPUT_FEAT NAME="Postcode 6 polygon"/>
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_geometry{0}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="POSTCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="Postcode4 polygon"/>
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_property" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gemeentenaam" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gemeentenaam.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="geom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="Postcode&lt;space&gt;6&lt;space&gt;polygon"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_geometry{0}" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="PC4" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <XFORM_ATTR ATTR_NAME="POSTCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="Postcode4&lt;space&gt;polygon"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{0}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PC4" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="3"/>
-#!     <XFORM_ATTR ATTR_NAME="gml_parent_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="gml_parent_property" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="gml_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="code" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="code.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="gemeentenaam" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="gemeentenaam.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="geom" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
 #!     <XFORM_ATTR ATTR_NAME="gml_parent_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="gml_parent_property" IS_USER_CREATED="false" FEAT_INDEX="4" />
@@ -846,12 +852,22 @@
 #!     <XFORM_ATTR ATTR_NAME="gemeentenaam" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="gemeentenaam.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="geom" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_property" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="gml_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="code" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="code.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="gemeentenaam" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="gemeentenaam.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="geom" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_ARCGISFEATURES_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ARCGISFEATURES"/>
 #!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
@@ -859,7 +875,6 @@
 #!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_%&quot;Postcode 6 polygon&quot;%&quot;Postcode4 polygon&quot;"/>
 #!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceAUTH_TYPE&lt;comma&gt;None&lt;comma&gt;SourceUSER&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourcePASSWORD&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceTOKEN&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceAGOL_ADV_PARM_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceFEATURES_PER_REQUEST&lt;comma&gt;100000&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceARCGISFEATURES_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS&lt;comma&gt;Yes,METAFILE,ARCGISFEATURES"/>
@@ -867,23 +882,28 @@
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
 #!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_AUTH_TYPE" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
 #!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
 #!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ARCGISFEATURES_AGOL_ADV_PARM_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FEATURES_PER_REQUEST&quot;,ARCGISFEATURES&lt;space&gt;Advanced,ARCGISFEATURES_ARCGISFEATURES_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS ARCGISFEATURES%Source&quot;,ARCGISFEATURES&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,ARCGISFEATURES_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,ARCGISFEATURES&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,ARCGISFEATURES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ARCGISFEATURES&lt;space&gt;,ARCGISFEATURES_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP ARCGISFEATURES_EXPOSE_FORMAT_ATTRS&quot;,ARCGISFEATURES&lt;space&gt;Schema&lt;space&gt;Attributes,ARCGISFEATURES_FEATURES_PER_REQUEST,&quot;OPTIONAL INTEGER&quot;,ARCGISFEATURES&lt;space&gt;Features&lt;space&gt;Per&lt;space&gt;Request:,ARCGISFEATURES_AUTH_TYPE,&quot;OPTIONAL ACTIVECHOICE_LOOKUP None,None,TOKEN,USER,PASSWORD%&quot;&quot;Provide Token&quot;&quot;,provide_token,USER,PASSWORD%Basic,Basic,TOKEN%Digest,Digest,TOKEN%NTLM,NTLM,TOKEN%Kerberos,Kerberos,TOKEN,USER,PASSWORD&quot;,ARCGISFEATURES&lt;space&gt;Authentication&lt;space&gt;Type:"/>
 #!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="Intersects"/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="&quot;Postcode 6 polygon&quot;,&quot;fme_geometry{0},OBJECTID,POSTCODE&quot;,&quot;Postcode4 polygon&quot;,&quot;fme_geometry{0},OBJECTID,PC4&quot;"/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES_RADIO" PARM_VALUE="FEATURETYPES"/>
 #!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="&quot;Postcode 6 polygon&quot; &quot;Postcode4 polygon&quot;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="&lt;quote&gt;Postcode&lt;space&gt;6&lt;space&gt;polygon&lt;quote&gt;&lt;space&gt;&lt;quote&gt;Postcode4&lt;space&gt;polygon&lt;quote&gt;"/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;geo.rug.nl&lt;solidus&gt;arcgis&lt;solidus&gt;rest&lt;solidus&gt;services&lt;solidus&gt;Administratief&lt;solidus&gt;PostcodegebiedenNL&lt;solidus&gt;FeatureServer"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_FEATURES_PER_REQUEST" PARM_VALUE="100000"/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_AGOL_ADV_PARM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
@@ -902,10 +922,10 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="8"
+#!   IDENTIFIER="11"
 #!   SOURCE_NODE="10"
 #!   TARGET_NODE="7"
-#!   SOURCE_PORT_DESC="fo 0 Postcode&lt;space&gt;6&lt;space&gt;polygon"
+#!   SOURCE_PORT_DESC="fo 1 Postcode&lt;lt&gt;space&lt;gt&gt;6&lt;lt&gt;space&lt;gt&gt;polygon"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
@@ -913,10 +933,10 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="11"
+#!   IDENTIFIER="14"
 #!   SOURCE_NODE="10"
 #!   TARGET_NODE="9"
-#!   SOURCE_PORT_DESC="fo 1 Postcode4&lt;space&gt;polygon"
+#!   SOURCE_PORT_DESC="fo 2 Postcode4&lt;lt&gt;space&lt;gt&gt;polygon"
 #!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
@@ -1227,24 +1247,20 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME "gemeenten (WFS_1) Splitter"    INPUT F
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 MACRO FeatureReader_OUTPUT_PORTS_ENCODED Postcode<space>6<space>polygon Postcode4<space>polygon
-MACRO FeatureReader_DIRECTIVES AGOL_ADV_PARM_GROUP FME_DISCLOSURE_OPEN USE_SEARCH_ENVELOPE NO QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes EXPOSE_ATTRS_GROUP FME_DISCLOSURE_OPEN FEATURES_PER_REQUEST 100000 AUTH_TYPE None
+MACRO FeatureReader_DIRECTIVES AGOL_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,USE_SEARCH_ENVELOPE,NO,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,FEATURES_PER_REQUEST,100000,AUTH_TYPE,None
 
-# Values come in encoded and come out decoded.
-Tcl2 proc FeatureReader_findInListElseDefault { valueEncoded defaultValue } {    if { [lsearch [split {$(FeatureReader_OUTPUT_PORTS_ENCODED)}] $valueEncoded] >= 0} {       return FeatureReader_[FME_DecodeText $valueEncoded]    } else {       return FeatureReader_$defaultValue    } }
-INCLUDE [if {{INTERSECTS} == {<Unused>} } {             puts {MACRO QUERY_INTERACTION_LINE QUERY_INTERACTION NONE};          } else {             if { {INTERSECTS} == {ENVELOPE_INTERSECT} } {                puts {MACRO QUERY_INTERACTION_LINE QUERY_INTERACTION};             } else {                puts {MACRO QUERY_INTERACTION_LINE QUERY_INTERACTION INTERSECTS};             }          }         ]
+# Always provide an INTERACTION, otherwise the factory defaults to ENVELOPE_INTERSECTS
+INCLUDE [if { ( {INTERSECTS} == {<Unused>} ) || ( {($INTERACT_OPTIONS)} == {} ) } {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION NONE};          } else {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION "INTERSECTS"};          }         ]
 # Consolidate the attribute merge options to what the factory expects
 DEFAULT_MACRO FeatureReader_COMBINE_ATTRS
 INCLUDE [       if { {RESULT_ONLY} == {MERGE} } {          puts "MACRO FeatureReader_COMBINE_ATTRS <Unused>";       } else {          puts "MACRO FeatureReader_COMBINE_ATTRS RESULT_ONLY";       };    ]
-FACTORY_DEF * QueryFactory    FACTORY_NAME FeatureReader    INPUT  FEATURE_TYPE gemeenten_WFS_1    $(QUERY_INTERACTION_LINE)    QUERYFCT_TABLE_SEPARATOR SPACE    COMBINE_ATTRIBUTES  $(FeatureReader_COMBINE_ATTRS)    QUERYFCT_ATTRIBUTE_PREFIX <Unused>    COMBINE_GEOMETRY    RESULT_ONLY    ENABLE_CACHE        NO    READER_TYPE         ARCGISFEATURES    READER_DATASET      "https:<solidus><solidus>geo.rug.nl<solidus>arcgis<solidus>rest<solidus>services<solidus>Administratief<solidus>PostcodegebiedenNL<solidus>FeatureServer"    READER_IDS          "Postcode 6 polygon" "Postcode4 polygon"    READER_DIRECTIVES   META_MACROS,SourceAUTH_TYPE<comma>None<comma>SourceUSER<comma><lt>Unused<gt><comma>SourcePASSWORD<comma><lt>Unused<gt><comma>SourceTOKEN<comma><lt>Unused<gt><comma>SourceAGOL_ADV_PARM_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceFEATURES_PER_REQUEST<comma>100000<comma>SourceEXPOSE_ATTRS_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceARCGISFEATURES_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM<comma><comma>SourceCLIP_TO_ENVELOPE<comma>NO<comma>SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS<comma>Yes,METAFILE,ARCGISFEATURES    CONTINUE_ON_READER_ERROR YES    READER_PARAMS     $(FeatureReader_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE *      @SupplyAttributes(fme_feature_type,@FeatureType())      @Tcl2("set FME_FeatureType [FeatureReader_findInListElseDefault [FME_EncodeText $FME_FeatureType] {<OTHER>}]")      @Transform(ARCGISFEATURES,FME_GENERIC)    OUTPUT QUERY FEATURE_TYPE FeatureReader_INITIATOR    OUTPUT READER_ERROR FEATURE_TYPE FeatureReader_<REJECTED>
+FACTORY_DEF * QueryFactory    FACTORY_NAME FeatureReader    INPUT  FEATURE_TYPE gemeenten_WFS_1    $(FCTQUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  $(FeatureReader_COMBINE_ATTRS)    QUERYFCT_ATTRIBUTE_PREFIX <Unused>    COMBINE_GEOMETRY    RESULT_ONLY    ENABLE_CACHE        NO    QUERYFCT_TABLE_SEPARATOR SPACE    READER_TYPE         ARCGISFEATURES    READER_DATASET      "https:<solidus><solidus>geo.rug.nl<solidus>arcgis<solidus>rest<solidus>services<solidus>Administratief<solidus>PostcodegebiedenNL<solidus>FeatureServer"    QUERYFCT_IDS        "<quote>Postcode<space>6<space>polygon<quote><space><quote>Postcode4<space>polygon<quote>"    READER_DIRECTIVES META_MACROS,SourceAUTH_TYPE<comma>None<comma>SourceUSER<comma><lt>Unused<gt><comma>SourcePASSWORD<comma><lt>Unused<gt><comma>SourceTOKEN<comma><lt>Unused<gt><comma>SourceAGOL_ADV_PARM_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceFEATURES_PER_REQUEST<comma>100000<comma>SourceEXPOSE_ATTRS_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceARCGISFEATURES_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM<comma><comma>SourceCLIP_TO_ENVELOPE<comma>NO<comma>SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS<comma>Yes,METAFILE,ARCGISFEATURES    QUERYFCT_OUTPUT     "BASED_ON_CONNECTIONS"    CONTINUE_ON_READER_ERROR YES    QUERYFCT_RESULT_TAGS $(FeatureReader_OUTPUT_PORTS_ENCODED)    QUERYFCT_SET_FME_FEATURE_TYPE YES    READER_PARAMS_WWJD     $(FeatureReader_DIRECTIVES)    OUTPUT READER_ERROR FEATURE_TYPE FeatureReader_<REJECTED>    OUTPUT Postcode<space>6<space>polygon FEATURE_TYPE FeatureReader_Postcode<space>6<space>polygon    OUTPUT Postcode4<space>polygon FEATURE_TYPE FeatureReader_Postcode4<space>polygon
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureReader <OTHER> Output Nuker"   INPUT FEATURE_TYPE FeatureReader_<OTHER>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureReader INITIATOR Output Nuker"   INPUT FEATURE_TYPE FeatureReader_INITIATOR
-FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureReader <REJECTED> Output Nuker"   INPUT FEATURE_TYPE FeatureReader_<REJECTED>
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME FeatureReader_<Rejected> INPUT FEATURE_TYPE FeatureReader_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureReader<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC "FeatureReader_Postcode 6 polygon" TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>postcode6<closeparen> GEOMETRY    ROUTE FME_GENERIC "FeatureReader_Postcode4 polygon" TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>postcode4<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureReader_Postcode<space>6<space>polygon TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>postcode6<closeparen> GEOMETRY    ROUTE FME_GENERIC FeatureReader_Postcode4<space>polygon TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>postcode4<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
