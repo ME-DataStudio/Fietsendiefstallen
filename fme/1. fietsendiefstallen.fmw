@@ -1,0 +1,1806 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    D:\apps\FME\fme.exe "Z:\1. Anwar\AIConsultancy\Datascience Noord NL\Fme\fietsendiefstallen.fmw"
+#          --SourceDataset_XLSXR "Z:\1. Anwar\AIConsultancy\Datascience Noord NL\Fme\Diefstal fiets Groningen stad vanaf 2013.xlsx"
+#          --DestDataset_ESRISHAPE "Z:\1. Anwar\AIConsultancy\Datascience Noord NL\Fme\fietsendiefstal.shp"
+#    
+#    
+#!   TERMINATE_REJECTED="NO"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   SOURCE_ROUTING_FILE=""
+#!   DESCRIPTION=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   PASSWORD=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   MARKDOWN_DESCRIPTION=""
+#!   FME_BUILD_NUM="17271"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   USAGE=""
+#!   ZOOM_SCALE="100"
+#!   LAST_SAVE_BUILD="FME(R) 2017.0.0.1 (20170316 - Build 17271 - WIN32)"
+#!   SHOW_INFO_NODES="true"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   FME_SERVER_SERVICES=""
+#!   DOC_EXTENTS="4464.05 1185.5"
+#!   DESTINATION="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   END_TCL=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   BEGIN_TCL=""
+#!   IGNORE_READER_FAILURE="No"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   MAX_LOG_FEATURES="200"
+#!   LOG_FILE=""
+#!   DESTINATION_ROUTING_FILE=""
+#!   LAST_SAVE_DATE="2017-10-06T16:12:05"
+#!   END_PYTHON=""
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   SOURCE="NONE"
+#!   FME_DOCUMENT_PRIORGUID="070a9e31-e136-40e3-8b2f-57e796402fb0,63f0448c-b2a4-4484-896a-4188c8207cfd,53ecdb02-5281-4886-9568-09b728ff58ed,9a243dd3-f7f6-429d-8813-da502012e235,72456e08-c533-4a2a-a046-b59edee54dbc"
+#!   CATEGORY=""
+#!   PYTHON_COMPATIBILITY="27"
+#!   FME_DOCUMENT_GUID="0ad43ca8-d3c9-454c-bd71-ea61e1a82792"
+#!   USE_MARKDOWN=""
+#!   WORKSPACE_VERSION="1"
+#!   VIEW_POSITION="-1380.01 -35.0004"
+#!   BEGIN_PYTHON=""
+#!   TITLE=""
+#!   MARKDOWN_USAGE=""
+#!   DOC_TOP_LEFT="-1330.01 -1198"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR)"
+#!   KEYWORD="XLSXR_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_text_size number(31,15) fme_rotation number(31,15) fme_type char(50) multi_reader_keyword char(50) fme_color char(50) multi_reader_type char(50) fme_fill_color char(50) multi_reader_full_id number(11,0) fme_secondary_axis number(31,15) fme_basename char(50) fme_dataset char(50) multi_reader_id number(11,0) fme_primary_axis number(31,15) xlsx_row_id number(11,0) fme_sweep_angle number(31,15) fme_text_string char(50) fme_feature_type char(50) fme_start_angle number(31,15) fme_geometry fme_char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17271"
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="ESRISHAPE"
+#!   DATASET="$(DestDataset_ESRISHAPE)"
+#!   KEYWORD="ESRISHAPE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="10"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY} shape_dimension auto"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) SHAPE_GEOMETRY char(50) fme_text_string char(50) fme_rotation double fme_secondary_axis double fme_color char(50) fme_text_size double fme_type char(50) fme_fill_color char(50) fme_start_angle double fme_sweep_angle double fme_primary_axis double fme_geometry fme_char(50) fme_feature_type char(50) fme_dataset char(50) shape_measures char(254)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group shape_dimension Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,auto%2D,2d%2D&lt;space&gt;+&lt;space&gt;Measures,2dm%3D&lt;space&gt;+&lt;space&gt;Measures,3dm Output Dimension:&quot; auto "
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="17271"
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#!   COORDSYS="EPSG:4326"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shape_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Incidenten"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-1330.01 -572.002"
+#!   BOUNDING_RECT="-1330.01 -572.002 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Incident Identificatie" ATTR_TYPE="char(19)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Bronregistratie" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Incidentsoort code" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Incidentsoort" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegstraatnaam" ATTR_TYPE="char(34)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleeghuisnummer met toev." ATTR_TYPE="char(8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegpostcode" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegplaats" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleeggemeente" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegprovincie" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegwijk" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegbuurt" ATTR_TYPE="char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pleegsubbuurt" ATTR_TYPE="char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Begin-pleegdag v/d week" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Begin-pleegdagdeel" ATTR_TYPE="char(8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Begin-pleegdatum/tijd" ATTR_TYPE="datetime" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Eind-pleegdag v/d week" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Eind-pleegdagdeel" ATTR_TYPE="char(8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Eind-pleegdatum/tijd" ATTR_TYPE="datetime" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Kennisnamedag v/d week" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Kennisnamedagdeel" ATTR_TYPE="char(8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Kennisnamedatum/tijd" ATTR_TYPE="datetime" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Aangifte" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poging" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Verdachten" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Aanhoudingen" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Opgehelderd" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Object" ATTR_TYPE="char(41)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Project(en)" ATTR_TYPE="char(47)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Temperatuur" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Weer" ATTR_TYPE="char(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="X" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Y" ATTR_TYPE="number(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_header_row,0;xlsx_schema_end_col,0;xlsx_schema_end_row,0;xlsx_schema_start_col,0;xlsx_schema_start_row,1"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Incidenten"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="38"
+#!   FEAT_GEOMTYPE="shape_point"
+#!   POSITION="3134.04 -350.498"
+#!   BOUNDING_RECT="3134.04 -350.498 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Identifica" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Bronr" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="soort_code" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Incidentso" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="straatnaam" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hsnrtoev" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="postcode" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="plaats" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gemeente" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="provincie" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="wijk" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="buurt" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="subbuurt" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Begin_dag" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Begin_dagd" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Begin_datu" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Eind_dag" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Eind_dagde" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Eind_datum" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Kndag" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Kndagdeel" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Kndatum_ti" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Aangifte" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poging" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Verdachten" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Aanhouding" ATTR_TYPE="number(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Opgehelder" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Object" ATTR_TYPE="char(41)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Project(en" ATTR_TYPE="char(47)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Temperatuu" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Weer" ATTR_TYPE="char(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="X" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Y" ATTR_TYPE="number(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="lon" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="lat" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="boundary"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="34"
+#!   FEAT_GEOMTYPE="shape_polygon"
+#!   POSITION="3041.53 -768.001"
+#!   BOUNDING_RECT="3041.53 -768.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="boundary_500m"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="42"
+#!   FEAT_GEOMTYPE="shape_polygon"
+#!   POSITION="3134.04 -1190"
+#!   BOUNDING_RECT="3134.04 -1190 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Diefstal fiets Groningen stad vanaf 2013.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)fietsendiefstal.shp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="31"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Maak een boundary&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1025.01 -583"
+#!   TOP_LEFT="1025.01 -583"
+#!   BOTTOM_RIGHT="1024.01 -582"
+#!   BOUNDING_RECT="1025.01 -583 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="8"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="32"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Buffer van +500m voor de BAG&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1077.51 -1198"
+#!   TOP_LEFT="1077.51 -1198"
+#!   BOTTOM_RIGHT="1076.51 -1197"
+#!   BOUNDING_RECT="1077.51 -1198 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="12"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="28"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Auteur&lt;/span&gt;: Anwar Ibrahim&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Datum&lt;/span&gt;: 1-10-2017&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Versie&lt;/span&gt;: 0.1&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Omschrijving&lt;/span&gt;:&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;XY RD coordinaten van fietsendiefstallen omzetten naar lat/lon en wegschrijven naar een shape.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1330.01 -12.5008"
+#!   TOP_LEFT="-1330.01 -12.5008"
+#!   BOTTOM_RIGHT="-107.5 -332.504"
+#!   BOUNDING_RECT="-1330.01 -12.5008 1222.51 320.003"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="VertexCreator"
+#!   VERSION="2"
+#!   POSITION="-641.007 -487.001"
+#!   BOUNDING_RECT="-641.007 -487.001 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Incident Identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Bronregistratie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegstraatnaam" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleeghuisnummer met toev." IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegpostcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleeggemeente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegprovincie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegwijk" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegsubbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdag v/d week" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdag v/d week" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedag v/d week" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aangifte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Poging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Verdachten" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aanhoudingen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Opgehelderd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Project(en)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Temperatuur" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Weer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="X" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Incident Identificatie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Bronregistratie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegstraatnaam" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleeghuisnummer met toev." IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegpostcode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegplaats" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleeggemeente" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegprovincie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegwijk" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegbuurt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegsubbuurt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdag v/d week" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdagdeel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdag v/d week" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdagdeel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedag v/d week" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedagdeel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Aangifte" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Poging" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Verdachten" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Aanhoudingen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Opgehelderd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Project(en)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Temperatuur" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Weer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="X" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
+#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
+#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(Y)"/>
+#!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(X)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="HullAccumulator"
+#!   VERSION="4"
+#!   POSITION="1049.01 -708.001"
+#!   BOUNDING_RECT="1049.01 -708.001 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="HULL"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HULLTYPE_PARAM" PARM_VALUE="Concave )("/>
+#!     <XFORM_PARM PARM_NAME="ALPHA" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DIMENSION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HullAccumulator"/>
+#!     <XFORM_PARM PARM_NAME="3DMODE_PARAM" PARM_VALUE="2D"/>
+#!     <XFORM_PARM PARM_NAME="DEFAULTZ" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="Bufferer"
+#!   VERSION="13"
+#!   POSITION="1851.52 -1070"
+#!   BOUNDING_RECT="1851.52 -1070 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="BUFFERED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CAP_STYLE" PARM_VALUE="Round"/>
+#!     <XFORM_PARM PARM_NAME="ANGLE" PARM_VALUE="22.5"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OFFSET" PARM_VALUE="500"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Bufferer"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MITER_LIMIT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CORNER_STYLE" PARM_VALUE="Round"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="CoordinateSystemSetter"
+#!   VERSION="0"
+#!   POSITION="206.502 -512.002"
+#!   BOUNDING_RECT="206.502 -512.002 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Incident Identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Bronregistratie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegstraatnaam" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleeghuisnummer met toev." IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegpostcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleeggemeente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegprovincie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegwijk" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pleegsubbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdag v/d week" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-pleegdatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdag v/d week" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-pleegdatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedag v/d week" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kennisnamedatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aangifte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Poging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Verdachten" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aanhoudingen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Opgehelderd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Project(en)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Temperatuur" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Weer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="X" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:28992"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="40"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="1076.51 -378"
+#!   BOUNDING_RECT="1076.51 -378 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Bronr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="soort code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="straatnaam" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hsnrtoev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="plaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gemeente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="provincie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="wijk" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="buurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="subbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-dag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-dagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-datum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-dag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-dagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-datum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aangifte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Poging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Verdachten" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aanhoudingen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Opgehelderd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Project(en)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Temperatuur" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Weer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="X" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Incident&lt;space&gt;Identificatie Identificatie  RENAME_SET_VALUE Bronregistratie Bronr  RENAME_SET_VALUE Incidentsoort&lt;space&gt;code soort&lt;space&gt;code  RENAME_SET_VALUE Incidentsoort Incidentsoort  NO_OP Pleegstraatnaam straatnaam  RENAME_SET_VALUE Pleeghuisnummer&lt;space&gt;met&lt;space&gt;toev. hsnrtoev  RENAME_SET_VALUE Pleegpostcode postcode  RENAME_SET_VALUE Pleegplaats plaats  RENAME_SET_VALUE Pleeggemeente gemeente  RENAME_SET_VALUE Pleegprovincie provincie  RENAME_SET_VALUE Pleegwijk wijk  RENAME_SET_VALUE Pleegbuurt buurt  RENAME_SET_VALUE Pleegsubbuurt subbuurt  RENAME_SET_VALUE Begin-pleegdag&lt;space&gt;v&lt;solidus&gt;d&lt;space&gt;week Begin-dag  RENAME_SET_VALUE Begin-pleegdagdeel Begin-dagdeel  RENAME_SET_VALUE Begin-pleegdatum&lt;solidus&gt;tijd Begin-datum&lt;solidus&gt;tijd  RENAME_SET_VALUE Eind-pleegdag&lt;space&gt;v&lt;solidus&gt;d&lt;space&gt;week Eind-dag  RENAME_SET_VALUE Eind-pleegdagdeel Eind-dagdeel  RENAME_SET_VALUE Eind-pleegdatum&lt;solidus&gt;tijd Eind-datum&lt;solidus&gt;tijd  RENAME_SET_VALUE Kennisnamedag&lt;space&gt;v&lt;solidus&gt;d&lt;space&gt;week Kndag  RENAME_SET_VALUE Kennisnamedagdeel Kndagdeel  RENAME_SET_VALUE Kennisnamedatum&lt;solidus&gt;tijd Kndatum&lt;solidus&gt;tijd  RENAME_SET_VALUE Aangifte Aangifte  NO_OP Poging Poging  NO_OP Verdachten Verdachten  NO_OP Aanhoudingen Aanhoudingen  NO_OP Opgehelderd Opgehelderd  NO_OP Object Object  NO_OP Project&lt;openparen&gt;en&lt;closeparen&gt; Project&lt;openparen&gt;en&lt;closeparen&gt;  NO_OP Temperatuur Temperatuur  NO_OP Weer Weer  NO_OP X X  NO_OP Y Y  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="39"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="1684.02 -378"
+#!   BOUNDING_RECT="1684.02 -378 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Bronr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="soort code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="straatnaam" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hsnrtoev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="plaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gemeente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="provincie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="wijk" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="buurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="subbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-dag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-dagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-datum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-dag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-dagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-datum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aangifte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Poging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Verdachten" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aanhoudingen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Opgehelderd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Project(en)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Temperatuur" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Weer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="X" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="47"
+#!   TYPE="CoordinateExtractor"
+#!   VERSION="2"
+#!   POSITION="2339.02 -350.498"
+#!   BOUNDING_RECT="2339.02 -350.498 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Bronr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="soort code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Incidentsoort" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="straatnaam" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hsnrtoev" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="plaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gemeente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="provincie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="wijk" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="buurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="subbuurt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-dag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-dagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Begin-datum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-dag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-dagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Eind-datum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndagdeel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Kndatum/tijd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aangifte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Poging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Verdachten" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Aanhoudingen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Opgehelderd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Project(en)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Temperatuur" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Weer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="X" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="X_ATTR" PARM_VALUE="lon"/>
+#!     <XFORM_PARM PARM_NAME="Y_ATTR" PARM_VALUE="lat"/>
+#!     <XFORM_PARM PARM_NAME="ALL_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateExtractor"/>
+#!     <XFORM_PARM PARM_NAME="Z_DEFAULT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Z_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INDEX_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="IND" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Specify Coordinate"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="44"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="1851.52 -708.001"
+#!   BOUNDING_RECT="1851.52 -708.001 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector_2"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="51"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="2471.53 -1130"
+#!   BOUNDING_RECT="2471.53 -1130 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector_3"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="5"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 HULL"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="46"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="44"
+#!   SOURCE_PORT_DESC="fo 0 HULL"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="51"
+#!   SOURCE_PORT_DESC="fo 0 BUFFERED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="40"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="39"
+#!   TARGET_NODE="47"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="39"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="50"
+#!   SOURCE_NODE="44"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="53"
+#!   SOURCE_NODE="51"
+#!   TARGET_NODE="42"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! <ATTR_LINK
+#!   IDENTIFIER="65585"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 18 OUTPUT"
+#!   TARGET_PORT_DESC="18"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="393265"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 28 OUTPUT"
+#!   TARGET_PORT_DESC="28"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="262193"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 2 OUTPUT"
+#!   TARGET_PORT_DESC="2"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="589873"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 21 OUTPUT"
+#!   TARGET_PORT_DESC="21"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="458801"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 13 OUTPUT"
+#!   TARGET_PORT_DESC="13"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="720945"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 15 OUTPUT"
+#!   TARGET_PORT_DESC="15"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="196657"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 16 OUTPUT"
+#!   TARGET_PORT_DESC="16"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="131121"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 29 OUTPUT"
+#!   TARGET_PORT_DESC="29"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="852017"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="655409"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 17 OUTPUT"
+#!   TARGET_PORT_DESC="17"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="917553"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 25 OUTPUT"
+#!   TARGET_PORT_DESC="25"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="327729"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 26 OUTPUT"
+#!   TARGET_PORT_DESC="26"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="524337"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 14 OUTPUT"
+#!   TARGET_PORT_DESC="14"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="786481"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="38"
+#!   SOURCE_PORT_DESC="ao 0 3 OUTPUT"
+#!   TARGET_PORT_DESC="3"
+#! />
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,DestDataset_ESRISHAPE_1,ESRISHAPE_OUT_ENCODING_ESRISHAPE_1,ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_1,ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_1,ESRISHAPE_OUT_ADVANCED_ESRISHAPE_1,ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_1,ESRISHAPE_OUT_GEOMETRY_ESRISHAPE_1,ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_1,ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_1
+DEFAULT_MACRO SourceDataset_XLSXR $(FME_MF_DIR)Diefstal fiets Groningen stad vanaf 2013.xlsx
+GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+DEFAULT_MACRO DestDataset_ESRISHAPE $(FME_MF_DIR)fietsendiefstal.shp
+GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:
+INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_ESRISHAPE)} == {}} { puts_real {Parameter 'DestDataset_ESRISHAPE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE XLSXR
+READER_KEYWORD XLSXR_1
+READER_GEN_DIRECTIVES EXCEL_COL_NAMES,YES,FORCE_DATETIME,NO,XLSXR_EXPOSE_FORMAT_ATTRS,,EXPAND_MERGED_CELLS,Yes,SCAN_SCHEMA_IF_DYNAMIC,No,READ_BLANK_AS,Missing,EXPOSE_ATTRS_GROUP,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,ADVANCED,,TABLELIST,Incidenten<space>Informatie,_MERGE_SCHEMAS,YES,USE_SCHEMA_OTHER_FILES,No,CONFIGURATION_DATASET,Z:<solidus>1.<space>Anwar<solidus>AIConsultancy<solidus>Datascience<space>Noord<space>NL<solidus>Diefstal<space>fiets<space>Groningen<space>stad<space>vanaf<space>2013.xlsx,SCHEMA,Incidenten<comma>0<lt>comma<gt><lt>quote<gt>Incident<lt>space<gt>Identificatie<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>19<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt>Bronregistratie<lt>comma<gt>char<lt>comma<gt>22<lt>comma<gt><lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>quote<gt>Incidentsoort<lt>space<gt>code<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>4<lt>comma<gt><lt>comma<gt><lt>comma<gt>3<lt>comma<gt>Incidentsoort<lt>comma<gt>char<lt>comma<gt>15<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>Pleegstraatnaam<lt>comma<gt>char<lt>comma<gt>34<lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt><lt>quote<gt>Pleeghuisnummer<lt>space<gt>met<lt>space<gt>toev.<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>8<lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt>Pleegpostcode<lt>comma<gt>char<lt>comma<gt>7<lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt>Pleegplaats<lt>comma<gt>char<lt>comma<gt>10<lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>Pleeggemeente<lt>comma<gt>char<lt>comma<gt>10<lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt>Pleegprovincie<lt>comma<gt>char<lt>comma<gt>10<lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt>Pleegwijk<lt>comma<gt>char<lt>comma<gt>36<lt>comma<gt><lt>comma<gt><lt>comma<gt>11<lt>comma<gt>Pleegbuurt<lt>comma<gt>char<lt>comma<gt>23<lt>comma<gt><lt>comma<gt><lt>comma<gt>12<lt>comma<gt>Pleegsubbuurt<lt>comma<gt>char<lt>comma<gt>23<lt>comma<gt><lt>comma<gt><lt>comma<gt>13<lt>comma<gt><lt>quote<gt>Begin-pleegdag<lt>space<gt>v<lt>solidus<gt>d<lt>space<gt>week<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>10<lt>comma<gt><lt>comma<gt><lt>comma<gt>14<lt>comma<gt>Begin-pleegdagdeel<lt>comma<gt>char<lt>comma<gt>8<lt>comma<gt><lt>comma<gt><lt>comma<gt>15<lt>comma<gt>Begin-pleegdatum<lt>solidus<gt>tijd<lt>comma<gt>datetime<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>16<lt>comma<gt><lt>quote<gt>Eind-pleegdag<lt>space<gt>v<lt>solidus<gt>d<lt>space<gt>week<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>10<lt>comma<gt><lt>comma<gt><lt>comma<gt>17<lt>comma<gt>Eind-pleegdagdeel<lt>comma<gt>char<lt>comma<gt>8<lt>comma<gt><lt>comma<gt><lt>comma<gt>18<lt>comma<gt>Eind-pleegdatum<lt>solidus<gt>tijd<lt>comma<gt>datetime<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>19<lt>comma<gt><lt>quote<gt>Kennisnamedag<lt>space<gt>v<lt>solidus<gt>d<lt>space<gt>week<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>10<lt>comma<gt><lt>comma<gt><lt>comma<gt>20<lt>comma<gt>Kennisnamedagdeel<lt>comma<gt>char<lt>comma<gt>8<lt>comma<gt><lt>comma<gt><lt>comma<gt>21<lt>comma<gt>Kennisnamedatum<lt>solidus<gt>tijd<lt>comma<gt>datetime<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>22<lt>comma<gt>Aangifte<lt>comma<gt>char<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>comma<gt>23<lt>comma<gt>Poging<lt>comma<gt>char<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>comma<gt>24<lt>comma<gt>Verdachten<lt>comma<gt>number<lt>comma<gt>2<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>25<lt>comma<gt>Aanhoudingen<lt>comma<gt>number<lt>comma<gt>2<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>26<lt>comma<gt>Opgehelderd<lt>comma<gt>char<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>comma<gt>27<lt>comma<gt>Object<lt>comma<gt>char<lt>comma<gt>41<lt>comma<gt><lt>comma<gt><lt>comma<gt>28<lt>comma<gt>Project<lt>openparen<gt>en<lt>closeparen<gt><lt>comma<gt>char<lt>comma<gt>47<lt>comma<gt><lt>comma<gt><lt>comma<gt>29<lt>comma<gt>Temperatuur<lt>comma<gt>char<lt>comma<gt>5<lt>comma<gt><lt>comma<gt><lt>comma<gt>30<lt>comma<gt>Weer<lt>comma<gt>char<lt>comma<gt>33<lt>comma<gt><lt>comma<gt><lt>comma<gt>31<lt>comma<gt>X<lt>comma<gt>char<lt>comma<gt>7<lt>comma<gt><lt>comma<gt><lt>comma<gt>32<lt>comma<gt>Y<lt>comma<gt>number<lt>comma<gt>7<lt>comma<gt>0<lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt><lt>quote<gt>Z:<lt>solidus<gt>1.<lt>space<gt>Anwar<lt>solidus<gt>AIConsultancy<lt>solidus<gt>Datascience<lt>space<gt>Noord<lt>space<gt>NL<lt>solidus<gt>Diefstal<lt>space<gt>fiets<lt>space<gt>Groningen<lt>space<gt>stad<lt>space<gt>vanaf<lt>space<gt>2013.xlsx<lt>quote<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>32<lt>comma<gt>15947<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO<comma>Informatie<comma>0<lt>comma<gt><lt>quote<gt>Incidenten<lt>space<gt>met<lt>space<gt>incidentsoort<lt>space<gt>A72<lt>space<gt>gepleegd<lt>space<gt>in<lt>space<gt>plaats<lt>space<gt>Groningen<lt>space<gt>van<lt>space<gt>1<lt>space<gt>jan<lt>space<gt>2013<lt>space<gt>t<lt>solidus<gt>m<lt>space<gt>21<lt>space<gt>sep<lt>space<gt>2017<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>29<lt>comma<gt><lt>comma<gt><comma>1<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>1<lt>comma<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>0<lt>comma<gt>1<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO
+
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} ESRISHAPE
+MULTI_WRITER_KEYWORD{0} ESRISHAPE_1
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset_XLSXR)
+GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1 Z:/1. Anwar/AIConsultancy/Datascience Noord NL/Diefstal fiets Groningen stad vanaf 2013.xlsx
+XLSXR_1_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1 YES
+XLSXR_1_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_1 NO
+XLSXR_1_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_1)"
+GUI DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_1 SCAN_SCHEMA_IF_DYNAMIC%USE_SCHEMA_OTHER_FILES%READ_BLANK_AS%EXPAND_MERGED_CELLS Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 No
+XLSXR_1_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1)"
+GUI CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1 No
+XLSXR_1_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing
+XLSXR_1_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_1)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes
+XLSXR_1_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1)"
+GUI CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 
+XLSXR_1_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1)"
+GUI DISCLOSUREGROUP XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 XLSXR_EXPOSE_FORMAT_ATTRS Schema Attributes
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1 Yes
+XLSXR_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 
+XLSXR_1_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_1 DEFLINE
+XLSXR_1_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_1)"
+XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRISHAPE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER ESRISHAPE ESRISHAPE_1
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the Esri Shapefiles.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ESRISHAPE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ESRISHAPE ESRISHAPE_1
+DEFAULT_MACRO DestDataset_ESRISHAPE_1 $(DestDataset_ESRISHAPE)
+GUI DIRNAME DestDataset_ESRISHAPE_1 Destination Esri Shapefile Folder:
+ESRISHAPE_1_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
+# ============================================================================
+# Determines whether the attribute names should be uppercased, or whether they
+# should stay as specified in the shapefile. The default will be Yes for
+# backwards compatibility. Once the mapping file/workspace has been generated,
+# the value for this keyword should not be changed.
+DEFAULT_MACRO ESRISHAPE_OUT_UPPER_CASE_ATTR_NAMES_ESRISHAPE_1 No
+ESRISHAPE_1_UPPER_CASE_ATTR_NAMES "$(ESRISHAPE_OUT_UPPER_CASE_ATTR_NAMES_ESRISHAPE_1)"
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for outputting the shapefile
+# BUG31194: For backwards compatibility and not outputting a .cpg file
+# we have chosen to make the writer default encoding system (ANSI)
+DEFAULT_MACRO ESRISHAPE_OUT_ENCODING_ESRISHAPE_1 SYSTEM
+ESRISHAPE_1_ENCODING "$(ESRISHAPE_OUT_ENCODING_ESRISHAPE_1)"
+GUI OPTIONAL ENCODING ESRISHAPE_OUT_ENCODING_ESRISHAPE_1 ANSI%SYSTEM%BIG5%EUC%HKBIG5%ISO%OEM%SJIS%UTF-8%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP874%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO-8859-11%ISO8859-13%ISO8859-15%WINDOWS-874 Character Encoding
+# ============================================================================
+# PR2557: Specifies whether or not the reader will generate spatial index files
+DEFAULT_MACRO ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_1 No
+ESRISHAPE_1_WRITE_SPATIAL_INDEX "$(ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_1)"
+GUI CHECKBOX ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_1 Yes%No Write Spatial Index
+DEFAULT_MACRO ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_1 No
+ESRISHAPE_1_COMPRESSED_SHAPE_FILE "$(ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_1)"
+GUI CHECKBOX ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_1 Yes%No Create Compressed Shapefile (.shz)
+DEFAULT_MACRO ESRISHAPE_OUT_DIMENSION_ESRISHAPE_1 auto
+ESRISHAPE_1_DIMENSION "$(ESRISHAPE_OUT_DIMENSION_ESRISHAPE_1)"
+GUI DISCLOSUREGROUP ESRISHAPE_OUT_ADVANCED_ESRISHAPE_1 STRICT_COMPATIBILITY%GEOMETRY Advanced
+# ============================================================================
+# BUG31474: Add an Strict compatibility flag to prevent some apps from
+# crashing when record lengths are too long. By default, we want to write
+# compatible files going forward.
+DEFAULT_MACRO ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_1 Yes
+ESRISHAPE_1_STRICT_COMPATIBILITY "$(ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_1)"
+GUI CHECKBOX ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_1 Yes%No Strict Compatibility
+GUI DISCLOSUREGROUP ESRISHAPE_OUT_GEOMETRY_ESRISHAPE_1 PRESERVE_RING_VERTEX_ORDER%SURFACE_AND_SOLID_STORAGE%MEASURES_AS_Z Geometry
+# ============================================================
+# BUG39095: Add an option to preserve input ring vertex order.
+DEFAULT_MACRO ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_1 No
+ESRISHAPE_1_PRESERVE_RING_VERTEX_ORDER "$(ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_1)"
+GUI CHECKBOX ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_1 Yes%No Preserve Ring Vertex Order
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO ESRISHAPE_OUT_DESTINATION_DATASETTYPE_VALIDATION_ESRISHAPE_1 Yes
+ESRISHAPE_1_DESTINATION_DATASETTYPE_VALIDATION "$(ESRISHAPE_OUT_DESTINATION_DATASETTYPE_VALIDATION_ESRISHAPE_1)"
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_1 no
+ESRISHAPE_1_MEASURES_AS_Z "$(ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_1 yes%no Treat Measures as Elevation
+ESRISHAPE_1_ENCODING $(ESRISHAPE_OUT_ENCODING_ESRISHAPE_1)
+ESRISHAPE_1_DATASET "$(DestDataset_ESRISHAPE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)fietsendiefstallen.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
+DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_1 ESRISHAPE_1
+# -------------------------------------------------------------------------
+
+XLSXR_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ESRISHAPE_1_COORDINATE_SYSTEM EPSG:4326
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME fietsendiefstallen
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD XLSXR_1   INPUT FEATURE_TYPE *    ROUTE XLSXR XLSXR_1::Incidenten TO FME_GENERIC ::Incidenten ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+XLSXR_1_MERGE_DEF XLSXR_1::Incidenten EXACT Incidenten DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_header_row,0,xlsx_schema_end_col,0,xlsx_schema_start_row,1,xlsx_schema_start_col,0,xlsx_schema_end_row,0,fme_attribute_reading,defined,Incident<space>Identificatie,char<openparen>19<closeparen>,Bronregistratie,char<openparen>22<closeparen>,Incidentsoort<space>code,char<openparen>4<closeparen>,Incidentsoort,char<openparen>15<closeparen>,Pleegstraatnaam,char<openparen>34<closeparen>,Pleeghuisnummer<space>met<space>toev.,char<openparen>8<closeparen>,Pleegpostcode,char<openparen>7<closeparen>,Pleegplaats,char<openparen>10<closeparen>,Pleeggemeente,char<openparen>10<closeparen>,Pleegprovincie,char<openparen>10<closeparen>,Pleegwijk,char<openparen>36<closeparen>,Pleegbuurt,char<openparen>23<closeparen>,Pleegsubbuurt,char<openparen>23<closeparen>,Begin-pleegdag<space>v<solidus>d<space>week,char<openparen>10<closeparen>,Begin-pleegdagdeel,char<openparen>8<closeparen>,Begin-pleegdatum<solidus>tijd,datetime,Eind-pleegdag<space>v<solidus>d<space>week,char<openparen>10<closeparen>,Eind-pleegdagdeel,char<openparen>8<closeparen>,Eind-pleegdatum<solidus>tijd,datetime,Kennisnamedag<space>v<solidus>d<space>week,char<openparen>10<closeparen>,Kennisnamedagdeel,char<openparen>8<closeparen>,Kennisnamedatum<solidus>tijd,datetime,Aangifte,char<openparen>2<closeparen>,Poging,char<openparen>2<closeparen>,Verdachten,number<openparen>2<comma>0<closeparen>,Aanhoudingen,number<openparen>2<comma>0<closeparen>,Opgehelderd,char<openparen>2<closeparen>,Object,char<openparen>41<closeparen>,Project<openparen>en<closeparen>,char<openparen>47<closeparen>,Temperatuur,char<openparen>5<closeparen>,Weer,char<openparen>33<closeparen>,X,char<openparen>7<closeparen>,Y,number<openparen>7<comma>0<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Incidenten (XLSXR_1) Splitter"    INPUT FEATURE_TYPE Incidenten    OUTPUT FEATURE_TYPE Incidenten_XLSXR_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * VertexCreatorFactory    FACTORY_NAME VertexCreator    INPUT  FEATURE_TYPE Incidenten_XLSXR_1    MODE ADD    INDEX "<Unused>"    CONTINUE_ON_ERROR YES    XVAL "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>X<closeparen>,VertexCreator)"    YVAL "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>Y<closeparen>,VertexCreator)"    OUTPUT OUTPUT FEATURE_TYPE VertexCreator_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateSystemSetter    INPUT  FEATURE_TYPE VertexCreator_OUTPUT    OUTPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT         @CoordSys("EPSG:28992")
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "CoordinateSystemSetter OUTPUT Splitter"   INPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT   OUTPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT_0_PL4N+Vr4nAw=   OUTPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT_1_Zm/+LiWDUYk=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ConvexHullFactory    FACTORY_NAME HullAccumulator    MAKE3DMODE MAKE2D    DEFAULTZ "<Unused>"    MODE CONCAVE    INPUT  FEATURE_TYPE CoordinateSystemSetter_OUTPUT_0_PL4N+Vr4nAw=    REJECT_INVALID_GEOM Yes    OUTPUT CONVEX_HULL FEATURE_TYPE HullAccumulator_HULL
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HullAccumulator HULL Splitter"   INPUT FEATURE_TYPE HullAccumulator_HULL   OUTPUT FEATURE_TYPE HullAccumulator_HULL_0_k1Zd4q4Lom4=   OUTPUT FEATURE_TYPE HullAccumulator_HULL_1_Qz5p9yYGcUg=
+# -------------------------------------------------------------------------
+
+# Wipe out the source setting if it was untouched from the default setting
+
+DEFAULT_MACRO Reprojector_2_SOURCE "EPSG:28992"
+INCLUDE [if { {EPSG:28992} == {Read from feature} } {             puts {MACRO Reprojector_2_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector_2    INPUT  FEATURE_TYPE HullAccumulator_HULL_1_Qz5p9yYGcUg=    OUTPUT FEATURE_TYPE Reprojector_2_REPROJECTED         @Reproject($(Reprojector_2_SOURCE),"EPSG:4326",NearestNeighbor,PreserveCells,Reprojector_2,"COORD_SYS_WARNING")
+
+# -------------------------------------------------------------------------
+
+
+INCLUDE [if { ("JOIN_ROUND" == "JOIN_MITER") } {         } else {             puts "MACRO MITER_TO_USE 0"         }         ]
+FACTORY_DEF {*} PolygonDissolveFactory    INPUT  FEATURE_TYPE HullAccumulator_HULL_0_k1Zd4q4Lom4=    FACTORY_NAME Bufferer    PRE_BUFFER "500" "22.5" "CAP_ROUND" "JOIN_ROUND" "$(MITER_TO_USE)" FULL    DISSOLVE_MODE GEOS    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE <Unused>    OUTPUT POLYGON FEATURE_TYPE Bufferer_BUFFERED    OUTPUT NON_POLYGON FEATURE_TYPE Bufferer_BUFFERED
+# -------------------------------------------------------------------------
+
+# Wipe out the source setting if it was untouched from the default setting
+
+DEFAULT_MACRO Reprojector_3_SOURCE "EPSG:28992"
+INCLUDE [if { {EPSG:28992} == {Read from feature} } {             puts {MACRO Reprojector_3_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector_3    INPUT  FEATURE_TYPE Bufferer_BUFFERED    OUTPUT FEATURE_TYPE Reprojector_3_REPROJECTED         @Reproject($(Reprojector_3_SOURCE),"EPSG:4326",NearestNeighbor,PreserveCells,Reprojector_3,"COORD_SYS_WARNING")
+
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE CoordinateSystemSetter_OUTPUT_1_Zm/+LiWDUYk=    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION "Incident<space>Identificatie" "Identificatie" "" "RENAME_SET_VALUE"     ATTR_ACTION "Bronregistratie" "Bronr" "" "RENAME_SET_VALUE"     ATTR_ACTION "Incidentsoort<space>code" "soort<space>code" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegstraatnaam" "straatnaam" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleeghuisnummer<space>met<space>toev." "hsnrtoev" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegpostcode" "postcode" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegplaats" "plaats" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleeggemeente" "gemeente" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegprovincie" "provincie" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegwijk" "wijk" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegbuurt" "buurt" "" "RENAME_SET_VALUE"     ATTR_ACTION "Pleegsubbuurt" "subbuurt" "" "RENAME_SET_VALUE"     ATTR_ACTION "Begin-pleegdag<space>v<solidus>d<space>week" "Begin-dag" "" "RENAME_SET_VALUE"     ATTR_ACTION "Begin-pleegdagdeel" "Begin-dagdeel" "" "RENAME_SET_VALUE"     ATTR_ACTION "Begin-pleegdatum<solidus>tijd" "Begin-datum<solidus>tijd" "" "RENAME_SET_VALUE"     ATTR_ACTION "Eind-pleegdag<space>v<solidus>d<space>week" "Eind-dag" "" "RENAME_SET_VALUE"     ATTR_ACTION "Eind-pleegdagdeel" "Eind-dagdeel" "" "RENAME_SET_VALUE"     ATTR_ACTION "Eind-pleegdatum<solidus>tijd" "Eind-datum<solidus>tijd" "" "RENAME_SET_VALUE"     ATTR_ACTION "Kennisnamedag<space>v<solidus>d<space>week" "Kndag" "" "RENAME_SET_VALUE"     ATTR_ACTION "Kennisnamedagdeel" "Kndagdeel" "" "RENAME_SET_VALUE"     ATTR_ACTION "Kennisnamedatum<solidus>tijd" "Kndatum<solidus>tijd" "" "RENAME_SET_VALUE"    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
+
+# -------------------------------------------------------------------------
+
+# Wipe out the source setting if it was untouched from the default setting
+
+DEFAULT_MACRO Reprojector_SOURCE "EPSG:28992"
+INCLUDE [if { {EPSG:28992} == {Read from feature} } {             puts {MACRO Reprojector_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    OUTPUT FEATURE_TYPE Reprojector_REPROJECTED         @Reproject($(Reprojector_SOURCE),"EPSG:4326",NearestNeighbor,PreserveCells,Reprojector,"COORD_SYS_WARNING")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    INPUT  FEATURE_TYPE Reprojector_REPROJECTED    TEST "Specify Coordinate" == "All Coordinates"    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_PASSED    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_FAILED
+FACTORY_DEF * TestFactory    FACTORY_NAME CoordinateExtractor_PASSED    INPUT FEATURE_TYPE CoordinateExtractor_PASSED    TEST @Dimension() == 2    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_OUTPUT         @ZValue("")         @Coordinate(x,ALL,"<Unused>"{}.x,FLATTEN_AGGREGATE,YES)         @Coordinate(y,ALL,"<Unused>"{}.y,FLATTEN_AGGREGATE,NO)         @Coordinate(z,ALL,"<Unused>"{}.z,FLATTEN_AGGREGATE,NO)         @Dimension(2)    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_OUTPUT         @Coordinate(x,ALL,"<Unused>"{}.x,FLATTEN_AGGREGATE,YES)         @Coordinate(y,ALL,"<Unused>"{}.y,FLATTEN_AGGREGATE,NO)         @Coordinate(z,ALL,"<Unused>"{}.z,FLATTEN_AGGREGATE,NO)
+FACTORY_DEF * TestFactory    FACTORY_NAME CoordinateExtractor_FAILED    INPUT FEATURE_TYPE CoordinateExtractor_FAILED    TEST @Dimension() == 2    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_FAILED_PASSED    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_OUTPUT         "lon" @Coordinate(x,"0",FLATTEN_AGGREGATE,YES)         "lat" @Coordinate(y,"0",FLATTEN_AGGREGATE,NO)
+FACTORY_DEF * TestFactory    FACTORY_NAME CoordinateExtractor_FAILED_PASSED    INPUT FEATURE_TYPE CoordinateExtractor_FAILED_PASSED    TEST "" == ""    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_OUTPUT         "lon" @Coordinate(x,"0",FLATTEN_AGGREGATE,YES)         "lat" @Coordinate(y,"0",FLATTEN_AGGREGATE,NO)    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_OUTPUT         "lon" @Coordinate(x,"0",FLATTEN_AGGREGATE,YES)         "lat" @Coordinate(y,"0",FLATTEN_AGGREGATE,NO)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Reprojector_3_REPROJECTED TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>boundary_500m<closeparen> COORDINATE_SYSTEM EPSG:4326 GEOMETRY    ROUTE FME_GENERIC Reprojector_2_REPROJECTED TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>boundary<closeparen> COORDINATE_SYSTEM EPSG:4326 GEOMETRY    ROUTE FME_GENERIC CoordinateExtractor_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>Identifica<comma>Identificatie<comma>soort_code<comma>soort<lt>space<gt>code<comma>Incidentso<comma>Incidentsoort<comma>Begin_dag<comma>Begin-dag<comma>Begin_dagd<comma>Begin-dagdeel<comma>Begin_datu<comma>Begin-datum<lt>solidus<gt>tijd<comma>Eind_dag<comma>Eind-dag<comma>Eind_dagde<comma>Eind-dagdeel<comma>Eind_datum<comma>Eind-datum<lt>solidus<gt>tijd<comma>Kndatum_ti<comma>Kndatum<lt>solidus<gt>tijd<comma>Aanhouding<comma>Aanhoudingen<comma>Opgehelder<comma>Opgehelderd<comma>Project<lt>openparen<gt>en<comma>Project<lt>openparen<gt>en<lt>closeparen<gt><comma>Temperatuu<comma>Temperatuur<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Incidenten<closeparen> COORDINATE_SYSTEM EPSG:4326 GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+ESRISHAPE_1_DEF boundary_500m   SHAPE_GEOMETRY               shape_polygon   shape_dimension              auto
+# -------------------------------------------------------------------------
+ESRISHAPE_1_DEF boundary   SHAPE_GEOMETRY               shape_polygon   shape_dimension              auto
+# -------------------------------------------------------------------------
+ESRISHAPE_1_DEF Incidenten   SHAPE_GEOMETRY               shape_point   shape_dimension              auto   Identifica                   char(200)   Bronr                        char(200)   soort_code                   char(200)   Incidentso                   char(15)   straatnaam                   char(200)   hsnrtoev                     char(200)   postcode                     char(200)   plaats                       char(200)   gemeente                     char(200)   provincie                    char(200)   wijk                         char(200)   buurt                        char(200)   subbuurt                     char(200)   Begin_dag                    char(200)   Begin_dagd                   char(200)   Begin_datu                   char(200)   Eind_dag                     char(200)   Eind_dagde                   char(200)   Eind_datum                   char(200)   Kndag                        char(200)   Kndagdeel                    char(200)   Kndatum_ti                   char(200)   Aangifte                     char(2)   Poging                       char(2)   Verdachten                   number(2,0)   Aanhouding                   number(2,0)   Opgehelder                   char(2)   Object                       char(41)   "Project(en"                 char(47)   Temperatuu                   char(5)   Weer                         char(33)   X                            char(7)   Y                            number(7,0)   lon                          char(200)   lat                          char(200)

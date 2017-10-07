@@ -1,0 +1,1959 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    D:\apps\FME\fme.exe "Z:\1. Anwar\AIConsultancy\Datascience Noord NL\Fme\BAG.fmw"
+#          --SourceDataset_ESRISHAPE "Z:\1. Anwar\AIConsultancy\Datascience Noord NL\DataUit\fietsendiefstal.shp\boundary_500m.shp"
+#          --DestDataset_ESRISHAPE "Z:\1. Anwar\AIConsultancy\Datascience Noord NL\Fme\BAG-LL-WGS84.shp"
+#    
+#    
+#!   BEGIN_TCL=""
+#!   MAX_LOG_FEATURES="200"
+#!   DESTINATION_ROUTING_FILE=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   LAST_SAVE_BUILD="FME(R) 2017.0.0.1 (20170316 - Build 17271 - WIN32)"
+#!   DOC_EXTENTS="5439.03 1380.01"
+#!   MARKDOWN_DESCRIPTION=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   VIEW_POSITION="-4385.04 -155.002"
+#!   BEGIN_PYTHON=""
+#!   END_TCL=""
+#!   WORKSPACE_VERSION="1"
+#!   IGNORE_READER_FAILURE="No"
+#!   DESCRIPTION=""
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   TITLE=""
+#!   USAGE=""
+#!   SHOW_ANNOTATIONS="true"
+#!   TERMINATE_REJECTED="NO"
+#!   FME_SERVER_SERVICES=""
+#!   FME_BUILD_NUM="17271"
+#!   MARKDOWN_USAGE=""
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   SOURCE="NONE"
+#!   CATEGORY=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   DOC_TOP_LEFT="-4310.04 -1032.51"
+#!   ZOOM_SCALE="100"
+#!   LAST_SAVE_DATE="2017-10-06T21:18:33"
+#!   PYTHON_COMPATIBILITY="27"
+#!   LOG_FILE=""
+#!   FME_DOCUMENT_PRIORGUID="070a9e31-e136-40e3-8b2f-57e796402fb0,63f0448c-b2a4-4484-896a-4188c8207cfd,53ecdb02-5281-4886-9568-09b728ff58ed,9a243dd3-f7f6-429d-8813-da502012e235,c2428740-4e1c-402a-9454-a14fc0877751,43317499-fbfc-4797-966d-3ec0dec40b78,35556ff2-a61b-4dac-a8a8-e465cb39145c,d1798a62-2cdb-422a-ab23-873517094f56"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   END_PYTHON=""
+#!   HISTORY=""
+#!   PASSWORD=""
+#!   SHOW_INFO_NODES="true"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   DESTINATION="VISUALIZER"
+#!   FME_DOCUMENT_GUID="c2653d9f-bad9-4cfe-95ab-18b83cf6fe21"
+#!   SOURCE_ROUTING_FILE=""
+#!   USE_MARKDOWN=""
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ESRISHAPE"
+#!   DATASET="$(SourceDataset_ESRISHAPE)"
+#!   KEYWORD="ESRISHAPE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_geometry fme_char(50) multi_reader_id long fme_type char(50) fme_rotation double fme_text_string char(50) SHAPE_GEOMETRY char(50) fme_start_angle double fme_sweep_angle double multi_reader_keyword char(50) fme_color char(50) shape_geometry_error{} char(254) multi_reader_full_id long fme_text_size double shape_measures char(254) fme_primary_axis double fme_feature_type char(50) multi_reader_type char(50) fme_dataset char(50) fme_fill_color char(50) fme_secondary_axis double fme_basename char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="17271"
+#!   COORDSYS="EPSG:4326"
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MAX_FEATURES=""
+#!   START_FEATURE=""
+#!   MIN_FEATURES=""
+#!   FEATURE_TYPES=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shape_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="ESRISHAPE"
+#!   DATASET="$(DestDataset_ESRISHAPE)"
+#!   KEYWORD="ESRISHAPE_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="10"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY} shape_dimension auto"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_dataset char(50) fme_rotation double fme_start_angle double fme_feature_type char(50) fme_secondary_axis double fme_sweep_angle double fme_geometry fme_char(50) fme_primary_axis double fme_fill_color char(50) shape_measures char(254) fme_type char(50) SHAPE_GEOMETRY char(50) fme_basename char(50) fme_text_size double fme_color char(50) fme_text_string char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group shape_dimension Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,auto%2D,2d%2D&lt;space&gt;+&lt;space&gt;Measures,2dm%3D&lt;space&gt;+&lt;space&gt;Measures,3dm Output Dimension:&quot; auto "
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="17271"
+#!   FANOUT_GROUP="NO"
+#!   COORDSYS="EPSG:4326"
+#!   FANOUT_EXPRESSION=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shape_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="boundary_500m"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="13"
+#!   FEAT_GEOMTYPE="shape_polygon"
+#!   POSITION="-4270.04 -742.498"
+#!   BOUNDING_RECT="-4270.04 -742.498 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="boundar_ID" ATTR_TYPE="short" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AREA" ATTR_TYPE="number(15,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Pand"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="37"
+#!   FEAT_GEOMTYPE="shape_polygon"
+#!   POSITION="1128.99 -1032.51"
+#!   BOUNDING_RECT="1128.99 -1032.51 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="identifica" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="opp" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="status" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gebr_doel" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="openbare_r" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="huisnummer" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="huisletter" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="toevoeging" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="postcode" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="woonplaats" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="bouwjaar" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="pandidenti" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="pandstatus" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gid" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gid_xsi_ni" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Verblijfsobject"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="31"
+#!   FEAT_GEOMTYPE="shape_point"
+#!   POSITION="1041.48 -630.005"
+#!   BOUNDING_RECT="1041.48 -630.005 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="identifica" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="opp" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="status" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gebr_doel" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="openbare_r" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="huisnummer" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="huisletter" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="toevoeging" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="postcode" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="woonplaats" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="bouwjaar" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="pandidenti" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="pandstatus" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gid" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="gid_xsi_ni" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="lon" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="lat" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ESRISHAPE Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):"
+#!   DEFAULT_VALUE="Z:\1. Anwar\AIConsultancy\Datascience Noord NL\DataUit\fietsendiefstal.shp\boundary_500m.shp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)BAG-LL-WGS84.shp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="36"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;FeatureReader [res;ponse paging]&lt;/span&gt;&lt;br /&gt;&lt;br /&gt; Max Features to Read: 500000 = hoeveel in totaliteit&lt;br /&gt; WFS Count: 1000 = wat geeft de wfs max terug&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Aantal loops wordt automatisch bepaald: max/count&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3284.04 -218.492"
+#!   TOP_LEFT="-3284.04 -218.492"
+#!   BOTTOM_RIGHT="-2534.04 -268.492"
+#!   BOUNDING_RECT="-3284.04 -218.492 750 50"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="16"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="43"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zet om naar 28992 voor feature reader&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3712.54 -617.497"
+#!   TOP_LEFT="-3712.54 -617.497"
+#!   BOTTOM_RIGHT="-3713.54 -616.497"
+#!   BOUNDING_RECT="-3712.54 -617.497 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="21"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="44"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;haal pnd en vbo uitelkaar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-2190.02 -607.496"
+#!   TOP_LEFT="-2190.02 -607.496"
+#!   BOTTOM_RIGHT="-2191.02 -606.496"
+#!   BOUNDING_RECT="-2190.02 -607.496 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="23"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="45"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;vanwege shape output namen inkorten tot 8&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1557.52 -607.496"
+#!   TOP_LEFT="-1557.52 -607.496"
+#!   BOTTOM_RIGHT="-1558.52 -606.496"
+#!   BOUNDING_RECT="-1557.52 -607.496 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="39"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="46"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;naar wgs84&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-235.002 -555.006"
+#!   TOP_LEFT="-235.002 -555.006"
+#!   BOTTOM_RIGHT="-236.002 -554.006"
+#!   BOUNDING_RECT="-235.002 -555.006 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="27"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="35"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Auteur&lt;/span&gt;: Anwar Ibrahim&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Datum&lt;/span&gt;: 1-10-2017&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Versie&lt;/span&gt;: 0.1&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Omschrijving&lt;/span&gt;:&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Obv een gebied BAG VBO en PND ophalen van de PDOK WFS en vervolgens wegschrijven naar shape&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-4310.04 347.503"
+#!   TOP_LEFT="-4310.04 347.503"
+#!   BOTTOM_RIGHT="-3087.53 27.5"
+#!   BOUNDING_RECT="-4310.04 347.503 1222.51 320.003"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="FeatureReader"
+#!   VERSION="9"
+#!   POSITION="-2838.03 -629.495"
+#!   BOUNDING_RECT="-2838.03 -629.495 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="verblijfsobject"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_property" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gml_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="identificatie.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oppervlakte" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oppervlakte.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="status.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gebruiksdoel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gebruiksdoel.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="postcode.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="actualiteitsdatum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="actualiteitsdatum.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="geometrie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandgeometrie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{0}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{1}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{2}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{3}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{4}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{5}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{6}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{7}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_FME_FEATURE_IDENTIFIER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_ADD_NAMESPACE_PREFIX_TO_NAMES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_COUNT" PARM_VALUE="1000"/>
+#!     <XFORM_PARM PARM_NAME="WFS_QNAMES_FOR_PROPERTIES_TO_IGNORE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_CLIP_TO_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="verblijfsobject"/>
+#!     <XFORM_PARM PARM_NAME="WFS_TABLELIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAX_MULTI_LIST_LEVEL" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_FLATTEN_XML_FRAGMENTS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="WFS_GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="verblijfsobject"/>
+#!     <XFORM_PARM PARM_NAME="WFS_ENFORCE_PATH_CONTINUITY_BY" PARM_VALUE="SNAPPING_END_POINTS"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WFS_DISABLE_XML_NAMESPACE_PROCESSING" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="WFS_PREFER_POST,&quot;OPTIONAL CHECKBOX Yes%No&quot;,WFS&lt;space&gt;Prefer&lt;space&gt;HTTP&lt;space&gt;Post&lt;comma&gt;&lt;space&gt;if&lt;space&gt;Available:,WFS_TIMEOUT_GROUP,&quot;OPTIONAL DISCLOSUREGROUP CONNECTION_TIMEOUT%TRANSFER_TIMEOUT&quot;,WFS&lt;space&gt;Connection&lt;space&gt;Timeout,WFS_IGNORE_APPLICATON_SCHEMA,&quot;OPTIONAL ACTIVECHOICE no,GML_FEATURE_ELEMENTS%yes,XSD_DOC,FME_FEATURE_IDENTIFIER,MAP_FEATURE_COLLECTION,GML_FEATURE_PROPERTIES,GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP,GML_READER_GROUP&quot;,WFS&lt;space&gt;Ignore&lt;space&gt;Application&lt;space&gt;Schema:,WFS_PREFERRED_VERSION,&quot;OPTIONAL ACTIVECHOICE 1.0.0,START_INDEX,COUNT%1.1.0,START_INDEX,COUNT%2.0.0&quot;,WFS&lt;space&gt;WFS&lt;space&gt;Version:,WFS_GML_FEATURE_PROPERTIES,&quot;OPTIONAL DISCLOSUREGROUP MAP_EMBEDDED_OBJECTS_AS%MAP_PREDEFINED_GML_PROPERTIES%MAP_GEOMETRY_COLUMNS%ADD_NAMESPACE_PREFIX_TO_NAMES%QNAMES_FOR_PROPERTIES_TO_IGNORE&quot;,WFS&lt;space&gt;GML&lt;space&gt;Feature&lt;space&gt;Properties,WFS_GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP,&quot;OPTIONAL DISCLOSUREGROUP MAP_COMPLEX_PROPERTIES_AS%MAX_MULTI_LIST_LEVEL%XML_FRAGMENTS_AS_DOCUMENTS%FLATTEN_XML_FRAGMENTS&quot;,WFS&lt;space&gt;GML&lt;space&gt;Feature&lt;space&gt;Properties&lt;space&gt;-&lt;space&gt;Attribute&lt;space&gt;Handling,WFS_XSD_DOC,&quot;OPTIONAL FILE_OR_URL GML_Schema_File(*.xsd)|*.xsd|All_Files(*)|*&quot;,WFS&lt;space&gt;Application&lt;space&gt;Schema:,WFS_DISABLE_XML_NAMESPACE_PROCESSING,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Disable&lt;space&gt;XML&lt;space&gt;Namespace&lt;space&gt;Processing,WFS_QNAMES_FOR_PROPERTIES_TO_IGNORE,&quot;OPTIONAL TEXT_EDIT_XML_ENCODED&quot;,WFS&lt;space&gt;Properties&lt;space&gt;to&lt;space&gt;Ignore:,WFS_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%CLIP_TO_ENVELOPE%BBOX_COORDINATE_SYSTEM&quot;,WFS&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,WFS_GMLSRS_GEOMETRY_PARAMETERS,&quot;OPTIONAL DISCLOSUREGROUP SRS_AXIS_ORDER%SRS_ANGLE_DIRECTION%ENFORCE_PATH_CONTINUITY_BY&quot;,WFS&lt;space&gt;GML&lt;space&gt;SRS&lt;solidus&gt;Geometry&lt;space&gt;Parameters,WFS_OUTPUT_FORMAT,&quot;OPTIONAL STRING_OR_CHOICE&quot;,WFS&lt;space&gt;WFS&lt;space&gt;Output&lt;space&gt;Format:,WFS_FME_FEATURE_IDENTIFIER,&quot;OPTIONAL WFS_NUMERIC_IDENTIFIER $[DATASET],LAYER_LIST_ONLY,YES,LAYER_LIST_ONLY_INCLUDE_ATTRIBUTES,YES,HTTP_AUTH_USER,$[HTTP_AUTH_USER],HTTP_AUTH_PASSWORD,$[HTTP_AUTH_PASSWORD],HTTP_AUTH_METHOD,$[HTTP_AUTH_METHOD],HTTP_PROXY,$[HTTP_PROXY],HTTP_PROXY_PORT,$[HTTP_PROXY_PORT],HTTP_PROXY_USER,$[HTTP_PROXY_USER],HTTP_PROXY_PASSWORD,$[HTTP_PROXY_PASSWORD],HTTP_PROXY_AUTH_METHOD,$[HTTP_PROXY_AUTH_METHOD]&quot;,WFS&lt;space&gt;Numeric&lt;space&gt;Identifier&lt;space&gt;Attribute:,WFS_MAP_FEATURE_COLLECTION,&quot;OPTIONAL LOOKUP_LISTBOX gml:FeatureCollection,gml%wfs:FeatureCollection,wfs&quot;,WFS&lt;space&gt;Map&lt;space&gt;FeatureCollection:,WFS_START_INDEX,&quot;OPTIONAL INT_OR_CHOICE 0&quot;,WFS&lt;space&gt;Start&lt;space&gt;Index:,WFS_ENFORCE_PATH_CONTINUITY_BY,&quot;OPTIONAL LOOKUP_CHOICE &quot;&quot;Snapping End Points&quot;&quot;,SNAPPING_END_POINTS%&quot;&quot;Inserting New Segment&quot;&quot;,INSERTING_NEW_SEGMENT&quot;,WFS&lt;space&gt;Enforce&lt;space&gt;Path&lt;space&gt;Continuity&lt;space&gt;By:,WFS_MAP_EMBEDDED_OBJECTS_AS,&quot;OPTIONAL LOOKUP_CHOICE &quot;&quot;Attributes&quot;&quot;,ATTRIBUTES%&quot;&quot;Geometries&quot;&quot;,GEOMETRIES%&quot;&quot;Feature Types&quot;&quot;,FEATURE_TYPES&quot;,WFS&lt;space&gt;Map&lt;space&gt;Embedded&lt;space&gt;Objects&lt;space&gt;as:,WFS_DISABLE_AUTOMATIC_READER_TYPE_SELECTION,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Disable&lt;space&gt;Automatic&lt;space&gt;Reader&lt;space&gt;Type&lt;space&gt;Selection,WFS_CONNECTION_TIMEOUT,&quot;OPTIONAL RANGE_SLIDER 1%MAX%0&quot;,WFS&lt;space&gt;Connection&lt;space&gt;Timeout&lt;space&gt;Length&lt;space&gt;&lt;openparen&gt;seconds&lt;closeparen&gt;:,WFS_GML_READER_GROUP,&quot;OPTIONAL DISCLOSUREGROUP USE_OLD_READER%DISABLE_AUTOMATIC_READER_TYPE_SELECTION%DISABLE_XML_NAMESPACE_PROCESSING&quot;,WFS&lt;space&gt;GML&lt;space&gt;Version&lt;space&gt;and&lt;space&gt;Namespace,WFS_ARCGIS_CACHE_GROUP,&quot;OPTIONAL DISCLOSUREGROUP LOCAL_CACHE_EXPIRY&quot;,WFS&lt;space&gt;ArcGIS&lt;space&gt;Cache&lt;space&gt;Expiry,WFS_TRANSFER_TIMEOUT,&quot;OPTIONAL RANGE_SLIDER 1%MAX%0&quot;,WFS&lt;space&gt;Transfer&lt;space&gt;Timeout&lt;space&gt;Length&lt;space&gt;&lt;openparen&gt;seconds&lt;closeparen&gt;:,WFS_COUNT,&quot;OPTIONAL INTEGER&quot;,WFS&lt;space&gt;Count:,WFS_MAP_GEOMETRY_COLUMNS,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Map&lt;space&gt;Geometry&lt;space&gt;Columns,WFS_CLIP_TO_ENVELOPE,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Clip&lt;space&gt;to&lt;space&gt;Search&lt;space&gt;Envelope,WFS_FILTER_EXPRESSION,&quot;OPTIONAL TEXT_EDIT__ENCODED&quot;,WFS&lt;space&gt;XML&lt;space&gt;Filter&lt;space&gt;Expression:,WFS_WFS_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS WFS%Source&quot;,WFS&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,WFS_USE_OLD_READER,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Use&lt;space&gt;Old&lt;space&gt;Reader&lt;space&gt;for&lt;space&gt;GML&lt;space&gt;v3.1.1&lt;space&gt;and&lt;space&gt;v2.1.2&lt;space&gt;Documents,WFS_FLATTEN_XML_FRAGMENTS,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP FLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE%FLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE%FLATTEN_XML_FRAGMENTS_SEPARATOR&quot;,WFS&lt;space&gt;Flatten&lt;space&gt;XML&lt;space&gt;Fragments,WFS_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP WFS_EXPOSE_FORMAT_ATTRS&quot;,WFS&lt;space&gt;Schema&lt;space&gt;Attributes,WFS_MAX_RESULT_FEATURES,&quot;OPTIONAL INTEGER&quot;,WFS&lt;space&gt;Max&lt;space&gt;Features:,WFS_NETWORK_AUTHENTICATION,&quot;OPTIONAL AUTHENTICATOR CONTAINER%ACTIVEDISCLOSUREGROUP%CONTAINER_TITLE%Use Network Authentication%PROMPT_TYPE%NETWORK&quot;,WFS&lt;space&gt;Use&lt;space&gt;Network&lt;space&gt;Authentication,WFS_LOCAL_CACHE_EXPIRY,&quot;OPTIONAL INTEGER&quot;,WFS&lt;space&gt;Local&lt;space&gt;Cache&lt;space&gt;Expiry&lt;space&gt;&lt;openparen&gt;minutes&lt;closeparen&gt;:,WFS_SRS_ANGLE_DIRECTION,&quot;OPTIONAL LOOKUP_CHOICE Counterclockwise,CCW%Clockwise,CW&quot;,WFS&lt;space&gt;GML&lt;space&gt;SRS&lt;space&gt;Angle&lt;space&gt;Direction:,WFS_TABLELIST,&quot;OPTIONAL WFS_FEATURE_TYPES $[DATASET],LAYER_LIST_ONLY,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],PREFERRED_VERSION,$[PREFERRED_VERSION],CONNECTION_TIMEOUT,$[CONNECTION_TIMEOUT],TRANSFER_TIMEOUT,$[TRANSFER_TIMEOUT],ADD_NAMESPACE_PREFIX_TO_NAMES,$[ADD_NAMESPACE_PREFIX_TO_NAMES]&quot;,WFS&lt;space&gt;Feature&lt;space&gt;Types:,WFS_MAP_PREDEFINED_GML_PROPERTIES,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Map&lt;space&gt;Predefined&lt;space&gt;Properties,WFS_MAX_MULTI_LIST_LEVEL,&quot;OPTIONAL CHOICE 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20&quot;,WFS&lt;space&gt;Limit&lt;space&gt;Number&lt;space&gt;of&lt;space&gt;Lists&lt;space&gt;in&lt;space&gt;Nested&lt;space&gt;Attributes:,WFS_SRS_AXIS_ORDER,&quot;OPTIONAL CHOICE 1,2%2,1%1,2,3%2,1,3&quot;,WFS&lt;space&gt;GML&lt;space&gt;SRS&lt;space&gt;Axis&lt;space&gt;Order:,WFS_ADD_NAMESPACE_PREFIX_TO_NAMES,&quot;OPTIONAL LOOKUP_CHOICE &quot;&quot;Feature Types&quot;&quot;,FEATURE_TYPES%&quot;&quot;Feature Types and Attributes&quot;&quot;,FEATURE_TYPES_AND_ATTRIBUTES&quot;,WFS&lt;space&gt;Add&lt;space&gt;XML&lt;space&gt;Namespace&lt;space&gt;Prefix&lt;space&gt;to:,WFS_XML_FRAGMENTS_AS_DOCUMENTS,&quot;OPTIONAL CHECKBOX YES%NO&quot;,WFS&lt;space&gt;Include&lt;space&gt;XML&lt;space&gt;Declaration&lt;space&gt;in&lt;space&gt;XML&lt;space&gt;Fragments,WFS_MAP_COMPLEX_PROPERTIES_AS,&quot;OPTIONAL ACTIVECHOICE &quot;&quot;Nested Attributes&quot;&quot;%&quot;&quot;XML Fragments&quot;&quot;,MAX_MULTI_LIST_LEVEL&quot;,WFS&lt;space&gt;Map&lt;space&gt;Complex&lt;space&gt;Properties&lt;space&gt;as:"/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WFS_SRS_ANGLE_DIRECTION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_SRS_AXIS_ORDER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="verblijfsobject,&quot;gml_parent_id,gml_parent_property,gml_id,gid,gid.xsi_nil,identificatie,identificatie.xsi_nil,oppervlakte,oppervlakte.xsi_nil,status,status.xsi_nil,gebruiksdoel,gebruiksdoel.xsi_nil,openbare_ruimte,openbare_ruimte.xsi_nil,huisnummer,huisnummer.xsi_nil,huisletter,huisletter.xsi_nil,toevoeging,toevoeging.xsi_nil,postcode,postcode.xsi_nil,woonplaats,woonplaats.xsi_nil,actualiteitsdatum,actualiteitsdatum.xsi_nil,bouwjaar,bouwjaar.xsi_nil,pandidentificatie,pandidentificatie.xsi_nil,pandstatus,pandstatus.xsi_nil,geometrie,pandgeometrie,fme_geometry{0},fme_geometry{1},fme_geometry{2},fme_geometry{3},fme_geometry{4},fme_geometry{5},fme_geometry{6},fme_geometry{7}&quot;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourcePREFER_POST&lt;comma&gt;No&lt;comma&gt;SourcePREFERRED_VERSION&lt;comma&gt;2.0.0&lt;comma&gt;SourceTIMEOUT_GROUP&lt;comma&gt;NO&lt;comma&gt;SourceCONNECTION_TIMEOUT&lt;comma&gt;90&lt;comma&gt;SourceTRANSFER_TIMEOUT&lt;comma&gt;90&lt;comma&gt;SourceMAX_RESULT_FEATURES&lt;comma&gt;10000&lt;comma&gt;SourceSTART_INDEX&lt;comma&gt;0&lt;comma&gt;SourceCOUNT&lt;comma&gt;1000&lt;comma&gt;SourceOUTPUT_FORMAT&lt;comma&gt;&lt;comma&gt;SourceFILTER_EXPRESSION&lt;comma&gt;&lt;comma&gt;SourceIGNORE_APPLICATON_SCHEMA&lt;comma&gt;no&lt;comma&gt;SourceXSD_DOC&lt;comma&gt;&lt;comma&gt;SourceFME_FEATURE_IDENTIFIER&lt;comma&gt;&lt;comma&gt;SourceMAP_FEATURE_COLLECTION&lt;comma&gt;&lt;comma&gt;SourceGML_FEATURE_ELEMENTS&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceGMLSRS_GEOMETRY_PARAMETERS&lt;comma&gt;&lt;comma&gt;SourceSRS_AXIS_ORDER&lt;comma&gt;&lt;comma&gt;SourceSRS_ANGLE_DIRECTION&lt;comma&gt;&lt;comma&gt;SourceENFORCE_PATH_CONTINUITY_BY&lt;comma&gt;SNAPPING_END_POINTS&lt;comma&gt;SourceGML_READER_GROUP&lt;comma&gt;&lt;comma&gt;SourceUSE_OLD_READER&lt;comma&gt;NO&lt;comma&gt;SourceDISABLE_AUTOMATIC_READER_TYPE_SELECTION&lt;comma&gt;NO&lt;comma&gt;SourceDISABLE_XML_NAMESPACE_PROCESSING&lt;comma&gt;NO&lt;comma&gt;SourceGML_FEATURE_PROPERTIES&lt;comma&gt;&lt;comma&gt;SourceMAP_EMBEDDED_OBJECTS_AS&lt;comma&gt;ATTRIBUTES&lt;comma&gt;SourceMAP_PREDEFINED_GML_PROPERTIES&lt;comma&gt;NO&lt;comma&gt;SourceMAP_GEOMETRY_COLUMNS&lt;comma&gt;YES&lt;comma&gt;SourceADD_NAMESPACE_PREFIX_TO_NAMES&lt;comma&gt;&lt;comma&gt;SourceQNAMES_FOR_PROPERTIES_TO_IGNORE&lt;comma&gt;&lt;comma&gt;SourceGML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP&lt;comma&gt;&lt;comma&gt;SourceMAP_COMPLEX_PROPERTIES_AS&lt;comma&gt;&lt;quote&gt;Nested&lt;space&gt;Attributes&lt;quote&gt;&lt;comma&gt;SourceMAX_MULTI_LIST_LEVEL&lt;comma&gt;&lt;comma&gt;SourceXML_FRAGMENTS_AS_DOCUMENTS&lt;comma&gt;YES&lt;comma&gt;SourceFLATTEN_XML_FRAGMENTS&lt;comma&gt;NO&lt;comma&gt;SourceFLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE&lt;comma&gt;&lt;comma&gt;SourceFLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE&lt;comma&gt;&lt;comma&gt;SourceFLATTEN_XML_FRAGMENTS_SEPARATOR&lt;comma&gt;&lt;comma&gt;SourceARCGIS_CACHE_GROUP&lt;comma&gt;&lt;comma&gt;SourceLOCAL_CACHE_EXPIRY&lt;comma&gt;60&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;&lt;comma&gt;SourceWFS_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceBBOX_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceNETWORK_AUTHENTICATION&lt;comma&gt;,METAFILE,WFS"/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAX_RESULT_FEATURES" PARM_VALUE="10000"/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAP_EMBEDDED_OBJECTS_AS" PARM_VALUE="ATTRIBUTES"/>
+#!     <XFORM_PARM PARM_NAME="WFS_START_INDEX" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="WFS_DISABLE_AUTOMATIC_READER_TYPE_SELECTION" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="WFS_PREFERRED_VERSION" PARM_VALUE="2.0.0"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WFS_CONNECTION_TIMEOUT" PARM_VALUE="90"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_USE_OLD_READER" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="WFS_XSD_DOC" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="Intersects"/>
+#!     <XFORM_PARM PARM_NAME="WFS_TRANSFER_TIMEOUT" PARM_VALUE="90"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WFS_OUTPUT_FORMAT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_ARCGIS_CACHE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_LOCAL_CACHE_EXPIRY" PARM_VALUE="60"/>
+#!     <XFORM_PARM PARM_NAME="WFS_GML_READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_GML_FEATURE_PROPERTIES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="WFS"/>
+#!     <XFORM_PARM PARM_NAME="WFS_NETWORK_AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_XML_FRAGMENTS_AS_DOCUMENTS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="WFS_EXPOSE_ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_WFS_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_IGNORE_APPLICATON_SCHEMA" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Initiator and Result"/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAP_PREDEFINED_GML_PROPERTIES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="WFS_FILTER_EXPRESSION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAP_GEOMETRY_COLUMNS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="WFS_TIMEOUT_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;geodata.nationaalgeoregister.nl&lt;solidus&gt;bag&lt;solidus&gt;wfs?request=GetCapabilities"/>
+#!     <XFORM_PARM PARM_NAME="WFS_GMLSRS_GEOMETRY_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAP_COMPLEX_PROPERTIES_AS" PARM_VALUE="Nested Attributes"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_MAP_FEATURE_COLLECTION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WFS_PREFER_POST" PARM_VALUE="No"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="Deaggregator"
+#!   VERSION="10"
+#!   POSITION="-2108.52 -732.497"
+#!   BOUNDING_RECT="-2108.52 -732.497 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="DEAGGREGATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gml_parent_property" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="identificatie.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oppervlakte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oppervlakte.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebruiksdoel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebruiksdoel.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="actualiteitsdatum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="actualiteitsdatum.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="geometrie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandgeometrie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{0}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{1}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{2}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{3}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{4}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{5}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{6}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_geometry{7}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_hierarchy_child_id_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_geometry_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_hierarchy_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_hierarchy_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_part_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="ID and Parent ID"/>
+#!     <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="_hierarchy_parent_id"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPLODE_INSTANCES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="_hierarchy_child_id_list"/>
+#!     <XFORM_PARM PARM_NAME="SPLIT_COMPOSITES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR_MODE_LOOKUP" PARM_VALUE="LEAN"/>
+#!     <XFORM_PARM PARM_NAME="FLATTEN_ONE_LEVEL_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE="_geometry_name"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_HIERARCHY_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="_hierarchy_id"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Flatten One Level"/>
+#!     <XFORM_PARM PARM_NAME="PART_NUMBER_FIELD" PARM_VALUE="_part_number"/>
+#!     <XFORM_PARM PARM_NAME="COPY_ATTR" PARM_VALUE="Every Node"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Deaggregator"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="GeometryFilter"
+#!   VERSION="7"
+#!   POSITION="-808.505 -717.497"
+#!   BOUNDING_RECT="-808.505 -717.497 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="POINT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="AREA"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INSTANTIATE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GEOM_PORT_NAMES" PARM_VALUE="Point Area"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryFilter"/>
+#!     <XFORM_PARM PARM_NAME="BREAK_AGG" PARM_VALUE="No"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="-3623.54 -742.498"
+#!   BOUNDING_RECT="-3623.54 -742.498 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="boundar_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="27"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="-158.502 -680.007"
+#!   BOUNDING_RECT="-158.502 -680.007 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="32"
+#!   TYPE="Reprojector"
+#!   VERSION="4"
+#!   POSITION="-43.5009 -980.01"
+#!   BOUNDING_RECT="-43.5009 -980.01 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="EPSG:28992"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="Preserve Cells"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="39"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="-1468.52 -732.497"
+#!   BOUNDING_RECT="-1468.52 -732.497 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="boundar_ID boundar_ID  REMOVE AREA AREA  REMOVE gml_parent_id gml_parent_id  REMOVE gml_parent_property gml_parent_property  REMOVE gml_id gml_id  REMOVE identificatie identificatie  NO_OP identificatie.xsi_nil identificatie.xsi_nil  REMOVE oppervlakte opp  RENAME_SET_VALUE oppervlakte.xsi_nil oppervlakte.xsi_nil  REMOVE status status  NO_OP status.xsi_nil status.xsi_nil  REMOVE gebruiksdoel gebr_doel  RENAME_SET_VALUE gebruiksdoel.xsi_nil gebruiksdoel.xsi_nil  REMOVE openbare_ruimte openbare_ruimte  NO_OP openbare_ruimte.xsi_nil openbare_ruimte.xsi_nil  REMOVE huisnummer huisnummer  NO_OP huisnummer.xsi_nil huisnummer.xsi_nil  REMOVE huisletter huisletter  NO_OP huisletter.xsi_nil huisletter.xsi_nil  REMOVE toevoeging toevoeging  NO_OP toevoeging.xsi_nil toevoeging.xsi_nil  REMOVE postcode postcode  NO_OP postcode.xsi_nil postcode.xsi_nil  REMOVE woonplaats woonplaats  NO_OP woonplaats.xsi_nil woonplaats.xsi_nil  REMOVE actualiteitsdatum actualiteitsdatum  REMOVE actualiteitsdatum.xsi_nil actualiteitsdatum.xsi_nil  REMOVE bouwjaar bouwjaar  NO_OP bouwjaar.xsi_nil bouwjaar.xsi_nil  REMOVE pandidentificatie pandidentificatie  NO_OP pandidentificatie.xsi_nil pandidentificatie.xsi_nil  REMOVE pandstatus pandstatus  NO_OP pandstatus.xsi_nil pandstatus.xsi_nil  REMOVE geometrie geometrie  REMOVE pandgeometrie pandgeometrie  REMOVE fme_geometry&lt;opencurly&gt;0&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;0&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;1&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;1&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;2&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;2&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;3&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;3&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;4&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;4&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;5&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;5&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;6&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;6&lt;closecurly&gt;  REMOVE fme_geometry&lt;opencurly&gt;7&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;7&lt;closecurly&gt;  REMOVE _hierarchy_child_id_list&lt;opencurly&gt;&lt;closecurly&gt; _hierarchy_child_id_list&lt;opencurly&gt;&lt;closecurly&gt;  REMOVE _geometry_name _geometry_name  REMOVE _hierarchy_id _hierarchy_id  REMOVE _hierarchy_parent_id _hierarchy_parent_id  REMOVE _part_number _part_number  REMOVE fme_geometry&lt;opencurly&gt;&lt;closecurly&gt; fme_geometry&lt;opencurly&gt;&lt;closecurly&gt;  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="CoordinateExtractor"
+#!   VERSION="2"
+#!   POSITION="465.005 -607.496"
+#!   BOUNDING_RECT="465.005 -607.496 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17271"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="identificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="opp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gebr_doel" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="openbare_ruimte" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="huisletter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="toevoeging" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="woonplaats" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="bouwjaar" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandidentificatie" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="pandstatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gid.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="Z_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Z_DEFAULT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INDEX_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="IND" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="Y_ATTR" PARM_VALUE="lat"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Specify Coordinate"/>
+#!     <XFORM_PARM PARM_NAME="ALL_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateExtractor"/>
+#!     <XFORM_PARM PARM_NAME="X_ATTR" PARM_VALUE="lon"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="39"
+#!   SOURCE_PORT_DESC="fo 0 DEAGGREGATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="27"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="27"
+#!   SOURCE_PORT_DESC="fo 0 POINT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="39"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 1 verblijfsobject"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 1 AREA"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! <ATTR_LINK
+#!   IDENTIFIER="196641"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="ao 0 4 OUTPUT"
+#!   TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="262177"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="ao 0 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="65569"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="ao 0 14 OUTPUT"
+#!   TARGET_PORT_DESC="14"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="131105"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="ao 0 11 OUTPUT"
+#!   TARGET_PORT_DESC="11"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="65574"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="ao 0 14 REPROJECTED"
+#!   TARGET_PORT_DESC="14"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="131110"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="ao 0 11 REPROJECTED"
+#!   TARGET_PORT_DESC="11"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="196646"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="ao 0 4 REPROJECTED"
+#!   TARGET_PORT_DESC="4"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="262182"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="ao 0 0 REPROJECTED"
+#!   TARGET_PORT_DESC="0"
+#! />
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_ESRISHAPE_1,ESRISHAPE_IN_ENCODING_ESRISHAPE_1,ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1,ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1,ESRISHAPE_IN_ADVANCED_ESRISHAPE_1,ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1,ESRISHAPE_IN_GEOMETRY_ESRISHAPE_1,ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1,ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1,ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1,ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1,ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1,DestDataset_ESRISHAPE_2,ESRISHAPE_OUT_ENCODING_ESRISHAPE_2,ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_2,ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_2,ESRISHAPE_OUT_ADVANCED_ESRISHAPE_2,ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_2,ESRISHAPE_OUT_GEOMETRY_ESRISHAPE_2,ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_2,ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_2
+DEFAULT_MACRO SourceDataset_ESRISHAPE Z:\1. Anwar\AIConsultancy\Datascience Noord NL\DataUit\fietsendiefstal.shp\boundary_500m.shp
+GUI MULTIFILE SourceDataset_ESRISHAPE Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):
+DEFAULT_MACRO DestDataset_ESRISHAPE $(FME_MF_DIR)BAG-LL-WGS84.shp
+GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:
+INCLUDE [ if {{$(SourceDataset_ESRISHAPE)} == {}} { puts_real {Parameter 'SourceDataset_ESRISHAPE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_ESRISHAPE)} == {}} { puts_real {Parameter 'DestDataset_ESRISHAPE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE ESRISHAPE
+READER_KEYWORD ESRISHAPE_1
+READER_GEN_DIRECTIVES ESRISHAPE_EXPOSE_FORMAT_ATTRS,,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,_EXTRA_DATASETS,<quote>Z:<backslash>1.<space>Anwar<backslash>AIConsultancy<backslash>Datascience<space>Noord<space>NL<backslash>fietsendiefstal.shp<backslash>boundary_500m.shp<quote><comma><quote>Z:<backslash>1.<space>Anwar<backslash>AIConsultancy<backslash>Datascience<space>Noord<space>NL<backslash>fietsendiefstal.shp<backslash>Incidenten.shp<quote>,CLIP_TO_ENVELOPE,NO,GEOMETRY,,CHECK_NUMERIC_FIELDS,yes,UPPER_CASE_ATTR_NAMES,No,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MINX,0,USE_SEARCH_ENVELOPE,NO,ADVANCED,,DISSOLVE_HOLES,no,REPORT_BAD_GEOMETRY,no,SEARCH_ENVELOPE_MAXX,0,ENCODING,,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SEARCH_ENVELOPE_MINY,0,SIMPLE_DONUT_GEOMETRY,simple,READER_PARAMETERS,,TRIM_PRECEDING_SPACES,yes,MEASURES_AS_Z,no
+
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} ESRISHAPE
+MULTI_WRITER_KEYWORD{0} ESRISHAPE_2
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRISHAPE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRISHAPE ESRISHAPE_1
+# ============================================================================
+# The following GUI line prompts for the source shapefiles
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ESRISHAPE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRISHAPE ESRISHAPE_1
+DEFAULT_MACRO SourceDataset_ESRISHAPE_1 $(SourceDataset_ESRISHAPE)
+GUI MULTIFILE SourceDataset_ESRISHAPE_1 Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or shape_.
+ESRISHAPE_1_UNENCODED_ATTR_PREFIX fme_ shape_
+#Added default value for dissolve holes so that default for DI is consistent with workbench
+DEFAULT_MACRO ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1 no
+ESRISHAPE_1_DISSOLVE_HOLES "$(ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1)"
+# ============================================================================
+# Determines whether the attribute names should be uppercased, or whether they
+# should stay as specified in the shapefile. Once the mapping file/workspace
+# has been generated, the value for this keyword should not be changed.
+DEFAULT_MACRO ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES_ESRISHAPE_1 No
+ESRISHAPE_1_UPPER_CASE_ATTR_NAMES "$(ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES_ESRISHAPE_1)"
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for reading the shapefile, overrides dbf file LDID or .cpg
+# file if present.
+DEFAULT_MACRO ESRISHAPE_IN_ENCODING_ESRISHAPE_1 
+ESRISHAPE_1_ENCODING "$(ESRISHAPE_IN_ENCODING_ESRISHAPE_1)"
+GUI OPTIONAL ENCODING ESRISHAPE_IN_ENCODING_ESRISHAPE_1 ANSI%SYSTEM%BIG5%EUC%HKBIG5%ISO%OEM%SJIS%UTF-8%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP874%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO-8859-11%ISO8859-13%ISO8859-15%WINDOWS-874 Character Encoding
+#Note: Using the search envelope requires the shape index files (.sbnand.sbx)
+DEFAULT_MACRO ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_1 
+ESRISHAPE_1_EXPOSE_ATTRS_GROUP "$(ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_1)"
+GUI DISCLOSUREGROUP ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_1 ESRISHAPE_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1 
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1)"
+GUI OPTIONAL COORDSYS ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1 Search Envelope Coordinate System:
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1 NO
+ESRISHAPE_1_CLIP_TO_ENVELOPE "$(ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1)"
+GUI OPTIONAL CHECKBOX ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ESRISHAPE_IN_CHECK_NUMERIC_FIELDS_ESRISHAPE_1 yes
+ESRISHAPE_1_CHECK_NUMERIC_FIELDS "$(ESRISHAPE_IN_CHECK_NUMERIC_FIELDS_ESRISHAPE_1)"
+GUI DISCLOSUREGROUP ESRISHAPE_IN_ADVANCED_ESRISHAPE_1 TRIM_PRECEDING_SPACES%GEOMETRY Advanced
+DEFAULT_MACRO ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1 yes
+ESRISHAPE_1_TRIM_PRECEDING_SPACES "$(ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1 yes%no Trim Preceding Spaces
+GUI DISCLOSUREGROUP ESRISHAPE_IN_GEOMETRY_ESRISHAPE_1 SIMPLE_DONUT_GEOMETRY%MEASURES_AS_Z%DISSOLVE_HOLES%REPORT_BAD_GEOMETRY Geometry
+# ============================================================================
+# Option to use simple donut geometry creation, which is faster than the
+# original creation method, but less meticulous at detecting and correcting
+# geometric anomalies (i.e.holeswithinholes)
+DEFAULT_MACRO ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1 simple
+ESRISHAPE_1_SIMPLE_DONUT_GEOMETRY "$(ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1)"
+GUI LOOKUP_CHOICE ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1 "Orientation Only",simple%"Orientation and Spatial Relationship",complex Donut Geometry Detection
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1 no
+ESRISHAPE_1_MEASURES_AS_Z "$(ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1 yes%no Treat Measures as Elevation
+# ============================================================================
+# The following keyword sets whether the reader dissolves holes in donuts.
+ESRISHAPE_1_DISSOLVE_HOLES "$(ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1 yes%no Dissolve Adjacent Holes
+# ============================================================================
+# The following keyword sets whether bad geometry should be reported via
+# the shape_geometry_error{} list attribute.
+DEFAULT_MACRO ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1 no
+ESRISHAPE_1_REPORT_BAD_GEOMETRY "$(ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1 yes%no Report Geometry Anomalies
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1 
+ESRISHAPE_1_NETWORK_AUTHENTICATION "$(ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1)"
+GUI OPTIONAL AUTHENTICATOR ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_ATTRIBUTE_READING_ESRISHAPE_1 ALL
+ESRISHAPE_1_ATTRIBUTE_READING "$(ESRISHAPE_IN_ATTRIBUTE_READING_ESRISHAPE_1)"
+ESRISHAPE_1_DATASET "$(SourceDataset_ESRISHAPE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRISHAPE_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER ESRISHAPE ESRISHAPE_2
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the Esri Shapefiles.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ESRISHAPE_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ESRISHAPE ESRISHAPE_2
+DEFAULT_MACRO DestDataset_ESRISHAPE_2 $(DestDataset_ESRISHAPE)
+GUI DIRNAME DestDataset_ESRISHAPE_2 Destination Esri Shapefile Folder:
+ESRISHAPE_2_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
+# ============================================================================
+# Determines whether the attribute names should be uppercased, or whether they
+# should stay as specified in the shapefile. The default will be Yes for
+# backwards compatibility. Once the mapping file/workspace has been generated,
+# the value for this keyword should not be changed.
+DEFAULT_MACRO ESRISHAPE_OUT_UPPER_CASE_ATTR_NAMES_ESRISHAPE_2 No
+ESRISHAPE_2_UPPER_CASE_ATTR_NAMES "$(ESRISHAPE_OUT_UPPER_CASE_ATTR_NAMES_ESRISHAPE_2)"
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for outputting the shapefile
+# BUG31194: For backwards compatibility and not outputting a .cpg file
+# we have chosen to make the writer default encoding system (ANSI)
+DEFAULT_MACRO ESRISHAPE_OUT_ENCODING_ESRISHAPE_2 SYSTEM
+ESRISHAPE_2_ENCODING "$(ESRISHAPE_OUT_ENCODING_ESRISHAPE_2)"
+GUI OPTIONAL ENCODING ESRISHAPE_OUT_ENCODING_ESRISHAPE_2 ANSI%SYSTEM%BIG5%EUC%HKBIG5%ISO%OEM%SJIS%UTF-8%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP874%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO-8859-11%ISO8859-13%ISO8859-15%WINDOWS-874 Character Encoding
+# ============================================================================
+# PR2557: Specifies whether or not the reader will generate spatial index files
+DEFAULT_MACRO ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_2 No
+ESRISHAPE_2_WRITE_SPATIAL_INDEX "$(ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_2)"
+GUI CHECKBOX ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_2 Yes%No Write Spatial Index
+DEFAULT_MACRO ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_2 No
+ESRISHAPE_2_COMPRESSED_SHAPE_FILE "$(ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_2)"
+GUI CHECKBOX ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_2 Yes%No Create Compressed Shapefile (.shz)
+DEFAULT_MACRO ESRISHAPE_OUT_DIMENSION_ESRISHAPE_2 auto
+ESRISHAPE_2_DIMENSION "$(ESRISHAPE_OUT_DIMENSION_ESRISHAPE_2)"
+GUI DISCLOSUREGROUP ESRISHAPE_OUT_ADVANCED_ESRISHAPE_2 STRICT_COMPATIBILITY%GEOMETRY Advanced
+# ============================================================================
+# BUG31474: Add an Strict compatibility flag to prevent some apps from
+# crashing when record lengths are too long. By default, we want to write
+# compatible files going forward.
+DEFAULT_MACRO ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_2 Yes
+ESRISHAPE_2_STRICT_COMPATIBILITY "$(ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_2)"
+GUI CHECKBOX ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_2 Yes%No Strict Compatibility
+GUI DISCLOSUREGROUP ESRISHAPE_OUT_GEOMETRY_ESRISHAPE_2 PRESERVE_RING_VERTEX_ORDER%SURFACE_AND_SOLID_STORAGE%MEASURES_AS_Z Geometry
+# ============================================================
+# BUG39095: Add an option to preserve input ring vertex order.
+DEFAULT_MACRO ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_2 No
+ESRISHAPE_2_PRESERVE_RING_VERTEX_ORDER "$(ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_2)"
+GUI CHECKBOX ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_2 Yes%No Preserve Ring Vertex Order
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO ESRISHAPE_OUT_DESTINATION_DATASETTYPE_VALIDATION_ESRISHAPE_2 Yes
+ESRISHAPE_2_DESTINATION_DATASETTYPE_VALIDATION "$(ESRISHAPE_OUT_DESTINATION_DATASETTYPE_VALIDATION_ESRISHAPE_2)"
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_2 no
+ESRISHAPE_2_MEASURES_AS_Z "$(ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_2)"
+GUI CHOICE ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_2 yes%no Treat Measures as Elevation
+ESRISHAPE_2_ENCODING $(ESRISHAPE_OUT_ENCODING_ESRISHAPE_2)
+ESRISHAPE_2_DATASET "$(DestDataset_ESRISHAPE_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+WRITER_TYPE NULL
+WRITER_KEYWORD WBROUTER_OUT
+WBROUTER_OUT_DATASET null
+
+LOG_END_BANNER 
+LOG_END_BANNER *** All writer output has been redirected to the Data Inspector ***
+LOG_END_BANNER 
+LOG_FILENAME "$(FME_MF_DIR)BAG.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_1 ESRISHAPE_1
+DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_2 ESRISHAPE_2
+# -------------------------------------------------------------------------
+
+ESRISHAPE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ESRISHAPE_1_COORDINATE_SYSTEM EPSG:4326
+ESRISHAPE_2_COORDINATE_SYSTEM EPSG:4326
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME BAG
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+ESRISHAPE_1_DEF boundary_500m   SHAPE_GEOMETRY               shape_polygon   boundar_ID                   short   AREA                         number(15,3)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD ESRISHAPE_1   INPUT FEATURE_TYPE *    ROUTE ESRISHAPE ESRISHAPE_1::boundary_500m TO FME_GENERIC ::boundary_500m ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ESRISHAPE_1_MERGE_DEF ESRISHAPE_1::boundary_500m EXACT boundary_500m
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "boundary_500m (ESRISHAPE_1) Splitter"    INPUT FEATURE_TYPE boundary_500m    OUTPUT FEATURE_TYPE boundary_500m_ESRISHAPE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+# Wipe out the source setting if it was untouched from the default setting
+
+DEFAULT_MACRO Reprojector_SOURCE "EPSG:4326"
+INCLUDE [if { {EPSG:4326} == {Read from feature} } {             puts {MACRO Reprojector_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector    INPUT  FEATURE_TYPE boundary_500m_ESRISHAPE_1    OUTPUT FEATURE_TYPE Reprojector_REPROJECTED         @Reproject($(Reprojector_SOURCE),"EPSG:28992",NearestNeighbor,PreserveCells,Reprojector,"COORD_SYS_WARNING")
+
+# -------------------------------------------------------------------------
+MACRO FeatureReader_OUTPUT_PORTS_ENCODED verblijfsobject
+MACRO FeatureReader_DIRECTIVES PREFER_POST,No,TIMEOUT_GROUP,NO,IGNORE_APPLICATON_SCHEMA,no,PREFERRED_VERSION,2.0.0,DISABLE_XML_NAMESPACE_PROCESSING,NO,USE_SEARCH_ENVELOPE,NO,START_INDEX,0,ENFORCE_PATH_CONTINUITY_BY,SNAPPING_END_POINTS,MAP_EMBEDDED_OBJECTS_AS,ATTRIBUTES,DISABLE_AUTOMATIC_READER_TYPE_SELECTION,NO,CONNECTION_TIMEOUT,90,TRANSFER_TIMEOUT,90,COUNT,1000,MAP_GEOMETRY_COLUMNS,YES,CLIP_TO_ENVELOPE,NO,USE_OLD_READER,NO,FLATTEN_XML_FRAGMENTS,NO,MAX_RESULT_FEATURES,10000,LOCAL_CACHE_EXPIRY,60,MAP_PREDEFINED_GML_PROPERTIES,NO,XML_FRAGMENTS_AS_DOCUMENTS,YES,MAP_COMPLEX_PROPERTIES_AS,Nested<space>Attributes
+
+# Always provide an INTERACTION, otherwise the factory defaults to ENVELOPE_INTERSECTS
+INCLUDE [if { ( {INTERSECTS} == {<Unused>} ) || ( {($INTERACT_OPTIONS)} == {} ) } {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION NONE};          } else {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION "INTERSECTS"};          }         ]
+# Consolidate the attribute merge options to what the factory expects
+DEFAULT_MACRO FeatureReader_COMBINE_ATTRS
+INCLUDE [       if { {MERGE} == {MERGE} } {          puts "MACRO FeatureReader_COMBINE_ATTRS PREFER_RESULT";       } else {          puts "MACRO FeatureReader_COMBINE_ATTRS MERGE";       };    ]
+FACTORY_DEF * QueryFactory    FACTORY_NAME FeatureReader    INPUT  FEATURE_TYPE Reprojector_REPROJECTED    $(FCTQUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  $(FeatureReader_COMBINE_ATTRS)    QUERYFCT_ATTRIBUTE_PREFIX <Unused>    COMBINE_GEOMETRY    RESULT_ONLY    ENABLE_CACHE        NO    QUERYFCT_TABLE_SEPARATOR SPACE    READER_TYPE         WFS    READER_DATASET      "https:<solidus><solidus>geodata.nationaalgeoregister.nl<solidus>bag<solidus>wfs?request=GetCapabilities"    QUERYFCT_IDS        "verblijfsobject"    READER_COORDSYS     "EPSG:28992"    READER_DIRECTIVES META_MACROS,SourcePREFER_POST<comma>No<comma>SourcePREFERRED_VERSION<comma>2.0.0<comma>SourceTIMEOUT_GROUP<comma>NO<comma>SourceCONNECTION_TIMEOUT<comma>90<comma>SourceTRANSFER_TIMEOUT<comma>90<comma>SourceMAX_RESULT_FEATURES<comma>10000<comma>SourceSTART_INDEX<comma>0<comma>SourceCOUNT<comma>1000<comma>SourceOUTPUT_FORMAT<comma><comma>SourceFILTER_EXPRESSION<comma><comma>SourceIGNORE_APPLICATON_SCHEMA<comma>no<comma>SourceXSD_DOC<comma><comma>SourceFME_FEATURE_IDENTIFIER<comma><comma>SourceMAP_FEATURE_COLLECTION<comma><comma>SourceGML_FEATURE_ELEMENTS<comma><lt>Unused<gt><comma>SourceGMLSRS_GEOMETRY_PARAMETERS<comma><comma>SourceSRS_AXIS_ORDER<comma><comma>SourceSRS_ANGLE_DIRECTION<comma><comma>SourceENFORCE_PATH_CONTINUITY_BY<comma>SNAPPING_END_POINTS<comma>SourceGML_READER_GROUP<comma><comma>SourceUSE_OLD_READER<comma>NO<comma>SourceDISABLE_AUTOMATIC_READER_TYPE_SELECTION<comma>NO<comma>SourceDISABLE_XML_NAMESPACE_PROCESSING<comma>NO<comma>SourceGML_FEATURE_PROPERTIES<comma><comma>SourceMAP_EMBEDDED_OBJECTS_AS<comma>ATTRIBUTES<comma>SourceMAP_PREDEFINED_GML_PROPERTIES<comma>NO<comma>SourceMAP_GEOMETRY_COLUMNS<comma>YES<comma>SourceADD_NAMESPACE_PREFIX_TO_NAMES<comma><comma>SourceQNAMES_FOR_PROPERTIES_TO_IGNORE<comma><comma>SourceGML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP<comma><comma>SourceMAP_COMPLEX_PROPERTIES_AS<comma><quote>Nested<space>Attributes<quote><comma>SourceMAX_MULTI_LIST_LEVEL<comma><comma>SourceXML_FRAGMENTS_AS_DOCUMENTS<comma>YES<comma>SourceFLATTEN_XML_FRAGMENTS<comma>NO<comma>SourceFLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE<comma><comma>SourceFLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE<comma><comma>SourceFLATTEN_XML_FRAGMENTS_SEPARATOR<comma><comma>SourceARCGIS_CACHE_GROUP<comma><comma>SourceLOCAL_CACHE_EXPIRY<comma>60<comma>SourceEXPOSE_ATTRS_GROUP<comma><comma>SourceWFS_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceCLIP_TO_ENVELOPE<comma>NO<comma>SourceBBOX_COORDINATE_SYSTEM<comma><comma>SourceNETWORK_AUTHENTICATION<comma>,METAFILE,WFS    QUERYFCT_OUTPUT     "BASED_ON_CONNECTIONS"    CONTINUE_ON_READER_ERROR YES    QUERYFCT_RESULT_TAGS $(FeatureReader_OUTPUT_PORTS_ENCODED)    QUERYFCT_SET_FME_FEATURE_TYPE YES    READER_PARAMS_WWJD     $(FeatureReader_DIRECTIVES)    OUTPUT verblijfsobject FEATURE_TYPE FeatureReader_verblijfsobject
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * DeaggregateFactory    FACTORY_NAME Deaggregator    INPUT  FEATURE_TYPE FeatureReader_verblijfsobject    RECURSIVE No    SPLIT_COMPOSITES No    INSTANTIATE_GEOMETRY_INSTANCES_NEW No    SET_FME_TYPE Yes    PART_NUMBER_FIELD _part_number    GEOMETRY_NAME_FIELD _geometry_name    ID_ATTR _hierarchy_id    PARENT_ID_ATTR _hierarchy_parent_id    CHILD_ID_ATTR _hierarchy_child_id_list    COPY_ATTR EVERY_NODE    OUTPUT POINT FEATURE_TYPE Deaggregator_DEAGGREGATED    OUTPUT LINE FEATURE_TYPE Deaggregator_DEAGGREGATED    OUTPUT POLYGON FEATURE_TYPE Deaggregator_DEAGGREGATED    OUTPUT DONUT FEATURE_TYPE Deaggregator_DEAGGREGATED    OUTPUT AGGREGATE FEATURE_TYPE Deaggregator_DEAGGREGATED
+
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE Deaggregator_DEAGGREGATED    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION "boundar_ID" "boundar_ID" "" "REMOVE"     ATTR_ACTION "AREA" "AREA" "" "REMOVE"     ATTR_ACTION "gml_parent_id" "gml_parent_id" "" "REMOVE"     ATTR_ACTION "gml_parent_property" "gml_parent_property" "" "REMOVE"     ATTR_ACTION "gml_id" "gml_id" "" "REMOVE"     ATTR_ACTION "identificatie.xsi_nil" "identificatie.xsi_nil" "" "REMOVE"     ATTR_ACTION "oppervlakte" "opp" "" "RENAME_SET_VALUE"     ATTR_ACTION "oppervlakte.xsi_nil" "oppervlakte.xsi_nil" "" "REMOVE"     ATTR_ACTION "status.xsi_nil" "status.xsi_nil" "" "REMOVE"     ATTR_ACTION "gebruiksdoel" "gebr_doel" "" "RENAME_SET_VALUE"     ATTR_ACTION "gebruiksdoel.xsi_nil" "gebruiksdoel.xsi_nil" "" "REMOVE"     ATTR_ACTION "openbare_ruimte.xsi_nil" "openbare_ruimte.xsi_nil" "" "REMOVE"     ATTR_ACTION "huisnummer.xsi_nil" "huisnummer.xsi_nil" "" "REMOVE"     ATTR_ACTION "huisletter.xsi_nil" "huisletter.xsi_nil" "" "REMOVE"     ATTR_ACTION "toevoeging.xsi_nil" "toevoeging.xsi_nil" "" "REMOVE"     ATTR_ACTION "postcode.xsi_nil" "postcode.xsi_nil" "" "REMOVE"     ATTR_ACTION "woonplaats.xsi_nil" "woonplaats.xsi_nil" "" "REMOVE"     ATTR_ACTION "actualiteitsdatum" "actualiteitsdatum" "" "REMOVE"     ATTR_ACTION "actualiteitsdatum.xsi_nil" "actualiteitsdatum.xsi_nil" "" "REMOVE"     ATTR_ACTION "bouwjaar.xsi_nil" "bouwjaar.xsi_nil" "" "REMOVE"     ATTR_ACTION "pandidentificatie.xsi_nil" "pandidentificatie.xsi_nil" "" "REMOVE"     ATTR_ACTION "pandstatus.xsi_nil" "pandstatus.xsi_nil" "" "REMOVE"     ATTR_ACTION "geometrie" "geometrie" "" "REMOVE"     ATTR_ACTION "pandgeometrie" "pandgeometrie" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>0<closecurly>" "fme_geometry<opencurly>0<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>1<closecurly>" "fme_geometry<opencurly>1<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>2<closecurly>" "fme_geometry<opencurly>2<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>3<closecurly>" "fme_geometry<opencurly>3<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>4<closecurly>" "fme_geometry<opencurly>4<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>5<closecurly>" "fme_geometry<opencurly>5<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>6<closecurly>" "fme_geometry<opencurly>6<closecurly>" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly>7<closecurly>" "fme_geometry<opencurly>7<closecurly>" "" "REMOVE"     ATTR_ACTION "_hierarchy_child_id_list<opencurly><closecurly>" "_hierarchy_child_id_list<opencurly><closecurly>" "" "REMOVE"     ATTR_ACTION "_geometry_name" "_geometry_name" "" "REMOVE"     ATTR_ACTION "_hierarchy_id" "_hierarchy_id" "" "REMOVE"     ATTR_ACTION "_hierarchy_parent_id" "_hierarchy_parent_id" "" "REMOVE"     ATTR_ACTION "_part_number" "_part_number" "" "REMOVE"     ATTR_ACTION "fme_geometry<opencurly><closecurly>" "fme_geometry<opencurly><closecurly>" "" "REMOVE"    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
+
+# -------------------------------------------------------------------------
+MACRO OUTPUT_POINT_FTYPE not_selected
+MACRO OUTPUT_POINT_FTYPE GeometryFilter_POINT
+MACRO OUTPUT_AREA_FTYPE not_selected
+MACRO OUTPUT_AREA_FTYPE GeometryFilter_AREA
+MACRO OUTPUT_INSTANCE_FTYPE not_selected
+
+Lookup GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)
+
+MACRO COLLECTION_HANDLING NOT_THIS_TIME
+MACRO INSTANCE_FILTERING *
+INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{$(OUTPUT_INSTANCE_FTYPE)} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_InputPassThrough    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    OUTPUT FEATURE_TYPE GeometryFilter___Input___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
+FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_InstanceTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE $(OUTPUT_INSTANCE_FTYPE)    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Input___
+FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_CollectionTest    INPUT FEATURE_TYPE GeometryFilter___Input___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter___Collection___
+FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_Deagg    INPUT FEATURE_TYPE GeometryFilter___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW <Unused>    OUTPUT POINT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter___HomogeneousAggregate___
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter___Input___    OUTPUT FEATURE_TYPE GeometryFilter___Prepped___        GeometryFilter_d8f7c2ea_61c6_49b0_889a_ce45eb95f6410_targetFeatureType @Lookup(GeometryFilter_RouterTable,&fme_type)
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_Router    INPUT FEATURE_TYPE GeometryFilter___Prepped___    TEST @Value(GeometryFilter_d8f7c2ea_61c6_49b0_889a_ce45eb95f6410_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_d8f7c2ea_61c6_49b0_889a_ce45eb95f6410_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_d8f7c2ea_61c6_49b0_889a_ce45eb95f6410_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_<UNFILTERED>        @RemoveAttributes(GeometryFilter_d8f7c2ea_61c6_49b0_889a_ce45eb95f6410_targetFeatureType)
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "GeometryFilter <UNFILTERED> Output Nuker"   INPUT FEATURE_TYPE GeometryFilter_<UNFILTERED>
+# -------------------------------------------------------------------------
+
+# Wipe out the source setting if it was untouched from the default setting
+
+DEFAULT_MACRO Reprojector_3_SOURCE "EPSG:28992"
+INCLUDE [if { {EPSG:28992} == {Read from feature} } {             puts {MACRO Reprojector_3_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector_3    INPUT  FEATURE_TYPE GeometryFilter_AREA    OUTPUT FEATURE_TYPE Reprojector_3_REPROJECTED         @Reproject($(Reprojector_3_SOURCE),"EPSG:4326",NearestNeighbor,PreserveCells,Reprojector_3,"COORD_SYS_WARNING")
+
+# -------------------------------------------------------------------------
+
+# Wipe out the source setting if it was untouched from the default setting
+
+DEFAULT_MACRO Reprojector_2_SOURCE "EPSG:28992"
+INCLUDE [if { {EPSG:28992} == {Read from feature} } {             puts {MACRO Reprojector_2_SOURCE}          }         ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME Reprojector_2    INPUT  FEATURE_TYPE GeometryFilter_POINT    OUTPUT FEATURE_TYPE Reprojector_2_REPROJECTED         @Reproject($(Reprojector_2_SOURCE),"EPSG:4326",NearestNeighbor,PreserveCells,Reprojector_2,"COORD_SYS_WARNING")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    INPUT  FEATURE_TYPE Reprojector_2_REPROJECTED    TEST "Specify Coordinate" == "All Coordinates"    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_PASSED    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_FAILED
+FACTORY_DEF * TestFactory    FACTORY_NAME CoordinateExtractor_PASSED    INPUT FEATURE_TYPE CoordinateExtractor_PASSED    TEST @Dimension() == 2    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_OUTPUT         @ZValue("")         @Coordinate(x,ALL,"<Unused>"{}.x,FLATTEN_AGGREGATE,YES)         @Coordinate(y,ALL,"<Unused>"{}.y,FLATTEN_AGGREGATE,NO)         @Coordinate(z,ALL,"<Unused>"{}.z,FLATTEN_AGGREGATE,NO)         @Dimension(2)    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_OUTPUT         @Coordinate(x,ALL,"<Unused>"{}.x,FLATTEN_AGGREGATE,YES)         @Coordinate(y,ALL,"<Unused>"{}.y,FLATTEN_AGGREGATE,NO)         @Coordinate(z,ALL,"<Unused>"{}.z,FLATTEN_AGGREGATE,NO)
+FACTORY_DEF * TestFactory    FACTORY_NAME CoordinateExtractor_FAILED    INPUT FEATURE_TYPE CoordinateExtractor_FAILED    TEST @Dimension() == 2    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_FAILED_PASSED    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_OUTPUT         "lon" @Coordinate(x,"0",FLATTEN_AGGREGATE,YES)         "lat" @Coordinate(y,"0",FLATTEN_AGGREGATE,NO)
+FACTORY_DEF * TestFactory    FACTORY_NAME CoordinateExtractor_FAILED_PASSED    INPUT FEATURE_TYPE CoordinateExtractor_FAILED_PASSED    TEST "" == ""    OUTPUT PASSED FEATURE_TYPE CoordinateExtractor_OUTPUT         "lon" @Coordinate(x,"0",FLATTEN_AGGREGATE,YES)         "lat" @Coordinate(y,"0",FLATTEN_AGGREGATE,NO)    OUTPUT FAILED FEATURE_TYPE CoordinateExtractor_OUTPUT         "lon" @Coordinate(x,"0",FLATTEN_AGGREGATE,YES)         "lat" @Coordinate(y,"0",FLATTEN_AGGREGATE,NO)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Reprojector_3_REPROJECTED TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>identifica<comma>identificatie<comma>openbare_r<comma>openbare_ruimte<comma>pandidenti<comma>pandidentificatie<comma>gid_xsi_ni<comma>gid.xsi_nil<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Pand<closeparen> COORDINATE_SYSTEM EPSG:4326 GEOMETRY    ROUTE FME_GENERIC CoordinateExtractor_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>identifica<comma>identificatie<comma>openbare_r<comma>openbare_ruimte<comma>pandidenti<comma>pandidentificatie<comma>gid_xsi_ni<comma>gid.xsi_nil<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Verblijfsobject<closeparen> COORDINATE_SYSTEM EPSG:4326 GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Route to Viewer Reprojector"   INPUT FEATURE_TYPE *   OUTPUT FEATURE_TYPE *     @Reproject(EPSG:4326,EPSG:4326)
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {Pand} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME Pand_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME Pand_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Pand_FeatureDirector    INPUT  FEATURE_TYPE Pand    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE Pand___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE Pand___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME Pand___FeatureDirector1    INPUT FEATURE_TYPE Pand___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE Pand___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE Pand___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Pand_VectorSetterUpper    INPUT FEATURE_TYPE Pand___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+
+Tcl2 proc Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Pand___PointCloudThinner    INPUT FEATURE_TYPE Pand___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_thinPointCloud")
+Tcl2 proc Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Pand_RasterSetterUpper    INPUT FEATURE_TYPE Pand___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+
+DEFAULT_MACRO Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_VIS_FEAT_TYPE Pand$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Pand_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Pand_b64074b7_6f10_401a_b6bf_29b27a942fbb0_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA identifica,varchar<openparen>255<closeparen>,opp,varchar<openparen>255<closeparen>,status,varchar<openparen>255<closeparen>,gebr_doel,varchar<openparen>255<closeparen>,openbare_r,varchar<openparen>255<closeparen>,huisnummer,varchar<openparen>255<closeparen>,huisletter,varchar<openparen>255<closeparen>,toevoeging,varchar<openparen>255<closeparen>,postcode,varchar<openparen>255<closeparen>,woonplaats,varchar<openparen>255<closeparen>,bouwjaar,varchar<openparen>255<closeparen>,pandidenti,varchar<openparen>255<closeparen>,pandstatus,varchar<openparen>255<closeparen>,gid,varchar<openparen>255<closeparen>,gid_xsi_ni,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Pand Output Nuker"   INPUT FEATURE_TYPE Pand
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {Verblijfsobject} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME Verblijfsobject_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME Verblijfsobject_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Verblijfsobject_FeatureDirector    INPUT  FEATURE_TYPE Verblijfsobject    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE Verblijfsobject___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE Verblijfsobject___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME Verblijfsobject___FeatureDirector1    INPUT FEATURE_TYPE Verblijfsobject___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE Verblijfsobject___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE Verblijfsobject___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Verblijfsobject_VectorSetterUpper    INPUT FEATURE_TYPE Verblijfsobject___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+
+Tcl2 proc Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Verblijfsobject___PointCloudThinner    INPUT FEATURE_TYPE Verblijfsobject___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_thinPointCloud")
+Tcl2 proc Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Verblijfsobject_RasterSetterUpper    INPUT FEATURE_TYPE Verblijfsobject___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+
+DEFAULT_MACRO Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_VIS_FEAT_TYPE Verblijfsobject$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Verblijfsobject_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Verblijfsobject_b64074b7_6f10_401a_b6bf_29b27a942fbb1_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA identifica,varchar<openparen>255<closeparen>,opp,varchar<openparen>255<closeparen>,status,varchar<openparen>255<closeparen>,gebr_doel,varchar<openparen>255<closeparen>,openbare_r,varchar<openparen>255<closeparen>,huisnummer,varchar<openparen>255<closeparen>,huisletter,varchar<openparen>255<closeparen>,toevoeging,varchar<openparen>255<closeparen>,postcode,varchar<openparen>255<closeparen>,woonplaats,varchar<openparen>255<closeparen>,bouwjaar,varchar<openparen>255<closeparen>,pandidenti,varchar<openparen>255<closeparen>,pandstatus,varchar<openparen>255<closeparen>,gid,varchar<openparen>255<closeparen>,gid_xsi_ni,varchar<openparen>255<closeparen>,lon,varchar<openparen>255<closeparen>,lat,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Verblijfsobject Output Nuker"   INPUT FEATURE_TYPE Verblijfsobject
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
+# -------------------------------------------------------------------------
+ESRISHAPE_2_DEF Pand   SHAPE_GEOMETRY               shape_polygon   shape_dimension              auto   identifica                   char(200)   opp                          char(200)   status                       char(200)   gebr_doel                    char(200)   openbare_r                   char(200)   huisnummer                   char(200)   huisletter                   char(200)   toevoeging                   char(200)   postcode                     char(200)   woonplaats                   char(200)   bouwjaar                     char(200)   pandidenti                   char(200)   pandstatus                   char(200)   gid                          char(200)   gid_xsi_ni                   char(200)
+# -------------------------------------------------------------------------
+ESRISHAPE_2_DEF Verblijfsobject   SHAPE_GEOMETRY               shape_point   shape_dimension              auto   identifica                   char(200)   opp                          char(200)   status                       char(200)   gebr_doel                    char(200)   openbare_r                   char(200)   huisnummer                   char(200)   huisletter                   char(200)   toevoeging                   char(200)   postcode                     char(200)   woonplaats                   char(200)   bouwjaar                     char(200)   pandidenti                   char(200)   pandstatus                   char(200)   gid                          char(200)   gid_xsi_ni                   char(200)   lon                          char(200)   lat                          char(200)
+WBROUTER_OUT_DEF Pand
+WBROUTER_OUT_DEF Verblijfsobject
