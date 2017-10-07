@@ -7,6 +7,7 @@ Het gaat om de volgende datasets in de map [data](https://github.com/Kennisnetwe
 * Bushaltes in de gemeente Groningen (bron: NDOV). Het veld `bicylepar` (`Y`/`N`) geeft aan of er een fietsenstalling bij de bushalte aanwezig is.
 * Openbare verlichting (bron: [Dataplatform.nl](https://ckan.dataplatform.nl/dataset/ovl-groningen), Gemeente Groningen)
 * Verblijfsobjecten (bron: Basisregistratie Adressen en Gebouwen, Kadaster)
+   
 Het zijn in alle gevallen gezipte shape-bestanden in EPSG:4326 (WGS 84).
 
 Naast de gegevens wordt ook code in Python en R beschikbaar gesteld om de gegevens op een snelle en eenvoudige manier in te lezen.
