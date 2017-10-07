@@ -31,13 +31,13 @@
 #!   REDIRECT_TERMINATORS="NONE"
 #!   DESCRIPTION=""
 #!   MARKDOWN_USAGE=""
-#!   LAST_SAVE_DATE="2017-10-07T07:53:42"
+#!   LAST_SAVE_DATE="2017-10-07T08:42:22"
 #!   CATEGORY=""
 #!   TITLE=""
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   DESTINATION_ROUTING_FILE=""
 #!   HISTORY=""
-#!   FME_DOCUMENT_GUID="2c8adc27-1203-45bb-9c37-7d109f8dad8c"
+#!   FME_DOCUMENT_GUID="8d8981a7-0321-4481-8744-cf65e0644647"
 #!   ZOOM_SCALE="100"
 #!   IGNORE_READER_FAILURE="No"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
@@ -51,7 +51,7 @@
 #!   BEGIN_TCL=""
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   FME_REPROJECTION_ENGINE="FME"
-#!   FME_DOCUMENT_PRIORGUID="37f7826f-86f5-4c04-8d61-03ea6cff4251,d0db8377-07a9-42b5-97a0-ca67be5165a7,00a17d7f-3957-4fe6-82ef-a4043c0cae9b,8900c168-cb28-418d-9510-4edfbd289d4f,64da3ed5-5389-470c-b7d8-fc33c88e2b94"
+#!   FME_DOCUMENT_PRIORGUID="37f7826f-86f5-4c04-8d61-03ea6cff4251,d0db8377-07a9-42b5-97a0-ca67be5165a7,00a17d7f-3957-4fe6-82ef-a4043c0cae9b,8900c168-cb28-418d-9510-4edfbd289d4f,64da3ed5-5389-470c-b7d8-fc33c88e2b94,2c8adc27-1203-45bb-9c37-7d109f8dad8c"
 #!   TERMINATE_REJECTED="YES"
 #!   FME_SERVER_SERVICES=""
 #! >
@@ -69,7 +69,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xml_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="xml_type xml_char(50) fme_primary_axis xml_real64 multi_reader_keyword xml_char(50) fme_dataset xml_char(50) fme_start_angle xml_real64 fme_secondary_axis xml_real64 fme_type xml_char(50) fme_geometry fme_char(50) multi_reader_full_id xml_int32 fme_rotation xml_real64 fme_text_size xml_real64 fme_basename xml_char(50) fme_sweep_angle xml_real64 fme_color xml_char(50) fme_fill_color xml_char(50) fme_feature_type xml_char(50) fme_text_string xml_char(50) multi_reader_type xml_char(50) multi_reader_id xml_int32"
+#!   EXPOSABLE_ATTRS="xml_type xml_char(50) multi_reader_keyword xml_char(50) fme_primary_axis xml_real64 fme_dataset xml_char(50) fme_start_angle xml_real64 fme_secondary_axis xml_real64 fme_type xml_char(50) fme_geometry fme_char(50) multi_reader_full_id xml_int32 fme_rotation xml_real64 fme_text_size xml_real64 fme_basename xml_char(50) fme_sweep_angle xml_real64 fme_color xml_char(50) fme_fill_color xml_char(50) fme_feature_type xml_char(50) fme_text_string xml_char(50) multi_reader_type xml_char(50) multi_reader_id xml_int32"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -694,7 +694,7 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="vierkant100m2014.zip"
+#!   NODE_NAME="vierkant100m2014"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="true"
@@ -1371,10 +1371,10 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME FeatureReader_<Rejected> INPUT FEATURE_TYPE FeatureReader_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureReader<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureReader_CBSvierkant100m201410 TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>vierkant100m2014.zip<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureReader_CBSvierkant100m201410 TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>vierkant100m2014<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-ESRISHAPE_1_DEF vierkant100m2014.zip   SHAPE_GEOMETRY               shape_polygon   shape_dimension              auto   OBJECTID                     char(200)   C28992R100                   char(200)   INW2000                      char(200)   INW2001                      char(200)   INW2002                      char(200)   INW2003                      char(200)   INW2004                      char(200)   INW2005                      char(200)   INW2006                      char(200)   INW2007                      char(200)   INW2008                      char(200)   INW2009                      char(200)   INW2010                      char(200)   INW2011                      char(200)   INW2012                      char(200)   INW2013                      char(200)   INW2014                      char(200)   TINW_00_10                   char(200)   I2011_014                    char(200)   I2012_014                    char(200)   I2013_014                    char(200)   I2014_014                    char(200)   I2011_1524                   char(200)   I2012_1524                   char(200)   I2013_1524                   char(200)   I2014_1524                   char(200)   I2011_2544                   char(200)   I2012_2544                   char(200)   I2013_2544                   char(200)   I2014_2544                   char(200)   I2011_4564                   char(200)   I2012_4564                   char(200)   I2013_4564                   char(200)   I2014_4564                   char(200)   I2011_65PL                   char(200)   I2012_65PL                   char(200)   I2013_65PL                   char(200)   I2014_65PL                   char(200)   MAN_2011                     char(200)   MAN_2012                     char(200)   MAN_2013                     char(200)   MAN_2014                     char(200)   VROUW_2011                   char(200)   VROUW_2012                   char(200)   VROUW_2013                   char(200)   VROUW_2014                   char(200)   P_AUTO2011                   char(200)   P_AUTO2012                   char(200)   P_AUTO2013                   char(200)   P_AUTO2014                   char(200)   P_WAL2011                    char(200)   P_WAL2012                    char(200)   P_WAL2013                    char(200)   P_WAL2014                    char(200)   P_NWAL2011                   char(200)   P_NWAL2012                   char(200)   P_NWAL2013                   char(200)   P_NWAL2014                   char(200)   WON2000                      char(200)   WON2001                      char(200)   WON2002                      char(200)   WON2003                      char(200)   WON2004                      char(200)   WON2005                      char(200)   WON2006                      char(200)   WON2007                      char(200)   WON2008                      char(200)   WON2009                      char(200)   WON2010                      char(200)   WON2011                      char(200)   WON2012                      char(200)   WOZWON2011                   char(200)   WOZWON2012                   char(200)
+ESRISHAPE_1_DEF vierkant100m2014   SHAPE_GEOMETRY               shape_polygon   shape_dimension              auto   OBJECTID                     char(200)   C28992R100                   char(200)   INW2000                      char(200)   INW2001                      char(200)   INW2002                      char(200)   INW2003                      char(200)   INW2004                      char(200)   INW2005                      char(200)   INW2006                      char(200)   INW2007                      char(200)   INW2008                      char(200)   INW2009                      char(200)   INW2010                      char(200)   INW2011                      char(200)   INW2012                      char(200)   INW2013                      char(200)   INW2014                      char(200)   TINW_00_10                   char(200)   I2011_014                    char(200)   I2012_014                    char(200)   I2013_014                    char(200)   I2014_014                    char(200)   I2011_1524                   char(200)   I2012_1524                   char(200)   I2013_1524                   char(200)   I2014_1524                   char(200)   I2011_2544                   char(200)   I2012_2544                   char(200)   I2013_2544                   char(200)   I2014_2544                   char(200)   I2011_4564                   char(200)   I2012_4564                   char(200)   I2013_4564                   char(200)   I2014_4564                   char(200)   I2011_65PL                   char(200)   I2012_65PL                   char(200)   I2013_65PL                   char(200)   I2014_65PL                   char(200)   MAN_2011                     char(200)   MAN_2012                     char(200)   MAN_2013                     char(200)   MAN_2014                     char(200)   VROUW_2011                   char(200)   VROUW_2012                   char(200)   VROUW_2013                   char(200)   VROUW_2014                   char(200)   P_AUTO2011                   char(200)   P_AUTO2012                   char(200)   P_AUTO2013                   char(200)   P_AUTO2014                   char(200)   P_WAL2011                    char(200)   P_WAL2012                    char(200)   P_WAL2013                    char(200)   P_WAL2014                    char(200)   P_NWAL2011                   char(200)   P_NWAL2012                   char(200)   P_NWAL2013                   char(200)   P_NWAL2014                   char(200)   WON2000                      char(200)   WON2001                      char(200)   WON2002                      char(200)   WON2003                      char(200)   WON2004                      char(200)   WON2005                      char(200)   WON2006                      char(200)   WON2007                      char(200)   WON2008                      char(200)   WON2009                      char(200)   WON2010                      char(200)   WON2011                      char(200)   WON2012                      char(200)   WOZWON2011                   char(200)   WOZWON2012                   char(200)
