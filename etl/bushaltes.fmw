@@ -5,118 +5,59 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    E:\FME2017\fme.exe C:\temp\fme\bushaltes.fmw
-#          --SourceDataset_XML "http://data.ndovloket.nl/haltes/ExportCHB20171007010001.xml.gz\ExportCHB20171007010001.xml"
-#          --DestDataset_ESRISHAPE "..\data\bushaltes.zip"
+#    E:\FME2017\fme.exe C:\temp\etl\bushaltes.fmw
 #          --7ZIP "D:\7-Zip\7z.exe"
 #          --SOURCE_URL "http:<solidus><solidus>data.ndovloket.nl<solidus>haltes<solidus>ExportCHB20171007010001.xml.gz"
+#          --DestDataset_ESRISHAPE "..\data\bushaltes.zip"
 #    
 #    
-#!   MARKDOWN_USAGE=""
-#!   TERMINATE_REJECTED="YES"
-#!   FME_DOCUMENT_PRIORGUID="7b9599d3-988e-4649-abf0-8f73a1bc4a27,94c286e9-a6b7-4de1-8338-d106cfeafa2a,25d4a124-7f13-40f1-97ff-b69126404783,e453f182-b1e1-4226-8b1a-78c36f998450,f6c493e1-0a92-478b-88f1-1c5fa13de611,00629eee-5a46-41a0-ac18-0284069dc8aa,cf02d8b8-3a9a-40cb-9428-1ce77f721fff"
-#!   FME_DOCUMENT_GUID="a89c900f-1fe3-4ecb-8628-f3fae885cd1c"
-#!   MARKDOWN_DESCRIPTION=""
-#!   DOC_EXTENTS="3699.14 2105.71"
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   FME_BUILD_NUM="17539"
-#!   DESTINATION_ROUTING_FILE=""
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   DESTINATION="NONE"
-#!   LOG_MAX_RECORDED_FEATURES="200"
-#!   DOC_TOP_LEFT="-885.759 -1311.26"
-#!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_DATE="2017-10-07T15:00:44"
-#!   SHOW_ANNOTATIONS="true"
-#!   BEGIN_TCL=""
-#!   MAX_LOG_FEATURES="200"
-#!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
-#!   BEGIN_PYTHON=""
-#!   VIEW_POSITION="-884.384 884.384"
-#!   DESCRIPTION=""
-#!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   CATEGORY=""
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   FME_SERVER_SERVICES=""
-#!   LOG_FILE=""
 #!   TITLE=""
-#!   REDIRECT_TERMINATORS="NONE"
-#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   USAGE=""
+#!   CATEGORY=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   SHOW_ANNOTATIONS="true"
 #!   END_TCL=""
-#!   USE_MARKDOWN=""
-#!   HISTORY=""
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="100"
-#!   PASSWORD=""
+#!   FME_SERVER_SERVICES=""
+#!   FME_DOCUMENT_GUID="30f68b49-eee9-4897-a0fc-06ca5d6cdf14"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
+#!   USE_MARKDOWN=""
 #!   ATTR_TYPE_ENCODING="SDF"
-#!   SOURCE_ROUTING_FILE="E:\temp.ffs"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   FME_BUILD_NUM="17539"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   TERMINATE_REJECTED="YES"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   MAX_LOG_FEATURES="200"
+#!   VIEW_POSITION="-1271.89 881.259"
+#!   BEGIN_PYTHON=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   LOG_FILE=""
+#!   FME_DOCUMENT_PRIORGUID="7b9599d3-988e-4649-abf0-8f73a1bc4a27,94c286e9-a6b7-4de1-8338-d106cfeafa2a,25d4a124-7f13-40f1-97ff-b69126404783,e453f182-b1e1-4226-8b1a-78c36f998450,f6c493e1-0a92-478b-88f1-1c5fa13de611,00629eee-5a46-41a0-ac18-0284069dc8aa,cf02d8b8-3a9a-40cb-9428-1ce77f721fff,a89c900f-1fe3-4ecb-8628-f3fae885cd1c,fcea9e87-ed61-43f4-9ef1-7a30a33a92eb"
+#!   HISTORY=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   DESTINATION_ROUTING_FILE=""
 #!   PYTHON_COMPATIBILITY="27"
+#!   USAGE=""
+#!   DESCRIPTION=""
+#!   IGNORE_READER_FAILURE="No"
 #!   SHOW_INFO_NODES="true"
+#!   DOC_TOP_LEFT="-960.76 -778.133"
+#!   LAST_SAVE_DATE="2017-10-07T15:46:16"
+#!   MARKDOWN_USAGE=""
+#!   DOC_EXTENTS="3767.89 1572.58"
+#!   PASSWORD=""
+#!   FME_REPROJECTION_ENGINE="FME"
 #!   SOURCE="NONE"
 #!   END_PYTHON=""
+#!   BEGIN_TCL=""
+#!   ZOOM_SCALE="100"
+#!   SOURCE_ROUTING_FILE="E:\temp.ffs"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   LOG_MAX_RECORDED_FEATURES="200"
 #! >
 #! <DATASETS>
-#! <DATASET
-#!   IS_SOURCE="true"
-#!   ROLE="READER"
-#!   FORMAT="XML"
-#!   DATASET="$(SourceDataset_XML)"
-#!   KEYWORD="XML_1"
-#!   MULTI_GEOM_ALLOWED="false"
-#!   ATTR_MAX_LENGTH="0"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE=""
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename xml_char(50) fme_type xml_char(50) multi_reader_id xml_int32 fme_color xml_char(50) multi_reader_type xml_char(50) multi_reader_full_id xml_int32 fme_rotation xml_real64 fme_fill_color xml_char(50) xml_type xml_char(50) fme_text_size xml_real64 fme_secondary_axis xml_real64 fme_dataset xml_char(50) fme_primary_axis xml_real64 multi_reader_keyword xml_char(50) fme_sweep_angle xml_real64 fme_text_string xml_char(50) fme_geometry fme_char(50) fme_start_angle xml_real64 fme_feature_type xml_char(50)"
-#!   DEFLINE_PARMS=""
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="false"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILE_OR_URL"
-#!   GENERATE_FME_BUILD_NUM="17539"
-#!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   COORDSYS=""
-#!   MAX_FEATURES=""
-#!   MIN_FEATURES=""
-#!   START_FEATURE=""
-#!   FEATURE_TYPES=""
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="NETWORK_AUTHENTICATION"
-#!   VALUE="YES"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="xml file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="MIME_TYPE"
-#!   VALUE="application/XML"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the XML file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the XML file(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="XML_IN_VALIDATE_XFMAP XML_IN_VALIDATE_DATASET XML_OUT_TABLES_ROOT_ELEMENT XML_OUT_XML_NAMESPACE_DECLARATIONS XML_OUT_WRAP_TABLES XML_OUT_SUPPRESS_XML_DOCUMENT XML_OUT_SUPPRESS_XSD_DOCUMENT XML_OUT_GENERATE_ROW_ID XML_OUT_OUTPUT_ENCODING"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="NETWORK_PROXY"
-#!   VALUE="NO"
-#! />
-#! </DATASET>
 #! <DATASET
 #!   IS_SOURCE="true"
 #!   ROLE="READER"
@@ -130,7 +71,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xml_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename xml_char(50) fme_type xml_char(50) multi_reader_id xml_int32 fme_color xml_char(50) multi_reader_type xml_char(50) multi_reader_full_id xml_int32 fme_rotation xml_real64 fme_fill_color xml_char(50) xml_type xml_char(50) fme_text_size xml_real64 fme_secondary_axis xml_real64 fme_dataset xml_char(50) fme_primary_axis xml_real64 multi_reader_keyword xml_char(50) fme_sweep_angle xml_real64 fme_text_string xml_char(50) fme_geometry fme_char(50) fme_start_angle xml_real64 fme_feature_type xml_char(50)"
+#!   EXPOSABLE_ATTRS="multi_reader_type xml_char(50) fme_secondary_axis xml_real64 fme_primary_axis xml_real64 fme_sweep_angle xml_real64 fme_basename xml_char(50) fme_type xml_char(50) multi_reader_id xml_int32 fme_text_size xml_real64 fme_rotation xml_real64 fme_color xml_char(50) fme_fill_color xml_char(50) fme_geometry fme_char(50) multi_reader_full_id xml_int32 xml_type xml_char(50) fme_dataset xml_char(50) fme_feature_type xml_char(50) fme_start_angle xml_real64 fme_text_string xml_char(50) multi_reader_keyword xml_char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -139,12 +80,12 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="URL"
 #!   GENERATE_FME_BUILD_NUM="16167"
-#!   MAX_FEATURES_PER_FEATURE_TYPE=""
 #!   COORDSYS=""
-#!   MAX_FEATURES=""
-#!   MIN_FEATURES=""
 #!   START_FEATURE=""
 #!   FEATURE_TYPES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MAX_FEATURES=""
+#!   MIN_FEATURES=""
 #! >
 #! <METAFILE_PARAMETER
 #!   NAME="NETWORK_AUTHENTICATION"
@@ -155,12 +96,12 @@
 #!   VALUE="URL"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Specify the WFS URL"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="NETWORK_PROXY"
 #!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the WFS URL"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -176,7 +117,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY} shape_dimension auto"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_color char(50) fme_rotation double fme_type char(50) fme_text_string char(50) fme_dataset char(50) fme_feature_type char(50) fme_geometry fme_char(50) fme_text_size double fme_secondary_axis double fme_start_angle double fme_primary_axis double SHAPE_GEOMETRY char(50) fme_basename char(50) fme_sweep_angle double fme_fill_color char(50) shape_measures char(254)"
+#!   EXPOSABLE_ATTRS="fme_rotation double fme_text_string char(50) SHAPE_GEOMETRY char(50) fme_type char(50) fme_color char(50) fme_start_angle double fme_sweep_angle double fme_dataset char(50) fme_feature_type char(50) fme_text_size double fme_secondary_axis double fme_primary_axis double fme_geometry fme_char(50) fme_basename char(50) shape_measures char(254) fme_fill_color char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group shape_dimension Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,auto%2D,2d%2D&lt;space&gt;+&lt;space&gt;Measures,2dm%3D&lt;space&gt;+&lt;space&gt;Measures,3dm Output Dimension:&quot; auto "
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
@@ -185,25 +126,13 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILEDIR"
 #!   GENERATE_FME_BUILD_NUM="17539"
-#!   FANOUT_EXPRESSION=""
 #!   FANOUT_GROUP="NO"
-#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   COORDSYS="EPSG:4326"
 #! >
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="shp file"
-#! />
 #! <METAFILE_PARAMETER
 #!   NAME="WRITER_DATASET_HINT"
 #!   VALUE="Specify a folder for the Esri Shapefile"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the Esri Shapefile(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Shapefile"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="DEFAULT_GEOMETRY_TYPE"
@@ -212,6 +141,18 @@
 #! <METAFILE_PARAMETER
 #!   NAME="ADVANCED_PARMS"
 #!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -381,168 +322,6 @@
 #!   FORMAT_TYPE="xml_geometry"
 #!   FME_TYPE="fme_buffer"
 #!   FORMAT="WFS"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(width)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(width)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_buffer"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_buffer"
-#!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_buffer"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_xml"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_datetime"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_date"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_time"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_int64"
-#!   FME_TYPE="fme_int64"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_uint64"
-#!   FME_TYPE="fme_uint64"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_int32"
-#!   FME_TYPE="fme_int32"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_uint32"
-#!   FME_TYPE="fme_uint32"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_int16"
-#!   FME_TYPE="fme_int16"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_uint16"
-#!   FME_TYPE="fme_uint16"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_byte"
-#!   FME_TYPE="fme_int8"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_ubyte"
-#!   FME_TYPE="fme_uint8"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_real32"
-#!   FME_TYPE="fme_real32"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_real64"
-#!   FME_TYPE="fme_real64"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_decimal(width,decimal)"
-#!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_boolean"
-#!   FME_TYPE="fme_boolean"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(20)"
-#!   FME_TYPE="fme_datetime"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(8)"
-#!   FME_TYPE="fme_date"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_char(12)"
-#!   FME_TYPE="fme_time"
-#!   FORMAT="XML"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_geometry"
-#!   FME_TYPE="fme_buffer"
-#!   FORMAT="XML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
@@ -781,108 +560,6 @@
 #!   FORMAT="WFS"
 #! />
 #! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_no_geom"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_line"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_area"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_aggregate"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_text"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_area"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_area"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_area"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_arc"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_surface"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_solid"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_mesh"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_raster"
-#!   FME_TYPE="fme_no_geom"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_area"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_area"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="true"
-#!   FORMAT_TYPE="xml_no_geom"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="XML"
-#! />
-#! <GEOM_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="shape_point"
 #!   FME_TYPE="fme_point"
@@ -988,141 +665,6 @@
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="true"
-#!   NODE_NAME="quay"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="2"
-#!   FEAT_GEOMTYPE="xml_no_geom"
-#!   POSITION="-803.134 -1311.26"
-#!   BOUNDING_RECT="-803.134 -1311.26 -1 -1"
-#!   ORDER="5e+14"
-#!   COLLAPSED="true"
-#!   KEYWORD="XML_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS=""
-#!   MERGE_FILTER=""
-#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
-#!   MERGE_FILTER_CASE_SENSITIVE="true"
-#!   DYNAMIC_SCHEMA="false"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="onlygetout" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.alightingpositionwidth" ATTR_TYPE="xml_decimal(5,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.bayentranceangles" ATTR_TYPE="xml_decimal(6,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.bayexitangles" ATTR_TYPE="xml_decimal(6,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.baylength" ATTR_TYPE="xml_decimal(6,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.boardingpositionwidth" ATTR_TYPE="xml_decimal(5,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.embaymentwidth" ATTR_TYPE="xml_decimal(5,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.fulllengthguideline" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.groundsurfaceindicator" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.guidelines" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.guidelinestopplaceconnection" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.heightwithenvironment" ATTR_TYPE="xml_decimal(6,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.kerbheight" ATTR_TYPE="xml_decimal(4,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.lift" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.liftedpartlength" ATTR_TYPE="xml_decimal(6,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.markedkerb" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.narrowestpassagewidth" ATTR_TYPE="xml_decimal(5,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.quayshapetype" ATTR_TYPE="xml_char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.ramp" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.ramplength" ATTR_TYPE="xml_decimal(6,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.rampwidth" ATTR_TYPE="xml_decimal(5,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.stopplaceaccessroute" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.tactilegroundsurfaceindicator" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayaccessibilityadaptions.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaybearing.compassdirection" ATTR_TYPE="xml_decimal(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaybearing.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaybearing.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaycode" ATTR_TYPE="xml_char(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayconcessionprovider.concessionprovidercode" ATTR_TYPE="xml_char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayconcessionprovider.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayconcessionprovider.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible.disabledaccessible" ATTR_TYPE="xml_char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible.transportmode" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible{}.disabledaccessible" ATTR_TYPE="xml_char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible{}.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible{}.transportmode" ATTR_TYPE="xml_char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaydisabledaccessible{}.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayextraattributes.greenstop" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayextraattributes.hectometersign" ATTR_TYPE="xml_decimal(8,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayextraattributes.liftedbicyclepath" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayextraattributes.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayextraattributes.roadcode" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayextraattributes.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.audiobutton" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.bicycleparking" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.bins" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.illuminatedstop" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.infounit" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.leantosupport" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.numberofbicycleplaces" ATTR_TYPE="xml_decimal(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.ovccharging" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.ovccico" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.passengerinformationdisplay" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.passengerinformationdisplaytype" ATTR_TYPE="xml_decimal(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.routenetworkmap" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.seatavailable" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.shelter" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.shelterpublicity" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.stopsign" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.stopsigntype" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.timetableinformation" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayfacilities.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.level" ATTR_TYPE="xml_decimal(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.location" ATTR_TYPE="xml_char(101)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.rd-x" ATTR_TYPE="xml_decimal(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.rd-y" ATTR_TYPE="xml_decimal(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.rd-z" ATTR_TYPE="xml_decimal(2,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.street" ATTR_TYPE="xml_char(37)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.town" ATTR_TYPE="xml_char(29)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaylocationdata.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaymunicipality.municipalitycode" ATTR_TYPE="xml_char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaymunicipality.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaymunicipality.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaynamedata.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaynamedata.quayname" ATTR_TYPE="xml_char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaynamedata.stopsidecode" ATTR_TYPE="xml_char(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaynamedata.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayowner.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayowner.quayownercode" ATTR_TYPE="xml_char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayowner.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayremarks.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayremarks.remarks" ATTR_TYPE="xml_char(471)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayremarks.remarkstatus" ATTR_TYPE="xml_char(8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayremarks.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaystatusdata.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaystatusdata.quaystatus" ATTR_TYPE="xml_char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaystatusdata.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytransportmodes.transportmodedata.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytransportmodes.transportmodedata.transportmode" ATTR_TYPE="xml_char(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytransportmodes.transportmodedata.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytransportmodes.transportmodedata{}.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytransportmodes.transportmodedata{}.transportmode" ATTR_TYPE="xml_char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytransportmodes.transportmodedata{}.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytypedata.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytypedata.quaytype" ATTR_TYPE="xml_char(17)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quaytypedata.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayvisuallyaccessible.mutationdate" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayvisuallyaccessible.validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="quayvisuallyaccessible.visuallyaccessible" ATTR_TYPE="xml_char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="stopinternalcode" ATTR_TYPE="xml_char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="stopobjectcode" ATTR_TYPE="xml_char(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="validfrom" ATTR_TYPE="xml_char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xml_fragment" ATTR_TYPE="xml_xml" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xml_id" ATTR_TYPE="xml_char(23)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xml_matched_element" ATTR_TYPE="xml_char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xml_parent_child_pos" ATTR_TYPE="xml_char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="xml_parent_id" ATTR_TYPE="xml_char(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="true"
 #!   NODE_NAME="gemeenten"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
@@ -1159,10 +701,10 @@
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="20"
 #!   FEAT_GEOMTYPE="shape_point"
-#!   POSITION="2813.38 -361.754"
-#!   BOUNDING_RECT="2813.38 -361.754 -1 -1"
+#!   POSITION="2807.13 -368.004"
+#!   BOUNDING_RECT="2807.13 -368.004 -1 -1"
 #!   ORDER="5e+14"
-#!   COLLAPSED="false"
+#!   COLLAPSED="true"
 #!   KEYWORD="ESRISHAPE_1"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1185,16 +727,6 @@
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI MULTIFILE SourceDataset_XML XML/GML/Compressed_XML_Files(*.xml;*.gml;*.gz)|*.xml;*.gml;*.gz|XML_Files(*.xml)|*.xml|GML_Files(*.gml)|*.gml|Compressed_XML_Files(*.gz)|*.gz|All_Files(*)|* Source XML File(s):"
-#!   DEFAULT_VALUE="http://data.ndovloket.nl/haltes/ExportCHB20171007010001.xml.gz\ExportCHB20171007010001.xml"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:"
-#!   DEFAULT_VALUE="..\data\bushaltes.zip"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI FILENAME_MUSTEXIST_OR_ATTR 7ZIP EXE|*.exe|All_Files(*)|* Path to 7z.exe:"
 #!   DEFAULT_VALUE="D:\7-Zip\7z.exe"
 #!   IS_STAND_ALONE="true"
@@ -1202,6 +734,11 @@
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI URL_OR_ATTR_ENCODED SOURCE_URL https%http URL Centraal Halte Bestand:"
 #!   DEFAULT_VALUE="http:&lt;solidus&gt;&lt;solidus&gt;data.ndovloket.nl&lt;solidus&gt;haltes&lt;solidus&gt;ExportCHB20171007010001.xml.gz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:"
+#!   DEFAULT_VALUE="..\data\bushaltes.zip"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
@@ -1227,19 +764,34 @@
 #!   ANCHORED_NODE="12"
 #! />
 #! <COMMENT
-#!   IDENTIFIER="22"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Bushaltes (quays) in NL&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Bron: http://data.ndovloket.nl/haltes/&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-885.759 -892.133"
-#!   TOP_LEFT="-885.759 -892.133"
-#!   BOTTOM_RIGHT="-886.759 -891.133"
-#!   BOUNDING_RECT="-885.759 -892.133 -1 -1"
+#!   IDENTIFIER="41"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ESPG:4326 (WGS 84)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2783.13 -220.753"
+#!   TOP_LEFT="2783.13 -220.753"
+#!   BOTTOM_RIGHT="2782.13 -219.753"
+#!   BOUNDING_RECT="2783.13 -220.753 -1 -1"
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
 #!   COLOUR="1,1,0.784314,0.192157"
 #!   SIZE_POLICY="8"
 #!   COMMENT_TYPE="REGULAR"
-#!   ANCHORED_NODE="2"
+#!   ANCHORED_NODE="20"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="42"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Bushaltes (quays) in NL&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Bron: &lt;a href=&quot;http://data.ndovloket.nl/haltes/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://data.ndovloket.nl/haltes/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-960.76 62.6205"
+#!   TOP_LEFT="-960.76 62.6205"
+#!   BOTTOM_RIGHT="-961.76 63.6205"
+#!   BOUNDING_RECT="-960.76 62.6205 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.196078"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="38"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -1254,7 +806,7 @@
 #!   BOUNDING_RECT="-262.502 -196.877 912.508 581.256"
 #!   STICKY="true"
 #!   COLOUR="0.858824,0.819608,0.419608"
-#!   CONTENTS="16 4 24 "
+#!   CONTENTS="24 4 16 "
 #! />
 #! <BOOKMARK
 #!   IDENTIFIER="33"
@@ -1281,13 +833,13 @@
 #! <BOOKMARK
 #!   IDENTIFIER="37"
 #!   NAME="Download en unzip Centraal Halte Bestand (CHB)"
-#!   DESCRIPTION=""
+#!   DESCRIPTION="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   TOP_LEFT="-806.444 794.444"
-#!   BOTTOM_RIGHT="994.442 196.191"
+#!   BOTTOM_RIGHT="994.446 196.191"
 #!   BOUNDING_RECT="-806.444 794.444 1800.89 598.253"
 #!   STICKY="true"
-#!   COLOUR="0.482353,0.368627,0.0156863"
-#!   CONTENTS="23 26 30 35 36 "
+#!   COLOUR="0.482353,0.364706,0.0156863"
+#!   CONTENTS="35 26 30 36 23 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -1315,11 +867,11 @@
 #!     <XFORM_ATTR ATTR_NAME="quaynamedata.quayname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible"/>
 #!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="6"
@@ -1359,13 +911,13 @@
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
 #!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(quaylocationdata.rd-y)"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(quaylocationdata.rd-x)"/>
 #!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(quaylocationdata.rd-x)"/>
+#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
+#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -1394,8 +946,8 @@
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:28992"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="16"
@@ -1442,14 +994,15 @@
 #!   IDENTIFIER="19"
 #!   TYPE="AttributeManager"
 #!   VERSION="1"
-#!   POSITION="2260.25 -504.881"
-#!   BOUNDING_RECT="2260.25 -504.881 -1 -1"
+#!   POSITION="2282.13 -586.132"
+#!   BOUNDING_RECT="2282.13 -586.132 -1 -1"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="17539"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="mutation" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quaycode" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="quayname" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1460,15 +1013,15 @@
 #!     <XFORM_ATTR ATTR_NAME="bins" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="shelter" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="mutationdate mutation  RENAME_SET_VALUE quaycode quaycode  NO_OP quaynamedata.quayname quayname  RENAME_SET_VALUE quayowner.quayownercode quayowner  RENAME_SET_VALUE quaystatusdata.quaystatus quaystatus  RENAME_SET_VALUE quaydisabledaccessible.disabledaccessible accessible  RENAME_SET_VALUE quayfacilities.bicycleparking bicyclepar  RENAME_SET_VALUE quayfacilities.bins bins  RENAME_SET_VALUE quayfacilities.shelter shelter  RENAME_SET_VALUE quaylocationdata.rd-x quaylocationdata.rd-x  REMOVE quaylocationdata.rd-y quaylocationdata.rd-y  REMOVE gml_parent_id gml_parent_id  REMOVE gml_parent_property gml_parent_property  REMOVE gml_id gml_id  REMOVE code code  REMOVE code.xsi_nil code.xsi_nil  REMOVE gemeentenaam gemeentenaam  REMOVE gemeentenaam.xsi_nil gemeentenaam.xsi_nil  REMOVE geom geom  REMOVE _predicate _predicate  REMOVE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="mutationdate mutation  RENAME_SET_VALUE quaycode quaycode  NO_OP quaynamedata.quayname quayname  RENAME_SET_VALUE quayowner.quayownercode quayowner  RENAME_SET_VALUE quaystatusdata.quaystatus quaystatus  RENAME_SET_VALUE quaydisabledaccessible.disabledaccessible accessible  RENAME_SET_VALUE quayfacilities.bicycleparking bicyclepar  RENAME_SET_VALUE quayfacilities.bins bins  RENAME_SET_VALUE quayfacilities.shelter shelter  RENAME_SET_VALUE quaylocationdata.rd-x quaylocationdata.rd-x  REMOVE quaylocationdata.rd-y quaylocationdata.rd-y  REMOVE gml_parent_id gml_parent_id  REMOVE gml_parent_property gml_parent_property  REMOVE gml_id gml_id  REMOVE code code  REMOVE code.xsi_nil code.xsi_nil  REMOVE gemeentenaam gemeentenaam  REMOVE gemeentenaam.xsi_nil gemeentenaam.xsi_nil  REMOVE geom geom  REMOVE _predicate _predicate  REMOVE"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="27"
@@ -1538,24 +1091,24 @@
 #!     <XFORM_ATTR ATTR_NAME="quayowner.quayownercode" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="quaystatusdata.quaystatus" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_PARM PARM_NAME="USE_BOUNDING_BOX" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#!     <XFORM_PARM PARM_NAME="PASS_CRITERIA" PARM_VALUE="Pass Against One Filter"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="TESTS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpatialFilter"/>
 #!     <XFORM_PARM PARM_NAME="BASE_TYPE" PARM_VALUE="Multiple Filters"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Filter"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Candidate"/>
-#!     <XFORM_PARM PARM_NAME="PASS_CRITERIA" PARM_VALUE="Pass Against One Filter"/>
-#!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PREDICATES" PARM_VALUE="INTERSECTS"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="PREDATTR" PARM_VALUE="_predicate"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TESTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USE_BOUNDING_BOX" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Candidate"/>
 #!     <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Filter"/>
+#!     <XFORM_PARM PARM_NAME="PREDATTR" PARM_VALUE="_predicate"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="23"
@@ -1575,11 +1128,11 @@
 #!     <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_response_file_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="CMD" PARM_VALUE="$(7ZIP)&lt;space&gt;e&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_response_file_path&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;-oc:&lt;backslash&gt;temp&lt;space&gt;-aoa"/>
-#!     <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SystemCaller"/>
+#!     <XFORM_PARM PARM_NAME="CMD" PARM_VALUE="$(7ZIP)&lt;space&gt;e&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_response_file_path&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;-oc:&lt;backslash&gt;temp&lt;space&gt;-aoa"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="26"
@@ -1595,16 +1148,16 @@
 #!     <OUTPUT_FEAT NAME="CREATED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
-#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
-#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="30"
@@ -1632,47 +1185,47 @@
 #!     <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_response_file_path" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ADDITIONAL_URL_PARAMETERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="USE_COOKIES" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
-#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ADVANCED_REQUEST_PARAMETERS" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="CONNECTION_TIMEOUT_LENGTH" PARM_VALUE="60"/>
+#!     <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="AUTH_NAMED_CONNECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="ExportCHB.xml.gz"/>
+#!     <XFORM_PARM PARM_NAME="USE_COOKIES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPARTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_CONTENT_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_REQUEST_PARAMETERS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ADDITIONAL_URL_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADDITIONAL_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_BODY" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ADVANCED_RESPONSE_PARAMETERS" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR" PARM_VALUE="_response_file_path"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
-#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPCaller"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="ExportCHB.xml.gz"/>
-#!     <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_FILE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="$(SOURCE_URL)"/>
-#!     <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_CONTENT_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FILE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="HTTPURL_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="SAVE_MULTI" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_DIRNAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ADDITIONAL_PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
 #!     <XFORM_PARM PARM_NAME="SAVE_FILE" PARM_VALUE="File"/>
-#!     <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="MULTIPARTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="HTTP_METHOD" PARM_VALUE="GET"/>
-#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_RESPONSE_PARAMETERS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SAVE_MULTI" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="HTTPURL_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR" PARM_VALUE="_response_file_path"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFER_TIMEOUT_LENGTH" PARM_VALUE="90"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_DIRNAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPCaller"/>
+#!     <XFORM_PARM PARM_NAME="FILE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HTTP_METHOD" PARM_VALUE="GET"/>
+#!     <XFORM_PARM PARM_NAME="CONNECTION_TIMEOUT_LENGTH" PARM_VALUE="60"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="$(SOURCE_URL)"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="38"
@@ -1832,69 +1385,58 @@
 #!     <XFORM_ATTR ATTR_NAME="_response_file_path" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="quay"/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
-#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;No Spatial Filter&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="XML_XFMAP_FEATURE_PATHS,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_GET_ATTRIBUTE_VALUES_,,XML_PATH_SCAN,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],FME_DELIM,&lt;space&gt;,FME_PARENT_SELECTION,root_node,FME_READ_SCHEMA,NO,FME_DN_ATTR,display_value,FME_PATH_ATTR,feature_path&quot;,XML&lt;space&gt;Elements&lt;space&gt;to&lt;space&gt;Match:,XML_XFMAP_FEATURE_PATHS_STRUCTURE,&quot;OPTIONAL XML_FLATTEN_OPTIONS_ENCODED&quot;,XML&lt;space&gt;Flatten&lt;space&gt;Options:,XML_XFMAP_FEATURE_PATHS_EXCEPT,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_GET_ATTRIBUTE_VALUES_,,XML_PATH_SCAN,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],FME_DELIM,&lt;space&gt;,FME_PARENT_SELECTION,root_node,FME_READ_SCHEMA,NO,FME_DN_ATTR,display_value,FME_PATH_ATTR,feature_path&quot;,XML&lt;space&gt;Elements&lt;space&gt;to&lt;space&gt;Exclude:,XML_ADVANCED,&quot;OPTIONAL DISCLOSUREGROUP VALIDATE_XFMAP%VALIDATE_DATASET&quot;,XML&lt;space&gt;Advanced,XML_CONTINUE_ON_GEOM_ERROR,&quot;OPTIONAL CHOICE yes%no&quot;,XML&lt;space&gt;Continue&lt;space&gt;on&lt;space&gt;Geometry&lt;space&gt;Error:,XML_MAX_SCHEMA_SCAN_FEATURES,&quot;OPTIONAL INTEGER&quot;,XML&lt;space&gt;Max&lt;space&gt;Schema&lt;space&gt;Scan&lt;space&gt;Features:,XML_VALIDATE_DATASET,&quot;OPTIONAL CHOICE yes%no%auto&quot;,XML&lt;space&gt;Validate&lt;space&gt;XML&lt;space&gt;Dataset&lt;space&gt;File,XML_FILE_TYPE,&quot;OPTIONAL ACTIVECHOICE &quot;&quot;Feature Paths&quot;&quot;,XFMAP,XRS%xfMap,XRS,XFMAP_FEATURE_PATHS,XFMAP_FEATURE_PATHS_EXCEPT,XFMAP_FEATURE_PATHS_STRUCTURE,XFMAP_FEATURE_PATHS_SUB_FRAGMENTS%XRS,XFMAP_FEATURE_PATHS,XFMAP_FEATURE_PATHS_EXCEPT,XFMAP_FEATURE_PATHS_STRUCTURE,XFMAP_FEATURE_PATHS_SUB_FRAGMENTS,XFMAP&quot;,XML&lt;space&gt;Configuration&lt;space&gt;Type:,XML_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_GET_ATTRIBUTE_VALUES_,,XML_PATH_SCAN,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],FME_DELIM,&lt;space&gt;,FME_PARENT_SELECTION,root_node,FME_READ_SCHEMA,NO,FME_DN_ATTR,display_value,FME_PATH_ATTR,feature_path&quot;,XML&lt;space&gt;Elements&lt;space&gt;as&lt;space&gt;XML&lt;space&gt;Fragments:,XML_XML_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS XML%Source&quot;,XML&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,XML_VALIDATE_XFMAP,&quot;OPTIONAL CHOICE yes%no%auto&quot;,XML&lt;space&gt;Validate&lt;space&gt;XML&lt;space&gt;Map&lt;space&gt;File,XML_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP XML_EXPOSE_FORMAT_ATTRS&quot;,XML&lt;space&gt;Schema&lt;space&gt;Attributes,XML_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,XML&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope"/>
-#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_%quay"/>
-#!     <XFORM_PARM PARM_NAME="XML_FILE_TYPE" PARM_VALUE="Feature Paths"/>
+#!     <XFORM_PARM PARM_NAME="XML_MAX_SCHEMA_SCAN_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceFILE_TYPE&lt;comma&gt;&lt;quote&gt;Feature&lt;space&gt;Paths&lt;quote&gt;&lt;comma&gt;SourceMAX_SCHEMA_SCAN_FEATURES&lt;comma&gt;&lt;comma&gt;SourceXFMAP_FEATURE_PATHS&lt;comma&gt;export&lt;lt&gt;solidus&lt;gt&gt;stopplaces&lt;lt&gt;solidus&lt;gt&gt;stopplace&lt;lt&gt;solidus&lt;gt&gt;quays&lt;lt&gt;solidus&lt;gt&gt;quay&lt;comma&gt;SourceXFMAP_FEATURE_PATHS_EXCEPT&lt;comma&gt;&lt;comma&gt;SourceXFMAP_FEATURE_PATHS_STRUCTURE&lt;comma&gt;&lt;lt&gt;lf&lt;gt&gt;&lt;lt&gt;lt&lt;gt&gt;structure&lt;lt&gt;space&lt;gt&gt;separator=&lt;lt&gt;quote&lt;gt&gt;.&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;map-empty-elements=&lt;lt&gt;quote&lt;gt&gt;yes&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;matched-prefix=&lt;lt&gt;quote&lt;gt&gt;attributes&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;matched-attributes=&lt;lt&gt;quote&lt;gt&gt;yes&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;cardinality=&lt;lt&gt;quote&lt;gt&gt;+&lt;lt&gt;opencurly&lt;gt&gt;?&lt;lt&gt;closecurly&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;structure-prefix=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;child-position-attribute=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;except-expression=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;ui-mode=&lt;lt&gt;quote&lt;gt&gt;basic&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;matched-ancestor-attributes=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;solidus&lt;gt&gt;&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;lf&lt;gt&gt;&lt;comma&gt;SourceXFMAP_FEATURE_PATHS_SUB_FRAGMENTS&lt;comma&gt;&lt;comma&gt;SourceXFMAP&lt;comma&gt;&lt;comma&gt;SourceXRS&lt;comma&gt;&lt;comma&gt;SourceCONTINUE_ON_GEOM_ERROR&lt;comma&gt;yes&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_CLOSED&lt;comma&gt;SourceXML_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceADVANCED&lt;comma&gt;&lt;comma&gt;SourceVALIDATE_XFMAP&lt;comma&gt;no&lt;comma&gt;SourceVALIDATE_DATASET&lt;comma&gt;no,METAFILE,XML"/>
+#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS_EXCEPT" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="C:&lt;backslash&gt;temp&lt;backslash&gt;ExportCHB.xml"/>
-#!     <XFORM_PARM PARM_NAME="XML_VALIDATE_DATASET" PARM_VALUE="no"/>
-#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="XML_CONTINUE_ON_GEOM_ERROR" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
-#!     <XFORM_PARM PARM_NAME="XML_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XML_ADVANCED" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="C:&lt;backslash&gt;temp&lt;backslash&gt;ExportCHB.xml"/>
 #!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="XML_XFMAP_FEATURE_PATHS,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_GET_ATTRIBUTE_VALUES_,,XML_PATH_SCAN,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],FME_DELIM,&lt;space&gt;,FME_PARENT_SELECTION,root_node,FME_READ_SCHEMA,NO,FME_DN_ATTR,display_value,FME_PATH_ATTR,feature_path&quot;,XML&lt;space&gt;Elements&lt;space&gt;to&lt;space&gt;Match:,XML_XFMAP_FEATURE_PATHS_STRUCTURE,&quot;OPTIONAL XML_FLATTEN_OPTIONS_ENCODED&quot;,XML&lt;space&gt;Flatten&lt;space&gt;Options:,XML_XFMAP_FEATURE_PATHS_EXCEPT,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_GET_ATTRIBUTE_VALUES_,,XML_PATH_SCAN,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],FME_DELIM,&lt;space&gt;,FME_PARENT_SELECTION,root_node,FME_READ_SCHEMA,NO,FME_DN_ATTR,display_value,FME_PATH_ATTR,feature_path&quot;,XML&lt;space&gt;Elements&lt;space&gt;to&lt;space&gt;Exclude:,XML_ADVANCED,&quot;OPTIONAL DISCLOSUREGROUP VALIDATE_XFMAP%VALIDATE_DATASET&quot;,XML&lt;space&gt;Advanced,XML_CONTINUE_ON_GEOM_ERROR,&quot;OPTIONAL CHOICE yes%no&quot;,XML&lt;space&gt;Continue&lt;space&gt;on&lt;space&gt;Geometry&lt;space&gt;Error:,XML_MAX_SCHEMA_SCAN_FEATURES,&quot;OPTIONAL INTEGER&quot;,XML&lt;space&gt;Max&lt;space&gt;Schema&lt;space&gt;Scan&lt;space&gt;Features:,XML_VALIDATE_DATASET,&quot;OPTIONAL CHOICE yes%no%auto&quot;,XML&lt;space&gt;Validate&lt;space&gt;XML&lt;space&gt;Dataset&lt;space&gt;File,XML_FILE_TYPE,&quot;OPTIONAL ACTIVECHOICE &quot;&quot;Feature Paths&quot;&quot;,XFMAP,XRS%xfMap,XRS,XFMAP_FEATURE_PATHS,XFMAP_FEATURE_PATHS_EXCEPT,XFMAP_FEATURE_PATHS_STRUCTURE,XFMAP_FEATURE_PATHS_SUB_FRAGMENTS%XRS,XFMAP_FEATURE_PATHS,XFMAP_FEATURE_PATHS_EXCEPT,XFMAP_FEATURE_PATHS_STRUCTURE,XFMAP_FEATURE_PATHS_SUB_FRAGMENTS,XFMAP&quot;,XML&lt;space&gt;Configuration&lt;space&gt;Type:,XML_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS,&quot;OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED $[DATASET],_GET_ATTRIBUTE_VALUES_,,XML_PATH_SCAN,YES,NETWORK_AUTHENTICATION,$[NETWORK_AUTHENTICATION],FME_DELIM,&lt;space&gt;,FME_PARENT_SELECTION,root_node,FME_READ_SCHEMA,NO,FME_DN_ATTR,display_value,FME_PATH_ATTR,feature_path&quot;,XML&lt;space&gt;Elements&lt;space&gt;as&lt;space&gt;XML&lt;space&gt;Fragments:,XML_XML_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS XML%Source&quot;,XML&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,XML_VALIDATE_XFMAP,&quot;OPTIONAL CHOICE yes%no%auto&quot;,XML&lt;space&gt;Validate&lt;space&gt;XML&lt;space&gt;Map&lt;space&gt;File,XML_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP XML_EXPOSE_FORMAT_ATTRS&quot;,XML&lt;space&gt;Schema&lt;space&gt;Attributes,XML_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,XML&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope"/>
 #!     <XFORM_PARM PARM_NAME="XML_VALIDATE_XFMAP" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="XML_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="XML"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="XML_FILE_TYPE" PARM_VALUE="Feature Paths"/>
+#!     <XFORM_PARM PARM_NAME="XML_XML_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XML_ADVANCED" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XML_VALIDATE_DATASET" PARM_VALUE="no"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;No Spatial Filter&gt;"/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="quay,&quot;mutationdate,onlygetout,quayaccessibilityadaptions.alightingpositionwidth,quayaccessibilityadaptions.bayentranceangles,quayaccessibilityadaptions.bayexitangles,quayaccessibilityadaptions.baylength,quayaccessibilityadaptions.boardingpositionwidth,quayaccessibilityadaptions.embaymentwidth,quayaccessibilityadaptions.fulllengthguideline,quayaccessibilityadaptions.groundsurfaceindicator,quayaccessibilityadaptions.guidelines,quayaccessibilityadaptions.guidelinestopplaceconnection,quayaccessibilityadaptions.heightwithenvironment,quayaccessibilityadaptions.kerbheight,quayaccessibilityadaptions.lift,quayaccessibilityadaptions.liftedpartlength,quayaccessibilityadaptions.markedkerb,quayaccessibilityadaptions.mutationdate,quayaccessibilityadaptions.narrowestpassagewidth,quayaccessibilityadaptions.quayshapetype,quayaccessibilityadaptions.ramp,quayaccessibilityadaptions.ramplength,quayaccessibilityadaptions.rampwidth,quayaccessibilityadaptions.stopplaceaccessroute,quayaccessibilityadaptions.tactilegroundsurfaceindicator,quayaccessibilityadaptions.validfrom,quaybearing.compassdirection,quaybearing.mutationdate,quaybearing.validfrom,quaycode,quayconcessionprovider.concessionprovidercode,quayconcessionprovider.mutationdate,quayconcessionprovider.validfrom,quaydisabledaccessible.disabledaccessible,quaydisabledaccessible.mutationdate,quaydisabledaccessible.transportmode,quaydisabledaccessible.validfrom,quaydisabledaccessible{}.disabledaccessible,quaydisabledaccessible{}.mutationdate,quaydisabledaccessible{}.transportmode,quaydisabledaccessible{}.validfrom,quayextraattributes.greenstop,quayextraattributes.hectometersign,quayextraattributes.liftedbicyclepath,quayextraattributes.mutationdate,quayextraattributes.roadcode,quayextraattributes.validfrom,quayfacilities.audiobutton,quayfacilities.bicycleparking,quayfacilities.bins,quayfacilities.illuminatedstop,quayfacilities.infounit,quayfacilities.leantosupport,quayfacilities.mutationdate,quayfacilities.numberofbicycleplaces,quayfacilities.ovccharging,quayfacilities.ovccico,quayfacilities.passengerinformationdisplay,quayfacilities.passengerinformationdisplaytype,quayfacilities.routenetworkmap,quayfacilities.seatavailable,quayfacilities.shelter,quayfacilities.shelterpublicity,quayfacilities.stopsign,quayfacilities.stopsigntype,quayfacilities.timetableinformation,quayfacilities.validfrom,quaylocationdata.level,quaylocationdata.location,quaylocationdata.mutationdate,quaylocationdata.rd-x,quaylocationdata.rd-y,quaylocationdata.rd-z,quaylocationdata.street,quaylocationdata.town,quaylocationdata.validfrom,quaymunicipality.municipalitycode,quaymunicipality.mutationdate,quaymunicipality.validfrom,quaynamedata.mutationdate,quaynamedata.quayname,quaynamedata.stopsidecode,quaynamedata.validfrom,quayowner.mutationdate,quayowner.quayownercode,quayowner.validfrom,quayremarks.mutationdate,quayremarks.remarks,quayremarks.remarkstatus,quayremarks.validfrom,quaystatusdata.mutationdate,quaystatusdata.quaystatus,quaystatusdata.validfrom,quaytransportmodes.transportmodedata.mutationdate,quaytransportmodes.transportmodedata.transportmode,quaytransportmodes.transportmodedata.validfrom,quaytransportmodes.transportmodedata{}.mutationdate,quaytransportmodes.transportmodedata{}.transportmode,quaytransportmodes.transportmodedata{}.validfrom,quaytypedata.mutationdate,quaytypedata.quaytype,quaytypedata.validfrom,quayvisuallyaccessible.mutationdate,quayvisuallyaccessible.validfrom,quayvisuallyaccessible.visuallyaccessible,stopinternalcode,stopobjectcode,validfrom,xml_fragment,xml_id,xml_matched_element,xml_parent_child_pos,xml_parent_id&quot;"/>
 #!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XML_CONTINUE_ON_GEOM_ERROR" PARM_VALUE="yes"/>
-#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS" PARM_VALUE="export&lt;solidus&gt;stopplaces&lt;solidus&gt;stopplace&lt;solidus&gt;quays&lt;solidus&gt;quay"/>
-#!     <XFORM_PARM PARM_NAME="XML_XML_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="XML"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceFILE_TYPE&lt;comma&gt;&lt;quote&gt;Feature&lt;space&gt;Paths&lt;quote&gt;&lt;comma&gt;SourceMAX_SCHEMA_SCAN_FEATURES&lt;comma&gt;&lt;comma&gt;SourceXFMAP_FEATURE_PATHS&lt;comma&gt;export&lt;lt&gt;solidus&lt;gt&gt;stopplaces&lt;lt&gt;solidus&lt;gt&gt;stopplace&lt;lt&gt;solidus&lt;gt&gt;quays&lt;lt&gt;solidus&lt;gt&gt;quay&lt;comma&gt;SourceXFMAP_FEATURE_PATHS_EXCEPT&lt;comma&gt;&lt;comma&gt;SourceXFMAP_FEATURE_PATHS_STRUCTURE&lt;comma&gt;&lt;lt&gt;lf&lt;gt&gt;&lt;lt&gt;lt&lt;gt&gt;structure&lt;lt&gt;space&lt;gt&gt;separator=&lt;lt&gt;quote&lt;gt&gt;.&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;map-empty-elements=&lt;lt&gt;quote&lt;gt&gt;yes&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;matched-prefix=&lt;lt&gt;quote&lt;gt&gt;attributes&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;matched-attributes=&lt;lt&gt;quote&lt;gt&gt;yes&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;cardinality=&lt;lt&gt;quote&lt;gt&gt;+&lt;lt&gt;opencurly&lt;gt&gt;?&lt;lt&gt;closecurly&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;structure-prefix=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;child-position-attribute=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;except-expression=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;ui-mode=&lt;lt&gt;quote&lt;gt&gt;basic&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;matched-ancestor-attributes=&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;lt&gt;solidus&lt;gt&gt;&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;lf&lt;gt&gt;&lt;comma&gt;SourceXFMAP_FEATURE_PATHS_SUB_FRAGMENTS&lt;comma&gt;&lt;comma&gt;SourceXFMAP&lt;comma&gt;&lt;comma&gt;SourceXRS&lt;comma&gt;&lt;comma&gt;SourceCONTINUE_ON_GEOM_ERROR&lt;comma&gt;yes&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_CLOSED&lt;comma&gt;SourceXML_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceADVANCED&lt;comma&gt;&lt;comma&gt;SourceVALIDATE_XFMAP&lt;comma&gt;no&lt;comma&gt;SourceVALIDATE_DATASET&lt;comma&gt;no,METAFILE,XML"/>
-#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS_STRUCTURE" PARM_VALUE="&lt;lf&gt;&lt;lt&gt;structure&lt;space&gt;separator=&lt;quote&gt;.&lt;quote&gt;&lt;space&gt;map-empty-elements=&lt;quote&gt;yes&lt;quote&gt;&lt;space&gt;matched-prefix=&lt;quote&gt;attributes&lt;quote&gt;&lt;space&gt;matched-attributes=&lt;quote&gt;yes&lt;quote&gt;&lt;space&gt;cardinality=&lt;quote&gt;+&lt;opencurly&gt;?&lt;closecurly&gt;&lt;quote&gt;&lt;space&gt;structure-prefix=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;child-position-attribute=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;except-expression=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;ui-mode=&lt;quote&gt;basic&lt;quote&gt;&lt;space&gt;matched-ancestor-attributes=&lt;quote&gt;&lt;quote&gt;&lt;solidus&gt;&lt;gt&gt;&lt;lf&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XML_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
-#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS_EXCEPT" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
-#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XML_MAX_SCHEMA_SCAN_FEATURES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS" PARM_VALUE="export&lt;solidus&gt;stopplaces&lt;solidus&gt;stopplace&lt;solidus&gt;quays&lt;solidus&gt;quay"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XML_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_%quay"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="quay"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="XML_XFMAP_FEATURE_PATHS_STRUCTURE" PARM_VALUE="&lt;lf&gt;&lt;lt&gt;structure&lt;space&gt;separator=&lt;quote&gt;.&lt;quote&gt;&lt;space&gt;map-empty-elements=&lt;quote&gt;yes&lt;quote&gt;&lt;space&gt;matched-prefix=&lt;quote&gt;attributes&lt;quote&gt;&lt;space&gt;matched-attributes=&lt;quote&gt;yes&lt;quote&gt;&lt;space&gt;cardinality=&lt;quote&gt;+&lt;opencurly&gt;?&lt;closecurly&gt;&lt;quote&gt;&lt;space&gt;structure-prefix=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;child-position-attribute=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;except-expression=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;ui-mode=&lt;quote&gt;basic&lt;quote&gt;&lt;space&gt;matched-ancestor-attributes=&lt;quote&gt;&lt;quote&gt;&lt;solidus&gt;&lt;gt&gt;&lt;lf&gt;"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
-#! <FEAT_LINK
-#!   IDENTIFIER="17"
-#!   SOURCE_NODE="2"
-#!   TARGET_NODE="4"
-#!   SOURCE_PORT_DESC="-1"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
 #! <FEAT_LINK
 #!   IDENTIFIER="31"
 #!   SOURCE_NODE="12"
@@ -2027,30 +1569,23 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
-GUI IGNORE SourceDataset_XML_1,XML_IN_XFMAP_FEATURE_PATHS_STRUCTURE_XML_1,XML_IN_XFMAP_XML_1,XML_IN_XRS_XML_1,XML_IN_CONTINUE_ON_GEOM_ERROR_XML_1,XML_IN_EXPOSE_ATTRS_GROUP_XML_1,XML_IN_SEARCH_ENVELOPE_MINX_XML_1,XML_IN_SEARCH_ENVELOPE_MINY_XML_1,XML_IN_SEARCH_ENVELOPE_MAXX_XML_1,XML_IN_SEARCH_ENVELOPE_MAXY_XML_1,XML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_XML_1,XML_IN_CLIP_TO_ENVELOPE_XML_1,XML_IN_ADVANCED_XML_1,XML_IN_VALIDATE_XFMAP_XML_1,XML_IN_VALIDATE_DATASET_XML_1,XML_IN_NETWORK_AUTHENTICATION_XML_1,XFMAP_FEATURE_PATHS_XML_1,SourceDataset_WFS_1,WFS_IN_PREFER_POST_WFS_1,WFS_IN_PREFERRED_VERSION_WFS_1,WFS_IN_TIMEOUT_GROUP_WFS_1,WFS_IN_CONNECTION_TIMEOUT_WFS_1,WFS_IN_TRANSFER_TIMEOUT_WFS_1,WFS_IN_MAX_RESULT_FEATURES_WFS_1,WFS_IN_OUTPUT_FORMAT_WFS_1,WFS_IN_FILTER_EXPRESSION_WFS_1,WFS_IN_IGNORE_APPLICATON_SCHEMA_WFS_1,WFS_IN_XSD_DOC_WFS_1,WFS_IN_FME_FEATURE_IDENTIFIER_WFS_1,WFS_IN_GML_FEATURE_ELEMENTS_WFS_1,WFS_IN_GMLSRS_GEOMETRY_PARAMETERS_WFS_1,WFS_IN_SRS_AXIS_ORDER_WFS_1,WFS_IN_SRS_ANGLE_DIRECTION_WFS_1,WFS_IN_ENFORCE_PATH_CONTINUITY_BY_WFS_1,WFS_IN_GML_READER_GROUP_WFS_1,WFS_IN_USE_OLD_READER_WFS_1,WFS_IN_DISABLE_AUTOMATIC_READER_TYPE_SELECTION_WFS_1,WFS_IN_DISABLE_XML_NAMESPACE_PROCESSING_WFS_1,WFS_IN_GML_FEATURE_PROPERTIES_WFS_1,WFS_IN_MAP_EMBEDDED_OBJECTS_AS_WFS_1,WFS_IN_MAP_PREDEFINED_GML_PROPERTIES_WFS_1,WFS_IN_MAP_GEOMETRY_COLUMNS_WFS_1,WFS_IN_ADD_NAMESPACE_PREFIX_TO_NAMES_WFS_1,WFS_IN_QNAMES_FOR_PROPERTIES_TO_IGNORE_WFS_1,WFS_IN_GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP_WFS_1,WFS_IN_MAP_COMPLEX_PROPERTIES_AS_WFS_1,WFS_IN_MAX_MULTI_LIST_LEVEL_WFS_1,WFS_IN_XML_FRAGMENTS_AS_DOCUMENTS_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_SEPARATOR_WFS_1,WFS_IN_EXPOSE_ATTRS_GROUP_WFS_1,WFS_IN_SEARCH_ENVELOPE_MINX_WFS_1,WFS_IN_SEARCH_ENVELOPE_MINY_WFS_1,WFS_IN_SEARCH_ENVELOPE_MAXX_WFS_1,WFS_IN_SEARCH_ENVELOPE_MAXY_WFS_1,WFS_IN_CLIP_TO_ENVELOPE_WFS_1,WFS_IN_BBOX_COORDINATE_SYSTEM_WFS_1,WFS_IN_NETWORK_AUTHENTICATION_WFS_1,DestDataset_ESRISHAPE_1,ESRISHAPE_OUT_ENCODING_ESRISHAPE_1,ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_1,ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_1,ESRISHAPE_OUT_ADVANCED_ESRISHAPE_1,ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_1,ESRISHAPE_OUT_GEOMETRY_ESRISHAPE_1,ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_1,ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_1
-DEFAULT_MACRO SourceDataset_XML http://data.ndovloket.nl/haltes/ExportCHB20171007010001.xml.gz\ExportCHB20171007010001.xml
-GUI MULTIFILE SourceDataset_XML XML/GML/Compressed_XML_Files(*.xml;*.gml;*.gz)|*.xml;*.gml;*.gz|XML_Files(*.xml)|*.xml|GML_Files(*.gml)|*.gml|Compressed_XML_Files(*.gz)|*.gz|All_Files(*)|* Source XML File(s):
-DEFAULT_MACRO DestDataset_ESRISHAPE ..\data\bushaltes.zip
-GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:
+GUI IGNORE SourceDataset_WFS_1,WFS_IN_PREFER_POST_WFS_1,WFS_IN_PREFERRED_VERSION_WFS_1,WFS_IN_TIMEOUT_GROUP_WFS_1,WFS_IN_CONNECTION_TIMEOUT_WFS_1,WFS_IN_TRANSFER_TIMEOUT_WFS_1,WFS_IN_MAX_RESULT_FEATURES_WFS_1,WFS_IN_OUTPUT_FORMAT_WFS_1,WFS_IN_FILTER_EXPRESSION_WFS_1,WFS_IN_IGNORE_APPLICATON_SCHEMA_WFS_1,WFS_IN_XSD_DOC_WFS_1,WFS_IN_FME_FEATURE_IDENTIFIER_WFS_1,WFS_IN_GML_FEATURE_ELEMENTS_WFS_1,WFS_IN_GMLSRS_GEOMETRY_PARAMETERS_WFS_1,WFS_IN_SRS_AXIS_ORDER_WFS_1,WFS_IN_SRS_ANGLE_DIRECTION_WFS_1,WFS_IN_ENFORCE_PATH_CONTINUITY_BY_WFS_1,WFS_IN_GML_READER_GROUP_WFS_1,WFS_IN_USE_OLD_READER_WFS_1,WFS_IN_DISABLE_AUTOMATIC_READER_TYPE_SELECTION_WFS_1,WFS_IN_DISABLE_XML_NAMESPACE_PROCESSING_WFS_1,WFS_IN_GML_FEATURE_PROPERTIES_WFS_1,WFS_IN_MAP_EMBEDDED_OBJECTS_AS_WFS_1,WFS_IN_MAP_PREDEFINED_GML_PROPERTIES_WFS_1,WFS_IN_MAP_GEOMETRY_COLUMNS_WFS_1,WFS_IN_ADD_NAMESPACE_PREFIX_TO_NAMES_WFS_1,WFS_IN_QNAMES_FOR_PROPERTIES_TO_IGNORE_WFS_1,WFS_IN_GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP_WFS_1,WFS_IN_MAP_COMPLEX_PROPERTIES_AS_WFS_1,WFS_IN_MAX_MULTI_LIST_LEVEL_WFS_1,WFS_IN_XML_FRAGMENTS_AS_DOCUMENTS_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE_WFS_1,WFS_IN_FLATTEN_XML_FRAGMENTS_SEPARATOR_WFS_1,WFS_IN_EXPOSE_ATTRS_GROUP_WFS_1,WFS_IN_SEARCH_ENVELOPE_MINX_WFS_1,WFS_IN_SEARCH_ENVELOPE_MINY_WFS_1,WFS_IN_SEARCH_ENVELOPE_MAXX_WFS_1,WFS_IN_SEARCH_ENVELOPE_MAXY_WFS_1,WFS_IN_CLIP_TO_ENVELOPE_WFS_1,WFS_IN_BBOX_COORDINATE_SYSTEM_WFS_1,WFS_IN_NETWORK_AUTHENTICATION_WFS_1,DestDataset_ESRISHAPE_1,ESRISHAPE_OUT_ENCODING_ESRISHAPE_1,ESRISHAPE_OUT_WRITE_SPATIAL_INDEX_ESRISHAPE_1,ESRISHAPE_OUT_COMPRESSED_SHAPE_FILE_ESRISHAPE_1,ESRISHAPE_OUT_ADVANCED_ESRISHAPE_1,ESRISHAPE_OUT_STRICT_COMPATIBILITY_ESRISHAPE_1,ESRISHAPE_OUT_GEOMETRY_ESRISHAPE_1,ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_ESRISHAPE_1,ESRISHAPE_OUT_MEASURES_AS_Z_ESRISHAPE_1
 DEFAULT_MACRO 7ZIP D:\7-Zip\7z.exe
 GUI FILENAME_EXISTING 7ZIP EXE|*.exe|All_Files(*)|* Path to 7z.exe:
 DEFAULT_MACRO SOURCE_URL http:<solidus><solidus>data.ndovloket.nl<solidus>haltes<solidus>ExportCHB20171007010001.xml.gz
 GUI URL_ENCODED SOURCE_URL https%http URL Centraal Halte Bestand:
+DEFAULT_MACRO DestDataset_ESRISHAPE ..\data\bushaltes.zip
+GUI DIRNAME DestDataset_ESRISHAPE Destination Esri Shapefile Folder:
 DEFAULT_MACRO SourceDataset_WFS https://geodata.nationaalgeoregister.nl/bestuurlijkegrenzen/wfs?
 GUI IGNORE OPTIONAL TEXT SourceDataset_WFS Source WFS (Web Feature Service) URL:
-INCLUDE [ if {{$(DestDataset_ESRISHAPE)} == {}} { puts_real {Parameter 'DestDataset_ESRISHAPE' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(7ZIP)} == {}} { puts_real {Parameter '7ZIP' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SOURCE_URL)} == {}} { puts_real {Parameter 'SOURCE_URL' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_ESRISHAPE)} == {}} { puts_real {Parameter 'DestDataset_ESRISHAPE' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
-READER_TYPE MULTI_READER
-MULTI_READER_TYPE{0} NULL
-MULTI_READER_FORMAT{0} NULL
-MULTI_READER_KEYWORD{0} XML_1
-MULTI_READER_GEN_DIRECTIVES{0} XFMAP_FEATURE_PATHS_SUB_FRAGMENTS,,MAX_SCHEMA_SCAN_FEATURES,,CONTINUE_ON_GEOM_ERROR,yes,USE_SEARCH_ENVELOPE,NO,XML_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,VALIDATE_XFMAP,no,SEARCH_ENVELOPE_MAXY,0,XRS,,CLIP_TO_ENVELOPE,NO,XFMAP_FEATURE_PATHS_EXCEPT,,FILE_TYPE,Feature<space>Paths,ADVANCED,,XFMAP_FEATURE_PATHS_STRUCTURE,<lt>lf<gt><lt>lt<gt>structure<lt>space<gt>separator=<lt>quote<gt>.<lt>quote<gt><lt>space<gt>map-empty-elements=<lt>quote<gt>yes<lt>quote<gt><lt>space<gt>matched-prefix=<lt>quote<gt>attributes<lt>quote<gt><lt>space<gt>matched-attributes=<lt>quote<gt>yes<lt>quote<gt><lt>space<gt>cardinality=<lt>quote<gt>+<lt>opencurly<gt>?<lt>closecurly<gt><lt>quote<gt><lt>space<gt>structure-prefix=<lt>quote<gt><lt>quote<gt><lt>space<gt>child-position-attribute=<lt>quote<gt><lt>quote<gt><lt>space<gt>except-expression=<lt>quote<gt><lt>quote<gt><lt>space<gt>ui-mode=<lt>quote<gt>basic<lt>quote<gt><lt>space<gt>matched-ancestor-attributes=<lt>quote<gt><lt>quote<gt><lt>solidus<gt><lt>gt<gt><lt>lf<gt>,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_CLOSED,XFMAP_FEATURE_PATHS,export<lt>solidus<gt>stopplaces<lt>solidus<gt>stopplace<lt>solidus<gt>quays<lt>solidus<gt>quay,XFMAP,,_MERGE_SCHEMAS,YES,VALIDATE_DATASET,no,SEARCH_ENVELOPE_MAXX,0
-MULTI_READER_TYPE{1} WFS
-MULTI_READER_KEYWORD{1} WFS_1
-MULTI_READER_GEN_DIRECTIVES{1} DISABLE_XML_NAMESPACE_PROCESSING,NO,DISABLE_AUTOMATIC_READER_TYPE_SELECTION,NO,MAP_GEOMETRY_COLUMNS,YES,SEARCH_ENVELOPE_MINX,0,XSD_DOC,,WFS_EXPOSE_FORMAT_ATTRS,,MAX_MULTI_LIST_LEVEL,,USE_SEARCH_ENVELOPE,NO,LOCAL_CACHE_EXPIRY,60,EXPOSE_ATTRS_GROUP,,MAP_COMPLEX_PROPERTIES_AS,Nested<space>Attributes,SRS_ANGLE_DIRECTION,,QNAMES_FOR_PROPERTIES_TO_IGNORE,,SEARCH_ENVELOPE_MINY,0,GML_READER_GROUP,,ADD_NAMESPACE_PREFIX_TO_NAMES,,GML_FEATURE_ELEMENTS,<lt>Unused<gt>,FLATTEN_XML_FRAGMENTS_SEPARATOR,,BBOX_COORDINATE_SYSTEM,,GMLSRS_GEOMETRY_PARAMETERS,,MAP_PREDEFINED_GML_PROPERTIES,NO,CONNECTION_TIMEOUT,90,USE_OLD_READER,NO,GML_FEATURE_PROPERTIES,,NETWORK_AUTHENTICATION,AUTH_INFO_GROUP<comma>NO<comma>AUTH_METHOD<comma><lt>lt<gt>Unused<lt>gt<gt><comma>NAMED_CONNECTION<comma><lt>lt<gt>Unused<lt>gt<gt><comma>AUTH_USERNAME<comma><lt>lt<gt>Unused<lt>gt<gt><comma>AUTH_PASSWORD<comma><lt>Unused<gt>,FLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE,,FILTER_EXPRESSION,,MAP_EMBEDDED_OBJECTS_AS,ATTRIBUTES,FME_FEATURE_IDENTIFIER,,ARCGIS_CACHE_GROUP,,TABLELIST,<quote>gemeenten<space><space><opencurly>gemeenten<closecurly><quote><space><quote>provincies<space><space><opencurly>provincies<closecurly><quote>,GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP,,PREFERRED_VERSION,1.1.0,OUTPUT_FORMAT,,SRS_AXIS_ORDER,,TRANSFER_TIMEOUT,90,FLATTEN_XML_FRAGMENTS,NO,ENFORCE_PATH_CONTINUITY_BY,SNAPPING_END_POINTS,_MERGE_SCHEMAS,YES,MAX_RESULT_FEATURES,30000,IGNORE_APPLICATON_SCHEMA,no,SEARCH_ENVELOPE_MAXX,0,PREFER_POST,No,CLIP_TO_ENVELOPE,NO,TIMEOUT_GROUP,NO,WFS_SERVICE_TITLE,Bestuurlijke<space>grenzen<space>WFS,FLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE,,XML_FRAGMENTS_AS_DOCUMENTS,YES,SEARCH_ENVELOPE_MAXY,0
+READER_TYPE WFS
+READER_KEYWORD WFS_1
+READER_GEN_DIRECTIVES DISABLE_XML_NAMESPACE_PROCESSING,NO,DISABLE_AUTOMATIC_READER_TYPE_SELECTION,NO,MAP_GEOMETRY_COLUMNS,YES,SEARCH_ENVELOPE_MINX,0,XSD_DOC,,WFS_EXPOSE_FORMAT_ATTRS,,MAX_MULTI_LIST_LEVEL,,USE_SEARCH_ENVELOPE,NO,LOCAL_CACHE_EXPIRY,60,EXPOSE_ATTRS_GROUP,,MAP_COMPLEX_PROPERTIES_AS,Nested<space>Attributes,SRS_ANGLE_DIRECTION,,QNAMES_FOR_PROPERTIES_TO_IGNORE,,SEARCH_ENVELOPE_MINY,0,GML_READER_GROUP,,ADD_NAMESPACE_PREFIX_TO_NAMES,,GML_FEATURE_ELEMENTS,<lt>Unused<gt>,FLATTEN_XML_FRAGMENTS_SEPARATOR,,BBOX_COORDINATE_SYSTEM,,GMLSRS_GEOMETRY_PARAMETERS,,MAP_PREDEFINED_GML_PROPERTIES,NO,CONNECTION_TIMEOUT,90,USE_OLD_READER,NO,GML_FEATURE_PROPERTIES,,NETWORK_AUTHENTICATION,AUTH_INFO_GROUP<comma>NO<comma>AUTH_METHOD<comma><lt>lt<gt>Unused<lt>gt<gt><comma>NAMED_CONNECTION<comma><lt>lt<gt>Unused<lt>gt<gt><comma>AUTH_USERNAME<comma><lt>lt<gt>Unused<lt>gt<gt><comma>AUTH_PASSWORD<comma><lt>Unused<gt>,FLATTEN_XML_FRAGMENTS_CLOSE_LIST_BRACE,,FILTER_EXPRESSION,,MAP_EMBEDDED_OBJECTS_AS,ATTRIBUTES,FME_FEATURE_IDENTIFIER,,ARCGIS_CACHE_GROUP,,TABLELIST,<quote>gemeenten<space><space><opencurly>gemeenten<closecurly><quote><space><quote>provincies<space><space><opencurly>provincies<closecurly><quote>,GML_FEATURE_PROPERTIES_ATTRIBUTE_HANDLING_GROUP,,PREFERRED_VERSION,1.1.0,OUTPUT_FORMAT,,SRS_AXIS_ORDER,,TRANSFER_TIMEOUT,90,FLATTEN_XML_FRAGMENTS,NO,ENFORCE_PATH_CONTINUITY_BY,SNAPPING_END_POINTS,_MERGE_SCHEMAS,YES,MAX_RESULT_FEATURES,30000,IGNORE_APPLICATON_SCHEMA,no,SEARCH_ENVELOPE_MAXX,0,PREFER_POST,No,CLIP_TO_ENVELOPE,NO,TIMEOUT_GROUP,NO,WFS_SERVICE_TITLE,Bestuurlijke<space>grenzen<space>WFS,FLATTEN_XML_FRAGMENTS_OPEN_LIST_BRACE,,XML_FRAGMENTS_AS_DOCUMENTS,YES,SEARCH_ENVELOPE_MAXY,0
 
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
@@ -2059,114 +1594,6 @@ MULTI_WRITER_TYPE{0} ESRISHAPE
 MULTI_WRITER_KEYWORD{0} ESRISHAPE_1
 #! END_WB_HEADER
 
-#! START_WB_HEADER
-MACRO WB_KEYWORD "XML_1"
-#! END_WB_HEADER
-#! START_SOURCE_HEADER XML XML_1
-# ============================================================================
-# The following GUI line prompts for the XML file
-# The dataset this mapping file was generated from was:
-#! END_SOURCE_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO SourceDataset
-INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_XML_1 $(SourceDataset)}     \
- } ]
-#! END_WB_HEADER
-#! START_SOURCE_HEADER XML XML_1
-DEFAULT_MACRO SourceDataset_XML_1 $(SourceDataset_XML)
-GUI MULTIFILE SourceDataset_XML_1 XML/GML/Compressed_XML_Files(*.xml;*.gml;*.gz)|*.xml;*.gml;*.gz|XML_Files(*.xml)|*.xml|GML_Files(*.gml)|*.gml|Compressed_XML_Files(*.gz)|*.gz|All_Files(*)|* Source XML File(s):
-# ============================================================================
-#
-# ============================================================================
-# Include the deaggregate factory that will break XML aggregrate
-# into simpler features
-XML_1_PIPELINE "$(FME_HOME)/pipeline/xml_read.fmi"
-# =================================================================
-# =================================================================
-DEFAULT_MACRO XML_IN_XFMAP_FEATURE_PATHS_EXCEPT_XML_1 
-XML_1_XFMAP_FEATURE_PATHS_EXCEPT "$(XML_IN_XFMAP_FEATURE_PATHS_EXCEPT_XML_1)"
-# =================================================================
-# NOTE: Any changes made should be made to XMLFlattener, XMLFragmenter and XML Reader metafile
-DEFAULT_MACRO XML_IN_XFMAP_FEATURE_PATHS_STRUCTURE_XML_1 <lf><lt>structure<space>separator=<quote>.<quote><space>map-empty-elements=<quote>yes<quote><space>matched-prefix=<quote>attributes<quote><space>matched-attributes=<quote>yes<quote><space>cardinality=<quote>+<opencurly>?<closecurly><quote><space>structure-prefix=<quote><quote><space>child-position-attribute=<quote><quote><space>except-expression=<quote><quote><space>ui-mode=<quote>basic<quote><space>matched-ancestor-attributes=<quote><quote><solidus><gt><lf>
-XML_1_XFMAP_FEATURE_PATHS_STRUCTURE "$(XML_IN_XFMAP_FEATURE_PATHS_STRUCTURE_XML_1)"
-GUI OPTIONAL XML_FLATTEN_OPTIONS XML_IN_XFMAP_FEATURE_PATHS_STRUCTURE_XML_1 Flatten Options:
-# =================================================================
-# NOTE: Any changes made should be made to XMLFlattener, XMLFragmenter and XML Reader metafile
-DEFAULT_MACRO XML_IN_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS_XML_1 
-XML_1_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS "$(XML_IN_XFMAP_FEATURE_PATHS_SUB_FRAGMENTS_XML_1)"
-# =================================================================
-DEFAULT_MACRO XML_IN_XFMAP_XML_1 
-XML_1_XFMAP "$(XML_IN_XFMAP_XML_1)"
-GUI OPTIONAL MULTIFILE XML_IN_XFMAP_XML_1 XML_Map_File(*.xmp;*.xml)|*.xmp;*.xml|All_Files(*)|* xfMap File:
-# =================================================================
-DEFAULT_MACRO XML_IN_XRS_XML_1 
-XML_1_XRS "$(XML_IN_XRS_XML_1)"
-GUI OPTIONAL FILENAME_MUSTEXIST XML_IN_XRS_XML_1 XRS_File(*.xml;*.xrs)|*.xml;*.xrs|All_Files(*)|* XRS File:
-# =================================================================
-DEFAULT_MACRO XML_IN_CONTINUE_ON_GEOM_ERROR_XML_1 yes
-XML_1_CONTINUE_ON_GEOM_ERROR "$(XML_IN_CONTINUE_ON_GEOM_ERROR_XML_1)"
-GUI CHOICE XML_IN_CONTINUE_ON_GEOM_ERROR_XML_1 yes%no Continue on Geometry Error:
-DEFAULT_MACRO XML_IN_EXPOSE_ATTRS_GROUP_XML_1 FME_DISCLOSURE_CLOSED
-XML_1_EXPOSE_ATTRS_GROUP "$(XML_IN_EXPOSE_ATTRS_GROUP_XML_1)"
-GUI OPTIONAL DISCLOSUREGROUP XML_IN_EXPOSE_ATTRS_GROUP_XML_1 XML_IN_XML_EXPOSE_FORMAT_ATTRS Schema Attributes
-# Include this file in source setting section to add external search envelope processing
-# Zero as a default means we don't do any search -- this makes workbench happier
-# ===========================================================================
-DEFAULT_MACRO XML_IN_SEARCH_ENVELOPE_MINX_XML_1 0
-XML_1_SEARCH_ENVELOPE "$(XML_IN_SEARCH_ENVELOPE_MINX_XML_1)"
-GUI OPTIONAL FLOAT XML_IN_SEARCH_ENVELOPE_MINX_XML_1 Minimum X:
-# ===========================================================================
-DEFAULT_MACRO XML_IN_SEARCH_ENVELOPE_MINY_XML_1 0
-XML_1_SEARCH_ENVELOPE "$(XML_IN_SEARCH_ENVELOPE_MINY_XML_1)"
-GUI OPTIONAL FLOAT XML_IN_SEARCH_ENVELOPE_MINY_XML_1 Minimum Y:
-# ===========================================================================
-DEFAULT_MACRO XML_IN_SEARCH_ENVELOPE_MAXX_XML_1 0
-XML_1_SEARCH_ENVELOPE "$(XML_IN_SEARCH_ENVELOPE_MAXX_XML_1)"
-GUI OPTIONAL FLOAT XML_IN_SEARCH_ENVELOPE_MAXX_XML_1 Maximum X:
-# ===========================================================================
-DEFAULT_MACRO XML_IN_SEARCH_ENVELOPE_MAXY_XML_1 0
-XML_1_SEARCH_ENVELOPE "$(XML_IN_SEARCH_ENVELOPE_MAXY_XML_1)"
-GUI OPTIONAL FLOAT XML_IN_SEARCH_ENVELOPE_MAXY_XML_1 Maximum Y:
-# ===========================================================================
-DEFAULT_MACRO XML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_XML_1 
-XML_1_SEARCH_ENVELOPE "$(XML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_XML_1)"
-GUI OPTIONAL COORDSYS XML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_XML_1 Search Envelope Coordinate System:
-# ===========================================================================
-# BUG18999: We now have a soft clip to fall back on like native spatial index
-# thus we are reintroducing the clip to envelop as an option for users.
-# Defualt to soft clip as per the existing database readers we are emulating
-DEFAULT_MACRO XML_IN_CLIP_TO_ENVELOPE_XML_1 NO
-XML_1_CLIP_TO_ENVELOPE "$(XML_IN_CLIP_TO_ENVELOPE_XML_1)"
-GUI OPTIONAL CHECKBOX XML_IN_CLIP_TO_ENVELOPE_XML_1 YES%NO Clip to Search Envelope
-DEFAULT_MACRO XML_IN_ADVANCED_XML_1 
-GUI OPTIONAL DISCLOSUREGROUP XML_IN_ADVANCED_XML_1 XML_IN_VALIDATE_XFMAP_XML_1%XML_IN_VALIDATE_DATASET_XML_1 Advanced
-# ============================================================================
-# This specifies whether the xfMap document should be validated against its
-# DTD file. If set to 'auto', the xfMap document will only be validated if
-# its DTD file is available.
-DEFAULT_MACRO XML_IN_VALIDATE_XFMAP_XML_1 no
-XML_1_VALIDATE_XFMAP "$(XML_IN_VALIDATE_XFMAP_XML_1)"
-GUI CHOICE XML_IN_VALIDATE_XFMAP_XML_1 yes%no%auto Validate XML Map File
-# ============================================================================
-# This specifies whether the XML dataset should be validated against its
-# DTD file. If set to 'auto', the XML document will only be validated if
-# its DTD file is available.
-DEFAULT_MACRO XML_IN_VALIDATE_DATASET_XML_1 no
-XML_1_VALIDATE_DATASET "$(XML_IN_VALIDATE_DATASET_XML_1)"
-GUI CHOICE XML_IN_VALIDATE_DATASET_XML_1 yes%no%auto Validate XML Dataset File
-# ===========================================================================
-DEFAULT_MACRO XML_IN_NETWORK_AUTHENTICATION_XML_1 
-XML_1_NETWORK_AUTHENTICATION "$(XML_IN_NETWORK_AUTHENTICATION_XML_1)"
-GUI OPTIONAL AUTHENTICATOR XML_IN_NETWORK_AUTHENTICATION_XML_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
-# ===========================================================================
-DEFAULT_MACRO XML_IN_ATTRIBUTE_READING_XML_1 ALL
-XML_1_ATTRIBUTE_READING "$(XML_IN_ATTRIBUTE_READING_XML_1)"
-DEFAULT_MACRO XFMAP_FEATURE_PATHS_XML_1 export<solidus>stopplaces<solidus>stopplace<solidus>quays<solidus>quay
-GUI OPTIONAL STRING_ENCODED XFMAP_FEATURE_PATHS_XML_1 Elements to Match:
-XML_1_XFMAP_FEATURE_PATHS $(XFMAP_FEATURE_PATHS_XML_1)
-XML_1_DATASET "$(SourceDataset_XML_1)"
-#! END_SOURCE_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "WFS_1"
 #! END_WB_HEADER
@@ -2415,19 +1842,15 @@ FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
-DEFAULT_MACRO DATASET_KEYWORD_XML_1 XML_1
 DEFAULT_MACRO DATASET_KEYWORD_WFS_1 WFS_1
 DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_1 ESRISHAPE_1
-# -------------------------------------------------------------------------
-
-XML_1_READER_META_ATTRIBUTES fme_feature_type
-
 # -------------------------------------------------------------------------
 
 WFS_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
+ESRISHAPE_1_COORDINATE_SYSTEM EPSG:4326
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
@@ -2438,15 +1861,11 @@ MACRO FME_VIEWER_APP fmedatainspector
 WFS_1_DEF gemeenten   xml_type                     "xml_no_geom xml_point xml_line xml_area xml_arc xml_surface xml_solid xml_aggregate"   gml_parent_id                xml_buffer   gml_parent_property          xml_buffer   gml_id                       xml_buffer   code                         xml_buffer   code.xsi_nil                 xml_boolean   gemeentenaam                 xml_buffer   gemeentenaam.xsi_nil         xml_boolean   geom                         xml_geometry
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE WFS WFS_1::gemeenten multi_reader_keyword,$(DATASET_KEYWORD_WFS_1) TO FME_GENERIC ::gemeenten ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
-XML_1_MERGE_DEF XML_1::quay EXACT quay
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD WFS_1   INPUT FEATURE_TYPE *    ROUTE WFS WFS_1::gemeenten TO FME_GENERIC ::gemeenten ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 WFS_1_MERGE_DEF WFS_1::gemeenten EXACT gemeenten
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME "gemeenten (WFS_1) Splitter"    INPUT FEATURE_TYPE gemeenten    OUTPUT FEATURE_TYPE gemeenten_WFS_1
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "quay (XML_1) Splitter"    INPUT FEATURE_TYPE quay    OUTPUT FEATURE_TYPE quay_XML_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 
@@ -2492,9 +1911,9 @@ DEFAULT_MACRO _WB_BYPASS_TERMINATION No
 FACTORY_DEF * TeeFactory FACTORY_NAME FeatureReader_<Rejected> INPUT FEATURE_TYPE FeatureReader_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureReader<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
 # -------------------------------------------------------------------------
 
-INCLUDE [    set macroLine "MACRO AttributeKeeper_84b4a6dd_618c_46fc_ab02_9f738f83f88f1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+INCLUDE [    set macroLine "MACRO AttributeKeeper_6f6540ab_50ab_4008_a7f5_364b7b9fc1213_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE quay_XML_1    INPUT  FEATURE_TYPE FeatureReader_quay    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible,fme_pcre_match,"^fme_$(AttributeKeeper_84b4a6dd_618c_46fc_ab02_9f738f83f88f1_LIST_EXP)")
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE FeatureReader_quay    OUTPUT FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,quayfacilities.bins,quaynamedata.quayname,quaystatusdata.quaystatus,quaycode,quayfacilities.bicycleparking,quayowner.quayownercode,mutationdate,quayfacilities.shelter,quaylocationdata.rd-x,quaylocationdata.rd-y,quaydisabledaccessible.disabledaccessible,fme_pcre_match,"^fme_$(AttributeKeeper_6f6540ab_50ab_4008_a7f5_364b7b9fc1213_LIST_EXP)")
 
 # -------------------------------------------------------------------------
 
@@ -2526,7 +1945,7 @@ FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager    INPUT  FEATUR
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bushaltes<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO ESRISHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>bushaltes<closeparen> COORDINATE_SYSTEM EPSG:4326 GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
