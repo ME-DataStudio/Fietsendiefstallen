@@ -5,56 +5,56 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    E:\FME2017\fme.exe C:\temp\fme\postcodegebieden.fmw
+#    E:\FME2017\fme.exe C:\temp\etl\postcodegebieden.fmw
 #          --DestDataset_ESRISHAPE_PC6 "..\data\postcode6.zip"
 #          --DestDataset_ESRISHAPE_PC4 "..\data\postcode4.zip"
 #    
 #    
-#!   FME_DOCUMENT_PRIORGUID="37f7826f-86f5-4c04-8d61-03ea6cff4251,d0db8377-07a9-42b5-97a0-ca67be5165a7,00a17d7f-3957-4fe6-82ef-a4043c0cae9b,48973f13-9eea-408d-a2a3-3c4fba6d11ad,c8c7a2db-ec2a-4a9f-aa7a-9e0aaf7ea99d"
-#!   DESTINATION="NONE"
 #!   DOC_EXTENTS="2870.15 823.654"
-#!   IGNORE_READER_FAILURE="No"
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   BEGIN_TCL=""
-#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   MAX_LOG_FEATURES="200"
-#!   SOURCE="NONE"
-#!   FME_DOCUMENT_GUID="decdcb45-af0a-45d0-a418-070ebf53ffc3"
-#!   TERMINATE_REJECTED="YES"
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   MARKDOWN_DESCRIPTION=""
-#!   BEGIN_PYTHON=""
-#!   VIEW_POSITION="-184.377 15.6252"
-#!   USE_MARKDOWN=""
-#!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   LAST_SAVE_DATE="2017-10-07T15:14:56"
-#!   END_PYTHON=""
-#!   DESTINATION_ROUTING_FILE=""
-#!   FME_SERVER_SERVICES=""
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   LOG_MAX_RECORDED_FEATURES="200"
-#!   SHOW_ANNOTATIONS="true"
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   SOURCE_ROUTING_FILE=""
-#!   ZOOM_SCALE="100"
-#!   ATTR_TYPE_ENCODING="SDF"
-#!   REDIRECT_TERMINATORS="NONE"
-#!   DESCRIPTION=""
-#!   WORKSPACE_VERSION="1"
-#!   DOC_TOP_LEFT="-185.752 -1011.26"
-#!   SHOW_INFO_NODES="true"
-#!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
-#!   FME_BUILD_NUM="17539"
-#!   END_TCL=""
-#!   HISTORY=""
+#!   MARKDOWN_USAGE=""
 #!   CATEGORY=""
+#!   END_PYTHON=""
+#!   TERMINATE_REJECTED="YES"
+#!   HISTORY=""
 #!   TITLE=""
+#!   DESTINATION="NONE"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   MARKDOWN_DESCRIPTION=""
+#!   WORKSPACE_VERSION="1"
+#!   END_TCL=""
+#!   VIEW_POSITION="-184.377 12.5001"
+#!   BEGIN_PYTHON=""
+#!   IGNORE_READER_FAILURE="No"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   BEGIN_TCL=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   SHOW_ANNOTATIONS="true"
+#!   DESCRIPTION=""
+#!   FME_BUILD_NUM="17539"
+#!   SHOW_INFO_NODES="true"
 #!   PASSWORD=""
 #!   PYTHON_COMPATIBILITY="27"
-#!   FME_STROKE_MAX_DEVIATION="0"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   FME_SERVER_SERVICES=""
+#!   ZOOM_SCALE="100"
+#!   DOC_TOP_LEFT="-185.752 -1011.26"
+#!   MAX_LOG_FEATURES="200"
 #!   USAGE=""
-#!   MARKDOWN_USAGE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   LAST_SAVE_DATE="2017-10-07T15:28:16"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_DOCUMENT_PRIORGUID="37f7826f-86f5-4c04-8d61-03ea6cff4251,d0db8377-07a9-42b5-97a0-ca67be5165a7,00a17d7f-3957-4fe6-82ef-a4043c0cae9b,48973f13-9eea-408d-a2a3-3c4fba6d11ad,c8c7a2db-ec2a-4a9f-aa7a-9e0aaf7ea99d,decdcb45-af0a-45d0-a418-070ebf53ffc3"
+#!   SOURCE_ROUTING_FILE=""
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   SOURCE="NONE"
+#!   USE_MARKDOWN=""
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   FME_DOCUMENT_GUID="5a15b50b-632a-4a32-8d43-229ce45faf6f"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.0.0 (20170731 - Build 17539 - WIN64)"
 #!   LOG_FILE=""
+#!   DESTINATION_ROUTING_FILE=""
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -70,7 +70,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="xml_type {FME_GEN_GEOMETRY}"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="xml_type xml_char(50) fme_geometry fme_char(50) multi_reader_type xml_char(50) multi_reader_keyword xml_char(50) fme_secondary_axis xml_real64 fme_dataset xml_char(50) fme_primary_axis xml_real64 fme_color xml_char(50) fme_feature_type xml_char(50) fme_sweep_angle xml_real64 multi_reader_full_id xml_int32 fme_rotation xml_real64 fme_text_size xml_real64 fme_basename xml_char(50) multi_reader_id xml_int32 fme_type xml_char(50) fme_fill_color xml_char(50) fme_text_string xml_char(50) fme_start_angle xml_real64"
+#!   EXPOSABLE_ATTRS="multi_reader_full_id xml_int32 xml_type xml_char(50) multi_reader_keyword xml_char(50) multi_reader_id xml_int32 fme_rotation xml_real64 fme_text_size xml_real64 fme_secondary_axis xml_real64 fme_text_string xml_char(50) fme_basename xml_char(50) fme_dataset xml_char(50) fme_type xml_char(50) fme_primary_axis xml_real64 multi_reader_type xml_char(50) fme_sweep_angle xml_real64 fme_geometry fme_char(50) fme_color xml_char(50) fme_feature_type xml_char(50) fme_start_angle xml_real64 fme_fill_color xml_char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -79,13 +79,17 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="URL"
 #!   GENERATE_FME_BUILD_NUM="16167"
-#!   START_FEATURE=""
 #!   FEATURE_TYPES=""
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
-#!   COORDSYS=""
-#!   MAX_FEATURES=""
 #!   MIN_FEATURES=""
+#!   MAX_FEATURES=""
+#!   COORDSYS=""
+#!   START_FEATURE=""
 #! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="URL"
+#! />
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
 #!   VALUE="Specify the WFS URL"
@@ -97,10 +101,6 @@
 #! <METAFILE_PARAMETER
 #!   NAME="NETWORK_PROXY"
 #!   VALUE="NO"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="URL"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -116,7 +116,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY} shape_dimension auto"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle double fme_basename char(50) fme_text_size double fme_feature_type char(50) fme_secondary_axis double fme_fill_color char(50) fme_primary_axis double fme_geometry fme_char(50) SHAPE_GEOMETRY char(50) fme_text_string char(50) fme_color char(50) fme_start_angle double fme_type char(50) shape_measures char(254) fme_rotation double fme_dataset char(50)"
+#!   EXPOSABLE_ATTRS="fme_text_size double fme_feature_type char(50) fme_primary_axis double fme_geometry fme_char(50) fme_rotation double fme_basename char(50) fme_secondary_axis double fme_start_angle double fme_dataset char(50) shape_measures char(254) fme_sweep_angle double fme_fill_color char(50) fme_color char(50) fme_type char(50) SHAPE_GEOMETRY char(50) fme_text_string char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group shape_dimension Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,auto%2D,2d%2D&lt;space&gt;+&lt;space&gt;Measures,2dm%3D&lt;space&gt;+&lt;space&gt;Measures,3dm Output Dimension:&quot; auto "
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
@@ -131,18 +131,6 @@
 #!   COORDSYS="EPSG:4326"
 #! >
 #! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the Esri Shapefile(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
-#!   VALUE="Shapefile1"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="WRITER_DATASET_HINT"
 #!   VALUE="Specify a folder for the Esri Shapefile"
 #! />
@@ -151,12 +139,24 @@
 #!   VALUE="shp file"
 #! />
 #! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
 #!   NAME="DEFAULT_GEOMETRY_TYPE"
 #!   VALUE="shape_first_feature"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Shapefile"
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -172,7 +172,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY} shape_dimension auto"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle double fme_basename char(50) fme_text_size double fme_feature_type char(50) fme_secondary_axis double fme_fill_color char(50) fme_primary_axis double fme_geometry fme_char(50) SHAPE_GEOMETRY char(50) fme_text_string char(50) fme_color char(50) fme_start_angle double fme_type char(50) shape_measures char(254) fme_rotation double fme_dataset char(50)"
+#!   EXPOSABLE_ATTRS="fme_text_size double fme_feature_type char(50) fme_primary_axis double fme_geometry fme_char(50) fme_rotation double fme_basename char(50) fme_secondary_axis double fme_start_angle double fme_dataset char(50) shape_measures char(254) fme_sweep_angle double fme_fill_color char(50) fme_color char(50) fme_type char(50) SHAPE_GEOMETRY char(50) fme_text_string char(50)"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group shape_dimension Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,auto%2D,2d%2D&lt;space&gt;+&lt;space&gt;Measures,2dm%3D&lt;space&gt;+&lt;space&gt;Measures,3dm Output Dimension:&quot; auto "
 #!   ATTR_INDEX_TYPES="Indexed"
 #!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
@@ -186,18 +186,6 @@
 #!   COORDSYS="EPSG:4326"
 #! >
 #! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the Esri Shapefile(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
-#!   VALUE="Shapefile1"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="WRITER_DATASET_HINT"
 #!   VALUE="Specify a folder for the Esri Shapefile"
 #! />
@@ -206,12 +194,24 @@
 #!   VALUE="shp file"
 #! />
 #! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
 #!   NAME="DEFAULT_GEOMETRY_TYPE"
 #!   VALUE="shape_first_feature"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="FEATURE_TYPE_NAME"
-#!   VALUE="Shapefile"
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -767,8 +767,8 @@
 #! >
 #!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="POSTCODE" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
@@ -789,8 +789,8 @@
 #! >
 #!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="PC4" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="auto"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
@@ -845,7 +845,7 @@
 #! />
 #! <COMMENT
 #!   IDENTIFIER="13"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Output wegschrijven als shape-bestanden (EPSG:4326 - WGS84)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Output wegschrijven als shape-bestanden (EPSG:4326 - WGS 84)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="1890.12 -612.985"
 #!   TOP_LEFT="1890.12 -612.985"
 #!   BOTTOM_RIGHT="2684.4 -755.486"
@@ -926,49 +926,49 @@
 #!     <XFORM_ATTR ATTR_NAME="gemeentenaam.xsi_nil" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="geom" IS_USER_CREATED="false" FEAT_INDEX="5" />
 #!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="5" />
-#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceAUTH_TYPE&lt;comma&gt;None&lt;comma&gt;SourceUSER&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourcePASSWORD&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceTOKEN&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceAGOL_ADV_PARM_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceFEATURES_PER_REQUEST&lt;comma&gt;100000&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceARCGISFEATURES_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS&lt;comma&gt;Yes,METAFILE,ARCGISFEATURES"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
-#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_AGOL_ADV_PARM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
-#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;geo.rug.nl&lt;solidus&gt;arcgis&lt;solidus&gt;rest&lt;solidus&gt;services&lt;solidus&gt;Administratief&lt;solidus&gt;PostcodegebiedenNL&lt;solidus&gt;FeatureServer"/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="&lt;quote&gt;Postcode&lt;space&gt;6&lt;space&gt;polygon&lt;quote&gt;&lt;space&gt;&lt;quote&gt;Postcode4&lt;space&gt;polygon&lt;quote&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_AUTH_TYPE" PARM_VALUE="None"/>
-#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_ARCGISFEATURES_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="Intersects"/>
-#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_%&quot;Postcode 6 polygon&quot;%&quot;Postcode4 polygon&quot;"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
-#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_FEATURES_PER_REQUEST" PARM_VALUE="100000"/>
-#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
-#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="ARCGISFEATURES"/>
-#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="&quot;Postcode 6 polygon&quot;,&quot;fme_geometry{0},OBJECTID,POSTCODE&quot;,&quot;Postcode4 polygon&quot;,&quot;fme_geometry{0},OBJECTID,PC4&quot;"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ARCGISFEATURES_AGOL_ADV_PARM_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FEATURES_PER_REQUEST&quot;,ARCGISFEATURES&lt;space&gt;Advanced,ARCGISFEATURES_ARCGISFEATURES_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS ARCGISFEATURES%Source&quot;,ARCGISFEATURES&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,ARCGISFEATURES_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,ARCGISFEATURES&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,ARCGISFEATURES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ARCGISFEATURES&lt;space&gt;,ARCGISFEATURES_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP ARCGISFEATURES_EXPOSE_FORMAT_ATTRS&quot;,ARCGISFEATURES&lt;space&gt;Schema&lt;space&gt;Attributes,ARCGISFEATURES_FEATURES_PER_REQUEST,&quot;OPTIONAL INTEGER&quot;,ARCGISFEATURES&lt;space&gt;Features&lt;space&gt;Per&lt;space&gt;Request:,ARCGISFEATURES_AUTH_TYPE,&quot;OPTIONAL ACTIVECHOICE_LOOKUP None,None,TOKEN,USER,PASSWORD%&quot;&quot;Provide Token&quot;&quot;,provide_token,USER,PASSWORD%Basic,Basic,TOKEN%Digest,Digest,TOKEN%NTLM,NTLM,TOKEN%Kerberos,Kerberos,TOKEN,USER,PASSWORD&quot;,ARCGISFEATURES&lt;space&gt;Authentication&lt;space&gt;Type:"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
+#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_ARCGISFEATURES_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_FEATURES_PER_REQUEST" PARM_VALUE="100000"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
 #!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_%&quot;Postcode 6 polygon&quot;%&quot;Postcode4 polygon&quot;"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="&lt;quote&gt;Postcode&lt;space&gt;6&lt;space&gt;polygon&lt;quote&gt;&lt;space&gt;&lt;quote&gt;Postcode4&lt;space&gt;polygon&lt;quote&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_AGOL_ADV_PARM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;geo.rug.nl&lt;solidus&gt;arcgis&lt;solidus&gt;rest&lt;solidus&gt;services&lt;solidus&gt;Administratief&lt;solidus&gt;PostcodegebiedenNL&lt;solidus&gt;FeatureServer"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceAUTH_TYPE&lt;comma&gt;None&lt;comma&gt;SourceUSER&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourcePASSWORD&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceTOKEN&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceAGOL_ADV_PARM_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceFEATURES_PER_REQUEST&lt;comma&gt;100000&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceARCGISFEATURES_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS&lt;comma&gt;Yes,METAFILE,ARCGISFEATURES"/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="Intersects"/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="ARCGISFEATURES_AGOL_ADV_PARM_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FEATURES_PER_REQUEST&quot;,ARCGISFEATURES&lt;space&gt;Advanced,ARCGISFEATURES_ARCGISFEATURES_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS ARCGISFEATURES%Source&quot;,ARCGISFEATURES&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,ARCGISFEATURES_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,ARCGISFEATURES&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,ARCGISFEATURES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,ARCGISFEATURES&lt;space&gt;,ARCGISFEATURES_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP ARCGISFEATURES_EXPOSE_FORMAT_ATTRS&quot;,ARCGISFEATURES&lt;space&gt;Schema&lt;space&gt;Attributes,ARCGISFEATURES_FEATURES_PER_REQUEST,&quot;OPTIONAL INTEGER&quot;,ARCGISFEATURES&lt;space&gt;Features&lt;space&gt;Per&lt;space&gt;Request:,ARCGISFEATURES_AUTH_TYPE,&quot;OPTIONAL ACTIVECHOICE_LOOKUP None,None,TOKEN,USER,PASSWORD%&quot;&quot;Provide Token&quot;&quot;,provide_token,USER,PASSWORD%Basic,Basic,TOKEN%Digest,Digest,TOKEN%NTLM,NTLM,TOKEN%Kerberos,Kerberos,TOKEN,USER,PASSWORD&quot;,ARCGISFEATURES&lt;space&gt;Authentication&lt;space&gt;Type:"/>
+#!     <XFORM_PARM PARM_NAME="ARCGISFEATURES_AUTH_TYPE" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>

@@ -10,4 +10,4 @@ Het zijn in alle gevallen gezipte shape-bestanden in EPSG:4326 (WGS 84).
 
 Naast de gegevens wordt ook code in Python en R beschikbaar gesteld om de gegevens op een snelle en eenvoudige manier in te lezen.
 
-In de map [etl](https://github.com/KennisnetwerkDataScience/Fietsendiefstallen/tree/master/fme) vind je de spatial ETL-scripts die gebruikt zijn om de datasets klaar te zetten. De scripts zijn gebouwd in FME Desktop 2017.
+In de map [etl](https://github.com/KennisnetwerkDataScience/Fietsendiefstallen/tree/master/etl) vind je de spatial ETL-scripts die gebruikt zijn om de datasets klaar te zetten. De scripts zijn gebouwd in FME Desktop 2017.
