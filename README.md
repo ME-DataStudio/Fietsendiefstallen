@@ -8,7 +8,7 @@ Het gaat om de volgende datasets in de map [data](https://github.com/Kennisnetwe
 * Openbare verlichting (bron: [Dataplatform.nl](https://ckan.dataplatform.nl/dataset/ovl-groningen), Gemeente Groningen)
 * Verblijfsobjecten (bron: Basisregistratie Adressen en Gebouwen, Kadaster)
    
-Het zijn in alle gevallen gezipte shape-bestanden in EPSG:4326 (WGS 84).
+Het zijn in alle gevallen gezipte shape-bestanden in EPSG:3857 ('de Google projectie').
 
 Naast de gegevens wordt ook code in Python en R beschikbaar gesteld om de gegevens op een snelle en eenvoudige manier in te lezen.
 
